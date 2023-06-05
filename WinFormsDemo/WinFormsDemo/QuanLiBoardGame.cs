@@ -12,13 +12,32 @@ namespace WinFormsDemo
 {
     public partial class QuanLiBoardGame : Form
     {
-        MySqlConnection conn;
-        MySqlCommandBuilder cmd;
-        MySqlDataAdapter adap;
-        DataTable mytable;
+        static MySqlConnection conn;
+
         public QuanLiBoardGame()
         {
             InitializeComponent();
+            Connection();
+        }
+        static void Connection()
+        {
+            string connstr = "server=127.0.0.1;uid=root;pwd=122606;database=quanlyboardgame";
+            try
+            {
+                conn = new MySqlConnection(connstr);
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+
+
         }
 
         private void QuanLyBoardGame_Load(object sender, EventArgs e)
@@ -51,6 +70,18 @@ namespace WinFormsDemo
         private void thôngTinKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void thôngTinQuảnTrịViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongTinAdmin tt = new ThongTinAdmin();
+            conn.Open();
+            MySqlCommand mySqlComman = new MySqlCommand("select * from admins", conn);
+            MySqlDataReader reader = mySqlComman.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+            tt.TTAdmin.DataSource = dt;
+            tt.ShowDialog();
         }
     }
 }
