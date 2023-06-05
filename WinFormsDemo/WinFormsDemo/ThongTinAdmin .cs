@@ -66,7 +66,7 @@ namespace WinFormsDemo
             mySqlCommand.Parameters.AddWithValue("@mail", mail);
             mySqlCommand.ExecuteNonQuery();
             MessageBox.Show("Thêm Quản trị viên thành công!");
-            conn.Close() ;
+            conn.Close();
             username.Text = "";
             hovaten.Text = "";
             password.Text = "";
@@ -137,6 +137,11 @@ namespace WinFormsDemo
             {
                 MessageBox.Show("Hủy Thành Công!");
             }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

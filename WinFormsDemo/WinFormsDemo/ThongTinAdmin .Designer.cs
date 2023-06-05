@@ -440,6 +440,7 @@
             label1.Size = new Size(359, 41);
             label1.TabIndex = 7;
             label1.Text = "Thông tin Quản trị viên";
+            label1.Click += label1_Click_1;
             // 
             // TTAdmin
             // 
