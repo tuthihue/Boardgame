@@ -61,9 +61,11 @@ namespace WinFormsDemo
             {
                 string Masp = masp.Text;
                 conn.Open();
+
                 MySqlCommand mySqlCommand = new MySqlCommand("delete from boardgame where MASP=@masp ", conn);
                 mySqlCommand.Parameters.AddWithValue("@masp", Masp);
-                MessageBox.Show("xóa thành công thành công!");
+                mySqlCommand.ExecuteNonQuery();
+                MessageBox.Show("xóa BoardGame thành công!");
                 conn.Close();
                 masp.Text = "";
             }
