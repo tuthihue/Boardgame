@@ -22,7 +22,7 @@ namespace WinFormsDemo
         }
         static void Connection()
         {
-            string connstr = "server=127.0.0.1;uid=root;pwd=122606;database=quanlyboardgame";
+            string connstr = "server=127.0.0.1;uid=root;pwd=;database=quanlyboardgame";
             try
             {
                 conn = new MySqlConnection(connstr);

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            exit = new Button();
+            update = new Button();
             textBox4 = new TextBox();
             label4 = new Label();
             textBox3 = new TextBox();
@@ -37,8 +39,6 @@
             label2 = new Label();
             textBox1 = new TextBox();
             label1 = new Label();
-            update = new Button();
-            exit = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -58,6 +58,25 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(555, 326);
             panel1.TabIndex = 1;
+            // 
+            // exit
+            // 
+            exit.Location = new Point(317, 241);
+            exit.Name = "exit";
+            exit.Size = new Size(107, 39);
+            exit.TabIndex = 9;
+            exit.Text = "Thoát";
+            exit.UseVisualStyleBackColor = true;
+            // 
+            // update
+            // 
+            update.Location = new Point(184, 241);
+            update.Name = "update";
+            update.Size = new Size(100, 39);
+            update.TabIndex = 8;
+            update.Text = "Cập nhật";
+            update.UseVisualStyleBackColor = true;
+            update.Click += update_Click;
             // 
             // textBox4
             // 
@@ -123,24 +142,6 @@
             label1.Size = new Size(107, 20);
             label1.TabIndex = 0;
             label1.Text = "Tên đăng nhập";
-            // 
-            // update
-            // 
-            update.Location = new Point(184, 241);
-            update.Name = "update";
-            update.Size = new Size(100, 39);
-            update.TabIndex = 8;
-            update.Text = "Cập nhật";
-            update.UseVisualStyleBackColor = true;
-            // 
-            // exit
-            // 
-            exit.Location = new Point(317, 241);
-            exit.Name = "exit";
-            exit.Size = new Size(107, 39);
-            exit.TabIndex = 9;
-            exit.Text = "Thoát";
-            exit.UseVisualStyleBackColor = true;
             // 
             // DoiMatKhau
             // 

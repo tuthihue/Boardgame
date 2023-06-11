@@ -21,5 +21,10 @@ namespace WinFormsDemo
         {
 
         }
+
+        private void update_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
