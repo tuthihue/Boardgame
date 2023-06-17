@@ -21,7 +21,7 @@ namespace WinFormsDemo
         }
         static void Connection()
         {
-            string connstr = "server=127.0.0.1;uid=root;pwd=;database=quanlyboardgame";
+            string connstr = "server=127.0.0.1;uid=root;pwd=;database=qlboardgame";
             try
             {
                 conn = new MySqlConnection(connstr);
@@ -95,7 +95,7 @@ namespace WinFormsDemo
 
         private void thôngTinSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThongtinBoardGame tt=new ThongtinBoardGame();
+            ThongtinBoardGame tt = new ThongtinBoardGame();
             conn.Open();
             MySqlCommand mySqlComman = new MySqlCommand("select * from boardgame", conn);
             MySqlDataReader reader = mySqlComman.ExecuteReader();
@@ -105,6 +105,18 @@ namespace WinFormsDemo
 
             tt.ShowDialog();
             conn.Close();
+        }
+
+        private void thôngTinTrảBoardGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TraBoardGame TTTra = new TraBoardGame();
+            TTTra.ShowDialog();
+        }
+
+        private void thôngTinThuêBoardGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThueBoardGame TTThue=new ThueBoardGame();
+            TTThue.ShowDialog();
         }
     }
 }

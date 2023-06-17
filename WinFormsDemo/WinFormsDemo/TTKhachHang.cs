@@ -25,7 +25,7 @@ namespace WinFormsDemo
 
         static void Connection()
         {
-            string connstr = "server=127.0.0.1;uid=root;pwd=;database=quanlyboardgame";
+            string connstr = "server=127.0.0.1;uid=root;pwd=;database=qlboardgame";
             try
             {
                 conn = new MySqlConnection(connstr);
@@ -120,6 +120,11 @@ namespace WinFormsDemo
             {
                 MessageBox.Show("Hủy Thành Công!");
             }
+        }
+
+        private void TTCustomers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

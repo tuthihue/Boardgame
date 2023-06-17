@@ -16,6 +16,12 @@
     <Compile Update="ThongtinBoardGame.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ThueBoardGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TraBoardGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TTAcount.cs">
       <SubType>Form</SubType>
     </Compile>

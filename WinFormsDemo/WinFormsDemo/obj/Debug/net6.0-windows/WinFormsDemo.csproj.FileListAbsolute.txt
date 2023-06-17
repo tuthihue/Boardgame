@@ -96,3 +96,5 @@ C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinForms
 C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.ThongtinBoardGame.resources
 C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.TTAcount.resources
 C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.TTKhachHang.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.ThueBoardGame.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.TraBoardGame.resources

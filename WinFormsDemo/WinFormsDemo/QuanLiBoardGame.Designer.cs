@@ -119,12 +119,14 @@
             thôngTinThuêBoardGameToolStripMenuItem.Name = "thôngTinThuêBoardGameToolStripMenuItem";
             thôngTinThuêBoardGameToolStripMenuItem.Size = new Size(202, 24);
             thôngTinThuêBoardGameToolStripMenuItem.Text = "Thông tin thuê BoardGame";
+            thôngTinThuêBoardGameToolStripMenuItem.Click += thôngTinThuêBoardGameToolStripMenuItem_Click;
             // 
             // thôngTinTrảBoardGameToolStripMenuItem
             // 
             thôngTinTrảBoardGameToolStripMenuItem.Name = "thôngTinTrảBoardGameToolStripMenuItem";
             thôngTinTrảBoardGameToolStripMenuItem.Size = new Size(191, 24);
             thôngTinTrảBoardGameToolStripMenuItem.Text = "Thông tin trả BoardGame";
+            thôngTinTrảBoardGameToolStripMenuItem.Click += thôngTinTrảBoardGameToolStripMenuItem_Click;
             // 
             // QuanLiBoardGame
             // 

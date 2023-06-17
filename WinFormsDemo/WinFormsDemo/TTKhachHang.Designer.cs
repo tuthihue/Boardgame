@@ -128,6 +128,7 @@
             TTCustomers.RowTemplate.Height = 29;
             TTCustomers.Size = new Size(791, 491);
             TTCustomers.TabIndex = 8;
+            TTCustomers.CellContentClick += TTCustomers_CellContentClick;
             // 
             // addKH
             // 
