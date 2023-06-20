@@ -7,6 +7,7 @@ namespace WinFormsDemo
     public partial class LoginAdmin : Form
     {
         static MySqlConnection conn = null;
+        public string Account_Admin;
         public LoginAdmin()
         {
             InitializeComponent();
@@ -35,6 +36,7 @@ namespace WinFormsDemo
         {
             string uname = account.Text;
             string pass = password.Text;
+            Account_Admin = uname;
 
             try
             {
@@ -45,7 +47,7 @@ namespace WinFormsDemo
                 {
                     if (uname.Equals(Reader.GetString("USERNAME")) && pass.Equals(Reader.GetString("PassWord")))
                     {
-                        QuanLiBoardGame ql = new QuanLiBoardGame();
+                        QuanLiBoardGame ql = new QuanLiBoardGame(Account_Admin);
                         this.Hide();
                         ql.ShowDialog();
                         this.Show();

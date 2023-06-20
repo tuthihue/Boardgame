@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Boardgame\\WinFormsDemo\\WinFormsDemo\\WinFormsDemo.csproj": {}
+    "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Boardgame\\APP\\WinFormsDemo\\WinFormsDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Boardgame\\WinFormsDemo\\WinFormsDemo\\WinFormsDemo.csproj": {
+    "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Boardgame\\APP\\WinFormsDemo\\WinFormsDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Boardgame\\WinFormsDemo\\WinFormsDemo\\WinFormsDemo.csproj",
+        "projectUniqueName": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Boardgame\\APP\\WinFormsDemo\\WinFormsDemo.csproj",
         "projectName": "WinFormsDemo",
-        "projectPath": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Boardgame\\WinFormsDemo\\WinFormsDemo\\WinFormsDemo.csproj",
+        "projectPath": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Boardgame\\APP\\WinFormsDemo\\WinFormsDemo.csproj",
         "packagesPath": "C:\\Users\\hongp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Boardgame\\WinFormsDemo\\WinFormsDemo\\obj\\",
+        "outputPath": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Boardgame\\APP\\WinFormsDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

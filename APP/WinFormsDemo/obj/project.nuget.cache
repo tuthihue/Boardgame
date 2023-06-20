@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mw+vg6OwjK9/9fAn0+6LQOlQ3aQPPM8LHYpfS9Lpzj7LpEbfNgKH5x6916gdArEM01gp0k8tOuVW9zH1E2zPJA==",
+  "dgSpecHash": "iNKH8zEayQrqYX34L8ah5df9hiib69SwvFc2fdpoblhX4JCcIRvkfTbEtDcRxJ0j4Qe7XFZtsflDPb5I+I9bXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Boardgame\\WinFormsDemo\\WinFormsDemo\\WinFormsDemo.csproj",
+  "projectFilePath": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Boardgame\\APP\\WinFormsDemo\\WinFormsDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hongp\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\hongp\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",
