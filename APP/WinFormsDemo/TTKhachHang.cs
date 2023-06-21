@@ -60,6 +60,17 @@ namespace WinFormsDemo
             mySqlCommand.Parameters.AddWithValue("@phone", phone);
             mySqlCommand.Parameters.AddWithValue("@mail", mail);
             mySqlCommand.ExecuteNonQuery();
+            DateTime currentDate = DateTime.Now;
+
+            string formattedDate = currentDate.ToString("yyyy-MM-dd");
+
+            MySqlCommand mySqlCommand1 = new MySqlCommand("insert into wp_users(User_login,display_name,user_nicename,user_Pass,user_email,user_registered) values(@user, @hoten, @user,@passwd, @mail,@date) ", conn);
+            mySqlCommand1.Parameters.AddWithValue("@user", user);
+            mySqlCommand1.Parameters.AddWithValue("@hoten", hoten);
+            mySqlCommand1.Parameters.AddWithValue("@passwd", passwd);
+            mySqlCommand1.Parameters.AddWithValue("@mail", mail);
+            mySqlCommand1.Parameters.AddWithValue("@date", formattedDate);
+            mySqlCommand1.ExecuteNonQuery();
             MessageBox.Show("Thêm Khách hàng thành công!");
             conn.Close();
             username.Text = "";
@@ -76,9 +87,12 @@ namespace WinFormsDemo
                 string account = tentk.Text;
                 conn.Open();
                 MySqlCommand mySqlCommand = new MySqlCommand("delete from customers where UserName =@account ", conn);
+                MySqlCommand mySqlCommand1 = new MySqlCommand("delete from wp_users where user_login =@account ", conn);
                 mySqlCommand.Parameters.AddWithValue("@account", account);
+                mySqlCommand1.Parameters.AddWithValue("@account", account);
                 mySqlCommand.ExecuteNonQuery();
-                MessageBox.Show("xóa thành công thành công!");
+                mySqlCommand1.ExecuteNonQuery();
+                MessageBox.Show("xóa thành công!");
                 conn.Close();
                 tentk.Text = "";
 
@@ -86,6 +100,7 @@ namespace WinFormsDemo
             else
             {
                 MessageBox.Show("Hủy Thành Công!");
+                tentk.Text = "";
             }
         }
 
@@ -100,12 +115,18 @@ namespace WinFormsDemo
                 string mail = tkmail.Text;
                 conn.Open();
                 MySqlCommand mySqlCommand = new MySqlCommand("UPDATE customers SET HOTEN=@hoten,PassWord=@passwd,sdt=@phone,email=@mail where UserName=@user", conn);
+                MySqlCommand mySqlCommand1 = new MySqlCommand("UPDATE wp_users SET display_name=@hoten,user_pass=@passwd,user_email=@mail where user_login=@user", conn);
                 mySqlCommand.Parameters.AddWithValue("@user", user);
                 mySqlCommand.Parameters.AddWithValue("@hoten", hoten);
                 mySqlCommand.Parameters.AddWithValue("@passwd", passwd);
                 mySqlCommand.Parameters.AddWithValue("@phone", phone);
                 mySqlCommand.Parameters.AddWithValue("@mail", mail);
                 mySqlCommand.ExecuteNonQuery();
+                mySqlCommand1.Parameters.AddWithValue("@user", user);
+                mySqlCommand1.Parameters.AddWithValue("@hoten", hoten);
+                mySqlCommand1.Parameters.AddWithValue("@passwd", passwd);
+                mySqlCommand1.Parameters.AddWithValue("@mail", mail);
+                mySqlCommand1.ExecuteNonQuery();
                 MessageBox.Show("Sửa Thông Tin khách hàng thành công!");
                 account.Text = "";
                 hovten.Text = "";

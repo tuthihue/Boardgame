@@ -50,10 +50,10 @@ namespace WinFormsDemo
             MySqlDataReader Reader = mySqlComman.ExecuteReader();
             while (Reader.Read())
             {
-                 account_Admin = Reader.GetString("UserName");
-                ten = Reader.GetString("HOTEN"); 
+                account_Admin = Reader.GetString("UserName");
+                ten = Reader.GetString("HOTEN");
                 pwd = Reader.GetString("PassWord");
-                phone= Reader.GetString("sdt");
+                phone = Reader.GetString("sdt");
                 mail = Reader.GetString("Email");
             }
             Reader.Close();
@@ -82,6 +82,11 @@ namespace WinFormsDemo
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void TTAcount_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

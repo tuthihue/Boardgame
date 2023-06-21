@@ -147,6 +147,7 @@
             Controls.Add(label1);
             Name = "TTAcount";
             Text = "TTAcount";
+            Load += TTAcount_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -84,6 +84,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(369, 27);
             textBox4.TabIndex = 7;
+            textBox4.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -100,6 +101,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(369, 27);
             textBox3.TabIndex = 5;
+            textBox3.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -117,6 +119,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(369, 27);
             textBox2.TabIndex = 3;
+            textBox2.UseSystemPasswordChar = true;
             // 
             // label2
             // 
