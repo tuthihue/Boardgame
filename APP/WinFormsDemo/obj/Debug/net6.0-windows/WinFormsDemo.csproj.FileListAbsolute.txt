@@ -1,0 +1,186 @@
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.exe
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.deps.json
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.runtimeconfig.json
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.pdb
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.AssemblyReference.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.GenerateResource.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.AssemblyInfoInputs.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.AssemblyInfo.cs
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.CoreCompileInputs.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\refint\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.pdb
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.genruntimeconfig.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\ref\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.Form2.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.Page1.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.Properties.Resources.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.exe
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.deps.json
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.runtimeconfig.json
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.pdb
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.AssemblyReference.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.Properties.Resources.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.GenerateResource.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.AssemblyInfoInputs.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.AssemblyInfo.cs
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.CoreCompileInputs.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\refint\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.pdb
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.genruntimeconfig.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\ref\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\NuGet.Frameworks.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.CopyComplete
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.QuanLiBoardGame.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.DoiMatKhau.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.ThongTinAdmin.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\CNPM\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.LoginAdmin.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.exe
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.deps.json
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.runtimeconfig.json
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.pdb
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\NuGet.Frameworks.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.AssemblyReference.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.DoiMatKhau.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.LoginAdmin.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.Properties.Resources.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.QuanLiBoardGame.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.ThongTinAdmin.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.GenerateResource.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.AssemblyInfoInputs.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.AssemblyInfo.cs
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.CoreCompileInputs.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.CopyComplete
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\refint\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.pdb
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.genruntimeconfig.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\ref\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.ThongtinBoardGame.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.TTAcount.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.TTKhachHang.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.ThueBoardGame.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\WinFormsDemo\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.TraBoardGame.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.exe
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.deps.json
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.runtimeconfig.json
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.pdb
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\NuGet.Frameworks.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.AssemblyReference.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.DoiMatKhau.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.LoginAdmin.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.Properties.Resources.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.QuanLiBoardGame.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.ThongTinAdmin.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.ThongtinBoardGame.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.ThueBoardGame.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.TraBoardGame.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.TTAcount.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.TTKhachHang.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.GenerateResource.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.AssemblyInfoInputs.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.AssemblyInfo.cs
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.CoreCompileInputs.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.CopyComplete
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\refint\WinFormsDemo.dll
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.pdb
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.genruntimeconfig.cache
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\ref\WinFormsDemo.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.exe
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.deps.json
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.runtimeconfig.json
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\WinFormsDemo.pdb
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\NuGet.Frameworks.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.AssemblyReference.cache
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.DoiMatKhau.resources
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.LoginAdmin.resources
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.Properties.Resources.resources
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.QuanLiBoardGame.resources
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.ThongTinAdmin.resources
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.ThongtinBoardGame.resources
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.ThueBoardGame.resources
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.TraBoardGame.resources
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.TTAcount.resources
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.TTKhachHang.resources
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.GenerateResource.cache
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.AssemblyInfoInputs.cache
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.AssemblyInfo.cs
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.CoreCompileInputs.cache
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.csproj.CopyComplete
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\refint\WinFormsDemo.dll
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.pdb
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\WinFormsDemo.genruntimeconfig.cache
+C:\CNPM\Boardgame\APP\WinFormsDemo\obj\Debug\net6.0-windows\ref\WinFormsDemo.dll
