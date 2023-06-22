@@ -30,6 +30,8 @@
         {
             tabControl1 = new TabControl();
             TTSP = new TabPage();
+            label14 = new Label();
+            TTBoardGame = new DataGridView();
             addBG = new TabPage();
             label4 = new Label();
             AddAdmin = new Panel();
@@ -70,17 +72,15 @@
             label11 = new Label();
             MaBG1 = new TextBox();
             label12 = new Label();
-            label14 = new Label();
-            TTBoardGame = new DataGridView();
             tabControl1.SuspendLayout();
             TTSP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)TTBoardGame).BeginInit();
             addBG.SuspendLayout();
             AddAdmin.SuspendLayout();
             delBG.SuspendLayout();
             panel1.SuspendLayout();
             updateBG.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)TTBoardGame).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -106,6 +106,34 @@
             TTSP.TabIndex = 0;
             TTSP.Text = "Thông tin BoardGame";
             TTSP.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.BackColor = SystemColors.HotTrack;
+            label14.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label14.ForeColor = Color.Cornsilk;
+            label14.Location = new Point(6, 3);
+            label14.Name = "label14";
+            label14.Size = new Size(350, 41);
+            label14.TabIndex = 9;
+            label14.Text = "Thông Tin BoardGame";
+            label14.Click += label14_Click;
+            // 
+            // TTBoardGame
+            // 
+            TTBoardGame.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            TTBoardGame.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            TTBoardGame.BackgroundColor = SystemColors.ButtonHighlight;
+            TTBoardGame.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            TTBoardGame.Location = new Point(9, 74);
+            TTBoardGame.Name = "TTBoardGame";
+            TTBoardGame.ReadOnly = true;
+            TTBoardGame.RowHeadersWidth = 51;
+            TTBoardGame.RowTemplate.Height = 29;
+            TTBoardGame.Size = new Size(1206, 631);
+            TTBoardGame.TabIndex = 8;
+            TTBoardGame.CellContentClick += TTAdmin_CellContentClick;
             // 
             // addBG
             // 
@@ -494,34 +522,6 @@
             label12.TabIndex = 0;
             label12.Text = "Mã BoardGame";
             // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.BackColor = SystemColors.HotTrack;
-            label14.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label14.ForeColor = Color.Cornsilk;
-            label14.Location = new Point(6, 3);
-            label14.Name = "label14";
-            label14.Size = new Size(350, 41);
-            label14.TabIndex = 9;
-            label14.Text = "Thông Tin BoardGame";
-            label14.Click += label14_Click;
-            // 
-            // TTBoardGame
-            // 
-            TTBoardGame.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            TTBoardGame.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            TTBoardGame.BackgroundColor = SystemColors.ButtonHighlight;
-            TTBoardGame.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            TTBoardGame.Location = new Point(129, 74);
-            TTBoardGame.Name = "TTBoardGame";
-            TTBoardGame.ReadOnly = true;
-            TTBoardGame.RowHeadersWidth = 51;
-            TTBoardGame.RowTemplate.Height = 29;
-            TTBoardGame.Size = new Size(791, 491);
-            TTBoardGame.TabIndex = 8;
-            TTBoardGame.CellContentClick += TTAdmin_CellContentClick;
-            // 
             // ThongtinBoardGame
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -533,6 +533,7 @@
             tabControl1.ResumeLayout(false);
             TTSP.ResumeLayout(false);
             TTSP.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)TTBoardGame).EndInit();
             addBG.ResumeLayout(false);
             addBG.PerformLayout();
             AddAdmin.ResumeLayout(false);
@@ -545,7 +546,6 @@
             updateBG.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)TTBoardGame).EndInit();
             ResumeLayout(false);
         }
 

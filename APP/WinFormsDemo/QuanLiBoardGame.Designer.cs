@@ -44,6 +44,7 @@
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
+            label6 = new Label();
             menuStrip1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -136,6 +137,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(label6);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
@@ -149,7 +151,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(848, 100);
+            label5.Location = new Point(847, 212);
             label5.Name = "label5";
             label5.Size = new Size(50, 20);
             label5.TabIndex = 3;
@@ -158,7 +160,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(542, 100);
+            label4.Location = new Point(541, 212);
             label4.Name = "label4";
             label4.Size = new Size(50, 20);
             label4.TabIndex = 2;
@@ -167,7 +169,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(251, 100);
+            label3.Location = new Point(250, 212);
             label3.Name = "label3";
             label3.Size = new Size(50, 20);
             label3.TabIndex = 1;
@@ -176,11 +178,20 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(542, 30);
+            label2.Location = new Point(541, 138);
             label2.Name = "label2";
             label2.Size = new Size(50, 20);
             label2.TabIndex = 0;
             label2.Text = "label2";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(62, 26);
+            label6.Name = "label6";
+            label6.Size = new Size(50, 20);
+            label6.TabIndex = 4;
+            label6.Text = "label6";
             // 
             // QuanLiBoardGame
             // 
@@ -221,5 +232,6 @@
         private Label label4;
         private Label label3;
         private Label label5;
+        private Label label6;
     }
 }

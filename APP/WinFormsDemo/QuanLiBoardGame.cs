@@ -129,14 +129,17 @@ namespace WinFormsDemo
             DateTime currentDate = DateTime.Now;
             string formattedDate = currentDate.ToString("dd-MM-yyyy");
             string slkh = "0";
-            string ds="0";
+            string ds = "0";
+            string slgame = "0";
+            string HoVaTen="0";
             conn.Open();
             MySqlCommand mySqlComman = new MySqlCommand("select count(*) as soluong from customers ", conn);
             MySqlDataReader Reader = mySqlComman.ExecuteReader();
             while (Reader.Read())
             {
-                slkh= Reader.GetString("soluong");
+                slkh = Reader.GetString("soluong");
             }
+            Reader.Close();
             conn.Close();
             conn.Open();
             MySqlCommand mySqlComman1 = new MySqlCommand("select sum(tongtien) as doanhthu from thue ", conn);
@@ -145,12 +148,28 @@ namespace WinFormsDemo
             {
                 ds = Reader1.GetString("doanhthu");
             }
-            Reader.Close();
+            Reader1.Close();
+            MySqlCommand mySqlComman2 = new MySqlCommand("select sum(soluong) as slg from order_game ", conn);
+            MySqlDataReader Reader2 = mySqlComman2.ExecuteReader();
+            while (Reader2.Read())
+            {
+                slgame = Reader2.GetString("slg");
+            }
+            Reader2.Close();
+            MySqlCommand mySqlComman3 = new MySqlCommand("select hoten from admins where username=@Admin ", conn);
+            mySqlComman3.Parameters.AddWithValue("@Admin", Admin);
+            MySqlDataReader Reader3 = mySqlComman3.ExecuteReader();
+            while (Reader3.Read())
+            {
+                HoVaTen = Reader3.GetString("hoten");
+            }
+            Reader3.Close();
             conn.Close();
             label2.Text = "Tính tới ngày " + formattedDate;
             label3.Text = "Có tổng " + slkh + " đăng kí tài khoản trên website";
-            label4.Text = "Doanh thu thu được là: " + ds +"000 VNĐ";
-
+            label4.Text = "Doanh thu thu được là: " + ds + "000 VNĐ" + "";
+            label5.Text = "Có tổng " + slgame + " game được thuê";
+            label6.Text = "Xin chào quản trị viên " + HoVaTen + ",";
 
         }
     }
