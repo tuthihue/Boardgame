@@ -134,6 +134,10 @@ namespace WinFormsDemo
             string date1 = selectedDate1.ToString("yyyy-MM-dd");
             DateTime selectedDate2 = dateTimePicker2.Value;
             string date2 = selectedDate2.ToString("yyyy-MM-dd");
+            if (conn.State != System.Data.ConnectionState.Closed)
+            {
+                conn.Close();
+            }
             conn.Open();
             MySqlCommand insertCommand1 = new MySqlCommand("insert into order_game select order_id, customer_id,date(date_created) as date_created,sum(product_gross_revenue) as tongtien,count(order_id) as soluong from wp_wc_order_product_lookup where date_created between @date1 and @date2 and wp_wc_order_product_lookup.order_id not in (select order_id from order_game) group by order_id,customer_id, date(date_created)", conn);
             insertCommand1.Parameters.AddWithValue("@date1", date1);

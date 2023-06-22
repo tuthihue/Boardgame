@@ -56,5 +56,21 @@ namespace WinFormsDemo
             TTThueBoardGame.DataSource = dt;
             conn.Close();
         }
+
+        private void TTSPThue_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            MySqlCommand mySqlComman = new MySqlCommand("select order_id as ID_THUE,order_item_name as TENSP,count(order_item_name) as soluong from wp_woocommerce_order_items group by order_id,order_item_name", conn);
+            MySqlDataReader reader = mySqlComman.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+            TTSPThue.DataSource = dt;
+            conn.Close();
+        }
     }
 }
