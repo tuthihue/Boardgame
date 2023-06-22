@@ -13,8 +13,12 @@ namespace WinFormsDemo
 {
     public partial class QuanLiBoardGame : Form
     {
-        static MySqlConnection conn;
+        static MySqlConnection conn=null;
         public string Admin;
+        public string slkh = "0";
+        public string ds = "0";
+        public string slgame = "0";
+        public string HoVaTen = "0";
         public QuanLiBoardGame(string Account_Admin)
         {
             InitializeComponent();
@@ -126,20 +130,24 @@ namespace WinFormsDemo
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            DateTime currentDate = DateTime.Now;
-            string formattedDate = currentDate.ToString("dd-MM-yyyy");
-            string slkh = "0";
-            string ds = "0";
-            string slgame = "0";
-            string HoVaTen="0";
+            DateTime selectedDate1 = dateTimePicker1.Value;
+            string date1 = selectedDate1.ToString("yyyy-MM-dd");
+            DateTime selectedDate2 = dateTimePicker2.Value;
+            string date2 = selectedDate2.ToString("yyyy-MM-dd");
             conn.Open();
-            MySqlCommand insertCommand1 = new MySqlCommand("insert into order_game select order_id, customer_id,date(date_created) as date_created,sum(product_gross_revenue) as tongtien,count(order_id) as soluong from wp_wc_order_product_lookup where wp_wc_order_product_lookup.order_id not in (select order_id from order_game)\r\ngroup by order_id,customer_id, date(date_created)", conn);
+            MySqlCommand insertCommand1 = new MySqlCommand("insert into order_game select order_id, customer_id,date(date_created) as date_created,sum(product_gross_revenue) as tongtien,count(order_id) as soluong from wp_wc_order_product_lookup where date_created between @date1 and @date2 and wp_wc_order_product_lookup.order_id not in (select order_id from order_game) group by order_id,customer_id, date(date_created)", conn);
+            insertCommand1.Parameters.AddWithValue("@date1", date1);
+            insertCommand1.Parameters.AddWithValue("@date2", date2);
             insertCommand1.ExecuteNonQuery();
-            MySqlCommand insertCommand2 = new MySqlCommand("INSERT into thue select order_id,display_name,date_created,tongtien from order_game o join wp_users c on o.customer_id=c.id where order_id not in (select ID_thue from thue);", conn);
+            MySqlCommand insertCommand2 = new MySqlCommand("INSERT into thue select order_id,display_name,date_created,tongtien from order_game o join wp_users c on o.customer_id=c.id where date_created between @date1 and @date2 and order_id not in (select ID_thue from thue);", conn);
+            insertCommand2.Parameters.AddWithValue("@date1", date1);
+            insertCommand2.Parameters.AddWithValue("@date2", date2);
             insertCommand2.ExecuteNonQuery();
             conn.Close();
             conn.Open();
-            MySqlCommand mySqlComman = new MySqlCommand("select count(*) as soluong from wp_users ", conn);
+            MySqlCommand mySqlComman = new MySqlCommand("select count(*) as soluong from wp_users where date(user_registered) between @date1 and @date2 ", conn);
+            mySqlComman.Parameters.AddWithValue("@date1", date1);
+            mySqlComman.Parameters.AddWithValue("@date2", date2);
             MySqlDataReader Reader = mySqlComman.ExecuteReader();
             while (Reader.Read())
             {
@@ -148,14 +156,18 @@ namespace WinFormsDemo
             Reader.Close();
             conn.Close();
             conn.Open();
-            MySqlCommand mySqlComman1 = new MySqlCommand("select sum(tongtien) as doanhthu from thue ", conn);
+            MySqlCommand mySqlComman1 = new MySqlCommand("select sum(tongtien) as doanhthu from thue where ngaythue between @date1 and @date2 ", conn);
+            mySqlComman1.Parameters.AddWithValue("@date1", date1);
+            mySqlComman1.Parameters.AddWithValue("@date2", date2);
             MySqlDataReader Reader1 = mySqlComman1.ExecuteReader();
             while (Reader1.Read())
             {
                 ds = Reader1.GetString("doanhthu");
             }
             Reader1.Close();
-            MySqlCommand mySqlComman2 = new MySqlCommand("select sum(soluong) as slg from order_game ", conn);
+            MySqlCommand mySqlComman2 = new MySqlCommand("select sum(soluong) as slg from order_game where date_created between @date1 and @date2 ", conn);
+            mySqlComman2.Parameters.AddWithValue("@date1", date1);
+            mySqlComman2.Parameters.AddWithValue("@date2", date2);
             MySqlDataReader Reader2 = mySqlComman2.ExecuteReader();
             while (Reader2.Read())
             {
@@ -171,11 +183,41 @@ namespace WinFormsDemo
             }
             Reader3.Close();
             conn.Close();
-            label2.Text = "Tính tới ngày " + formattedDate;
+
+
+        }
+
+        private void TKSP_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime selectedDate1 = dateTimePicker1.Value;
+            string date1 = selectedDate1.ToString("yyyy-MM-dd");
+            DateTime selectedDate2 = dateTimePicker2.Value;
+            string date2 = selectedDate2.ToString("yyyy-MM-dd");
+            conn.Open();
+            MySqlCommand Command1 = new MySqlCommand("WITH temp AS (SELECT t.USERNAME, HOTEN, sdt, SUM(tongtien) AS DoanhSo FROM thue t JOIN customers c ON t.username = c.username WHERE ngaythue BETWEEN @date1 AND @date2 GROUP BY t.username, hoten, sdt ORDER BY SUM(tongtien) DESC LIMIT 3) select USERNAME,HOTEN,sdt,concat(DoanhSo,'000') as DoanhSo from temp", conn);
+            Command1.Parameters.AddWithValue("@date1", date1);
+            Command1.Parameters.AddWithValue("@date2", date2);
+            MySqlDataReader reader = Command1.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+            TKSP.DataSource = dt;
+            conn.Close();
+            string date3 = selectedDate1.ToString("dd-MM-yyyy");
+            string date4 = selectedDate2.ToString("dd-MM-yyyy");
+            label2.Text = "Tính từ ngày " + date3 + " tới ngày " + date4;
             label3.Text = "Có tổng " + slkh + " đăng kí tài khoản trên website";
             label4.Text = "Doanh thu thu được là: " + ds + "000 VNĐ" + "";
             label5.Text = "Có tổng " + slgame + " game được thuê";
             label6.Text = "Xin chào quản trị viên " + HoVaTen + ",";
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
 
         }
     }
