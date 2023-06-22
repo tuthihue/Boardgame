@@ -22,7 +22,7 @@ namespace WinFormsDemo
         }
         static void Connection()
         {
-            string connstr = "server=127.0.0.1;uid=root;pwd=;database=qlboardgame";
+            string connstr = "server=127.0.0.1;uid=root;pwd=;database=boardgame";
             try
             {
                 conn = new MySqlConnection(connstr);
@@ -65,6 +65,11 @@ namespace WinFormsDemo
             mySqlCommand.ExecuteNonQuery();
             MessageBox.Show("Cập nhật thành công!");
             conn.Close();
+        }
+
+        private void TTTraBoardGame_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

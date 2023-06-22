@@ -104,6 +104,7 @@
             TTTraBoardGame.RowTemplate.Height = 29;
             TTTraBoardGame.Size = new Size(791, 491);
             TTTraBoardGame.TabIndex = 13;
+            TTTraBoardGame.CellContentClick += TTTraBoardGame_CellContentClick;
             // 
             // tabPage2
             // 

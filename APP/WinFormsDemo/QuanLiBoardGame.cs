@@ -24,7 +24,7 @@ namespace WinFormsDemo
 
         static void Connection()
         {
-            string connstr = "server=127.0.0.1;uid=root;pwd=;database=qlboardgame";
+            string connstr = "server=127.0.0.1;uid=root;pwd=;database=boardgame";
             try
             {
                 conn = new MySqlConnection(connstr);
@@ -133,7 +133,13 @@ namespace WinFormsDemo
             string slgame = "0";
             string HoVaTen="0";
             conn.Open();
-            MySqlCommand mySqlComman = new MySqlCommand("select count(*) as soluong from customers ", conn);
+            MySqlCommand insertCommand1 = new MySqlCommand("insert into order_game select order_id, customer_id,date(date_created) as date_created,sum(product_gross_revenue) as tongtien,count(order_id) as soluong from wp_wc_order_product_lookup where wp_wc_order_product_lookup.order_id not in (select order_id from order_game)\r\ngroup by order_id,customer_id, date(date_created)", conn);
+            insertCommand1.ExecuteNonQuery();
+            MySqlCommand insertCommand2 = new MySqlCommand("INSERT into thue select order_id,display_name,date_created,tongtien from order_game o join wp_users c on o.customer_id=c.id where order_id not in (select ID_thue from thue);", conn);
+            insertCommand2.ExecuteNonQuery();
+            conn.Close();
+            conn.Open();
+            MySqlCommand mySqlComman = new MySqlCommand("select count(*) as soluong from wp_users ", conn);
             MySqlDataReader Reader = mySqlComman.ExecuteReader();
             while (Reader.Read())
             {

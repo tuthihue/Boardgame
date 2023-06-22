@@ -17,7 +17,7 @@ namespace WinFormsDemo
         static void Connection()
         {
           
-            string connstr = "server=127.0.0.1;uid=root;pwd=;database=qlboardgame";
+            string connstr = "server=127.0.0.1;uid=root;pwd=;database=boardgame";
             try
             {
                 conn = new MySqlConnection(connstr);
@@ -54,12 +54,9 @@ namespace WinFormsDemo
                         conn.Close();
                         return;
                     }
-                    else 
-                    {
-                        MessageBox.Show("Tài khoản hoặc mật khẩu sai!");
-                        return;
-                    }
+
                 }
+                MessageBox.Show("Tài khoản hoặc mật khẩu sai!");
             }
             catch (Exception ex)
             {
