@@ -143,5 +143,25 @@ namespace WinFormsDemo
         {
 
         }
+
+        private void info_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void insert_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginAdmin));
             username = new Label();
             account = new TextBox();
             password = new TextBox();
@@ -46,26 +47,26 @@
             // 
             username.AutoSize = true;
             username.BackColor = Color.Transparent;
-            username.Location = new Point(278, 350);
+            username.Location = new Point(566, 598);
             username.Name = "username";
-            username.Size = new Size(107, 20);
+            username.Size = new Size(192, 37);
             username.TabIndex = 0;
             username.Text = "Tên đăng nhập";
             username.Click += label1_Click;
             // 
             // account
             // 
-            account.Location = new Point(423, 350);
+            account.Location = new Point(786, 598);
             account.Name = "account";
-            account.Size = new Size(221, 27);
+            account.Size = new Size(365, 43);
             account.TabIndex = 1;
             account.TextChanged += textBox1_TextChanged;
             // 
             // password
             // 
-            password.Location = new Point(423, 412);
+            password.Location = new Point(786, 660);
             password.Name = "password";
-            password.Size = new Size(221, 27);
+            password.Size = new Size(365, 43);
             password.TabIndex = 3;
             password.UseSystemPasswordChar = true;
             password.TextChanged += textBox2_TextChanged;
@@ -74,9 +75,9 @@
             // 
             pass.AutoSize = true;
             pass.BackColor = Color.Transparent;
-            pass.Location = new Point(298, 412);
+            pass.Location = new Point(566, 660);
             pass.Name = "pass";
-            pass.Size = new Size(70, 20);
+            pass.Size = new Size(128, 37);
             pass.TabIndex = 2;
             pass.Text = "Mật khẩu";
             pass.Click += label2_Click;
@@ -85,9 +86,9 @@
             // 
             Login.BackColor = Color.RoyalBlue;
             Login.ForeColor = SystemColors.ControlLightLight;
-            Login.Location = new Point(423, 466);
+            Login.Location = new Point(786, 741);
             Login.Name = "Login";
-            Login.Size = new Size(94, 29);
+            Login.Size = new Size(166, 73);
             Login.TabIndex = 5;
             Login.Text = "Đăng nhập";
             Login.UseVisualStyleBackColor = false;
@@ -108,9 +109,9 @@
             // 
             Exit.BackColor = Color.RoyalBlue;
             Exit.ForeColor = SystemColors.ControlLightLight;
-            Exit.Location = new Point(536, 466);
+            Exit.Location = new Point(1026, 741);
             Exit.Name = "Exit";
-            Exit.Size = new Size(125, 29);
+            Exit.Size = new Size(125, 73);
             Exit.TabIndex = 7;
             Exit.Text = "Thoát";
             Exit.UseVisualStyleBackColor = false;
@@ -122,7 +123,7 @@
             pictureBox1.BackgroundImage = Properties.Resources.login_preview_rev_1;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.InitialImage = null;
-            pictureBox1.Location = new Point(421, 136);
+            pictureBox1.Location = new Point(868, 350);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(223, 208);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -135,10 +136,10 @@
             AcceptButton = Login;
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ControlLightLight;
-            BackgroundImage = Properties.Resources.login_background;
-            BackgroundImageLayout = ImageLayout.Zoom;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             CancelButton = Exit;
-            ClientSize = new Size(1069, 640);
+            ClientSize = new Size(1946, 1311);
             Controls.Add(Exit);
             Controls.Add(Login);
             Controls.Add(username);
@@ -147,6 +148,7 @@
             Controls.Add(account);
             Controls.Add(pictureBox1);
             ForeColor = SystemColors.ActiveCaptionText;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "LoginAdmin";
             Text = "Cổng thông tin đào tạo";
             FormClosing += Page1_FormClosing;
