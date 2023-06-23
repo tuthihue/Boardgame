@@ -56,18 +56,30 @@ namespace WinFormsDemo
         private void button2_Click(object sender, EventArgs e)
         {
             string idthue = mahd.Text;
-            string ngtra = date.Text;
-
-            conn.Open();
-            MySqlCommand mySqlCommand = new MySqlCommand("insert into tragame(ID_THUE,ngaytra) values(@mahd,@date)", conn);
-            mySqlCommand.Parameters.AddWithValue("@mahd", idthue);
-            mySqlCommand.Parameters.AddWithValue("@date", ngtra);
-            mySqlCommand.ExecuteNonQuery();
-            MessageBox.Show("Cập nhật thành công!");
-            conn.Close();
+            DateTime selectedDate1 = dateTimePicker1.Value;
+            string date1 = selectedDate1.ToString("yyyy-MM-dd");
+            if (string.IsNullOrEmpty(mahd.Text))
+            {
+                MessageBox.Show("Mã hóa đơn không được để trống !");
+            }
+            else
+            {
+                conn.Open();
+                MySqlCommand mySqlCommand = new MySqlCommand("insert into tragame(ID_THUE,ngaytra) values(@mahd,@date)", conn);
+                mySqlCommand.Parameters.AddWithValue("@mahd", idthue);
+                mySqlCommand.Parameters.AddWithValue("@date", date1);
+                mySqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Cập nhật thành công!");
+                conn.Close();
+            }
         }
 
         private void TTTraBoardGame_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }

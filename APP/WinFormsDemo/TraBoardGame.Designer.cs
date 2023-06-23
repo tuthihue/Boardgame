@@ -35,11 +35,11 @@
             TTTraBoardGame = new DataGridView();
             tabPage2 = new TabPage();
             button2 = new Button();
-            date = new TextBox();
             label3 = new Label();
             label2 = new Label();
             mahd = new TextBox();
             label1 = new Label();
+            dateTimePicker1 = new DateTimePicker();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)TTTraBoardGame).BeginInit();
@@ -108,8 +108,8 @@
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(dateTimePicker1);
             tabPage2.Controls.Add(button2);
-            tabPage2.Controls.Add(date);
             tabPage2.Controls.Add(label3);
             tabPage2.Controls.Add(label2);
             tabPage2.Controls.Add(mahd);
@@ -131,13 +131,6 @@
             button2.Text = "Cập nhật";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
-            // 
-            // date
-            // 
-            date.Location = new Point(238, 169);
-            date.Name = "date";
-            date.Size = new Size(177, 27);
-            date.TabIndex = 5;
             // 
             // label3
             // 
@@ -172,6 +165,14 @@
             label1.TabIndex = 0;
             label1.Text = "Mã hóa đơn";
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(238, 164);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(257, 27);
+            dateTimePicker1.TabIndex = 7;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
+            // 
             // TraBoardGame
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -202,7 +203,7 @@
         private Label label14;
         public DataGridView TTTraBoardGame;
         private Button button2;
-        public TextBox date;
         public TextBox mahd;
+        private DateTimePicker dateTimePicker1;
     }
 }

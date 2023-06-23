@@ -13,7 +13,7 @@ namespace WinFormsDemo
 {
     public partial class QuanLiBoardGame : Form
     {
-        static MySqlConnection conn=null;
+        static MySqlConnection conn;
         public string Admin;
         public string slkh = "0";
         public string ds = "0";
@@ -134,6 +134,23 @@ namespace WinFormsDemo
             string date1 = selectedDate1.ToString("yyyy-MM-dd");
             DateTime selectedDate2 = dateTimePicker2.Value;
             string date2 = selectedDate2.ToString("yyyy-MM-dd");
+            
+            
+
+
+        }
+
+        private void TKSP_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime selectedDate1 = dateTimePicker1.Value;
+            string date1 = selectedDate1.ToString("yyyy-MM-dd");
+            DateTime selectedDate2 = dateTimePicker2.Value;
+            string date2 = selectedDate2.ToString("yyyy-MM-dd");
             if (conn.State != System.Data.ConnectionState.Closed)
             {
                 conn.Close();
@@ -158,15 +175,13 @@ namespace WinFormsDemo
                 slkh = Reader.GetString("soluong");
             }
             Reader.Close();
-            conn.Close();
-            conn.Open();
-            MySqlCommand mySqlComman1 = new MySqlCommand("select sum(tongtien) as doanhthu from thue where ngaythue between @date1 and @date2 ", conn);
+            MySqlCommand mySqlComman1 = new MySqlCommand("select sum(tongtien) as dt from thue where ngaythue between @date1 and @date2 ", conn);
             mySqlComman1.Parameters.AddWithValue("@date1", date1);
             mySqlComman1.Parameters.AddWithValue("@date2", date2);
             MySqlDataReader Reader1 = mySqlComman1.ExecuteReader();
             while (Reader1.Read())
             {
-                ds = Reader1.GetString("doanhthu");
+                ds = Reader1.GetString("dt");
             }
             Reader1.Close();
             MySqlCommand mySqlComman2 = new MySqlCommand("select sum(soluong) as slg from order_game where date_created between @date1 and @date2 ", conn);
@@ -187,21 +202,6 @@ namespace WinFormsDemo
             }
             Reader3.Close();
             conn.Close();
-
-
-        }
-
-        private void TKSP_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            DateTime selectedDate1 = dateTimePicker1.Value;
-            string date1 = selectedDate1.ToString("yyyy-MM-dd");
-            DateTime selectedDate2 = dateTimePicker2.Value;
-            string date2 = selectedDate2.ToString("yyyy-MM-dd");
             conn.Open();
             MySqlCommand Command1 = new MySqlCommand("WITH temp AS (SELECT t.USERNAME, HOTEN, sdt, SUM(tongtien) AS DoanhSo FROM thue t JOIN customers c ON t.username = c.username WHERE ngaythue BETWEEN @date1 AND @date2 GROUP BY t.username, hoten, sdt ORDER BY SUM(tongtien) DESC LIMIT 3) select USERNAME,HOTEN,sdt,concat(DoanhSo,'000') as DoanhSo from temp", conn);
             Command1.Parameters.AddWithValue("@date1", date1);

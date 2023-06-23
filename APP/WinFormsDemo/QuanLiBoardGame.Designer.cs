@@ -40,6 +40,7 @@
             thôngTinThuêBoardGameToolStripMenuItem = new ToolStripMenuItem();
             thôngTinTrảBoardGameToolStripMenuItem = new ToolStripMenuItem();
             panel1 = new Panel();
+            label9 = new Label();
             label8 = new Label();
             label7 = new Label();
             dateTimePicker2 = new DateTimePicker();
@@ -51,7 +52,6 @@
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
-            label9 = new Label();
             menuStrip1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)TKSP).BeginInit();
@@ -163,6 +163,15 @@
             panel1.TabIndex = 14;
             panel1.Paint += panel1_Paint;
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(147, 222);
+            label9.Name = "label9";
+            label9.Size = new Size(446, 20);
+            label9.TabIndex = 15;
+            label9.Text = "Danh sách top 3 các khách hàng thuê game với doanh số cao nhất";
+            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -183,7 +192,7 @@
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(528, 67);
+            dateTimePicker2.Location = new Point(517, 62);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(259, 27);
             dateTimePicker2.TabIndex = 12;
@@ -265,15 +274,6 @@
             label2.Size = new Size(301, 20);
             label2.TabIndex = 0;
             label2.Text = "                                                                         ";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(147, 222);
-            label9.Name = "label9";
-            label9.Size = new Size(446, 20);
-            label9.TabIndex = 15;
-            label9.Text = "Danh sách top 3 các khách hàng thuê game với doanh số cao nhất";
             // 
             // QuanLiBoardGame
             // 
