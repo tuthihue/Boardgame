@@ -27,12 +27,14 @@
       </div>
           </div>
       </div>
+        <!-- end header -->
         <div id="main">
             <div class="page-title">
                 <div class="title">
                 <p>
                 <i class="fa-solid fa-house"></i>
                 <a href="/BoardGame/index.php">Trang chủ </a>
+                <a href="/BoardGame">/BoardGame</a>
                 </p>
                 </div>
                 <h1 ></h1>
@@ -58,6 +60,15 @@
                         </div>
                         <h2>Về sản phẩm: </h2>
                         <p class = "product-detail"> </p>
+                        <form action="cart.php" method="post">
+                          <input type="hidden" name="name_product" value="">
+                          <input type="hidden" name="code" value="">
+                          <input type="hidden" name="price" value="">
+                          <input type="hidden" name="describe" value="">
+                          <input type="hidden" name="quantity" value="1">
+                          
+                          <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
                       </div>
 
                     </div>
@@ -101,6 +112,10 @@
                       document.querySelector('.product-ID').textContent = productData[productId].code;
                       document.querySelector('.new-price span').textContent = productData[productId].price;
                       document.querySelector('.product-detail').textContent = productData[productId].describe;
+                      document.querySelector('input[name="name_product"]').value =productData[productId].name ;
+                      document.querySelector('input[name="code"]').value = productData[productId].code;
+                      document.querySelector('input[name="price"]').value = productData[productId].price;
+                      document.querySelector('input[name="describe"]').value = productData[productId].describe;
                                         };
                   </script>
 
