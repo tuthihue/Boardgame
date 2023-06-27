@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&family=Comfortaa:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Chakra Petch';
+}
+#wrapper {
+    /* Kích thước màn hình là 1280 x 720 */
+    width: 100%;
+    height: 16.5vh;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(252, 30%, 17%);
+    overflow: hidden ;
+}
+.container {
+    width: 80%;
+    margin: 0px auto;
+}
+#header{
+    width: 100%;
+    background-color: hsl(252, 30%, 100%);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+#header .container{
+    display: flex;
+    align-items:center ;
+    justify-content:space-between;
+}
+#header .logo {
+    width: 15%;
+    float: left;
+}
+#header .logo img{
+    width: 100%;
+}
+.search-bar{
+    background-color: hsl(252, 30%, 95%);
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+}
+.search-bar input{
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    background-color: hsl(252, 30%, 95%);
+}
+.button{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.button a {
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    padding: 00.6rem 2rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    cursor:pointer;
+    color: white;
+    background-color:crimson;
+    transition: all 300ms ease;
+}
+.btn:hover {
+    opacity: 0.8;
+    background-color:black;
+}
+.link{
+    cursor: pointer;
+
+}
+.link:hover {
+    text-decoration: underline;
+}
+#menu{
+  width: 100%;
+  margin:auto;
+  background-color: rgb(34, 35, 37);
+}
+#menu .menu-area ul{
+  list-style: none;
+  position: relative;
+  text-transform: uppercase;
+}
+#menu .menu-area ul li{
+  display: inline-block;
+
+}
+#menu .menu-area ul li a{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 12px 15px;
+}
+#menu .menu-area ul li:hover{
+  background:crimson;
+}
+#menu .menu-area ul li:hover > ul{
+  display: block;
+}
+#menu .menu-area ul ul{
+  display: none;
+  position: absolute;
+  top: 100%;
+  background:#24262b
+}
+#menu .menu-area ul ul li{
+  width: 200px;
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #ffffff;
+}
+#menu .menu-area ul ul ul{
+  position: absolute; 
+  left: 100%;
+  top: 0;
+}
+#main{
+    overflow: hidden;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#main .title-cart i{
+    margin: 10px;
+}
+#main .title-cart h2{
+    color:black;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+    opacity: 0.5;
+}
+#main .title-cart h2:hover{
+    opacity:1;
+}
+#main .cart table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+#main .cart table thead td{
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+}
+#main .cart table td{
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center; 
+}
+#main .cart table td:nth-child(1){
+    width: 100px;
+}
+#main .cart table td:nth-child(2),
+#main .cart table td:nth-child(3){
+    width: 200px;
+}
+#main .cart table td:nth-child(4),
+#main .cart table td:nth-child(5),
+#main .cart table td:nth-child(6){
+    width: 170px;
+}
+#main .cart table tbody img{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+#main .cart table tbody input{
+    width: 100px; 
+    text-align: center;
+}
+#main .cart table tbody i{
+    color:#24262b;
+}
+#main .cart table tbody i:hover{
+    opacity: 0.5;
+}
+#main .payment{
+    padding:20px 0;
+}
+#main .payment .row{
+    width: 100%;
+    display: flex;
+    padding: 10px auto;
+}
+#main .payment .row H4{
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+}
+#main .payment .row .row-left button{
+    width: 50px;
+    height:45px;
+    background-color:crimson;
+    border: none;
+    color: white;
+    margin: 10px;
+}
+#main .payment .row .row-left{
+    width: 40%;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#main .payment .row .row-left p,
+#main .payment .row .row-left input{
+    padding: 5px 12px;
+}
+#main .payment .row .row-left input{
+    height: 45px;
+    border: 1px solid #ccc;
+}
+#main .payment .row .row-right{
+    width: 60%;
+    margin-left: 30px; 
+    border: 1px solid rgb(0, 0, 0);
+}
+#main .payment .row .row-right .total-pay{
+    width: 100%;
+    overflow: hidden;
+}   
+#main .payment .row .row-right .total-pay h5{
+    float: left; /* Căn lề sát trái */
+    font-size: 30px;
+    margin-right: 10px; /* Khoảng cách giữa h4 và p */
+}
+#main .payment .row .row-right .total-pay p{
+    float: right; /* Căn lề sát phải */
+    font-size: 30px;
+    color: crimson;
+}
+#main .payment .row .row-right button{
+    width: 100%;
+    height:35px;
+    background-color:#24262b;
+    border: none;
+    color: white;
+}
+#main .payment .row .row-right .button-btn {
+    width: 100%;
+    height:35px;
+    background-color:#fff;
+    border: 1px solid crimson;
+    color: rgb(255, 0, 0);
+}
+#main .payment .row .row-right button:hover{
+    opacity: 0.5; 
+}
+#footer{
+	background-color: #24262b;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+#footer .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+#footer .row ul{
+	list-style: none;
+}
+#footer .footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+#footer .footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+#footer .footer-col p{
+  width: 50%;
+  color: #fff;
+}
+#footer .footer-col h4:before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+#footer .footer-col ul li{
+	margin-bottom: 10px;
+}
+#footer .footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+#footer .footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+#footer .footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+#footer .footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.footer-top{
+  margin-top: 40px;
+  text-align: center;
+  color: #fff;
+}
