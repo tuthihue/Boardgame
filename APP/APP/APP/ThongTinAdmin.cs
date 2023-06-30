@@ -61,5 +61,25 @@ namespace APP
             tkemail.Text = "";
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Xóa tài khoản admin này ?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                string account = tentk.Text;
+                conn.Open();
+                MySqlCommand mySqlCommand = new MySqlCommand("delete from admins where UserName =@account ", conn);
+                mySqlCommand.Parameters.AddWithValue("@account", account);
+                mySqlCommand.ExecuteNonQuery();
+                MessageBox.Show("xóa thành công thành công!");
+                conn.Close();
+                tentk.Text = "";
+
+            }
+            else
+            {
+                MessageBox.Show("Hủy Thành Công!");
+            }
+        }
     }
 }
