@@ -103,5 +103,11 @@ namespace APP
             ThueBoardGame TTThue = new ThueBoardGame();
             TTThue.ShowDialog();
         }
+
+        private void thôngTinTrảBoardGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TraBoardGame TTTra = new TraBoardGame();
+            TTTra.ShowDialog();
+        }
     }
 }
