@@ -76,5 +76,44 @@ namespace APP
             sodienthoai.Text = "";
             tkemail.Text = "";
         }
+
+        private void suaBG_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Sửa tài khoản của khách hàng này ?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                string user = account.Text;
+                string passwd = matkhau.Text;
+                string hoten = hovten.Text;
+                string phone = phonenb.Text;
+                string mail = tkmail.Text;
+                conn.Open();
+                MySqlCommand mySqlCommand = new MySqlCommand("UPDATE customers SET HOTEN=@hoten,PassWord=@passwd,sdt=@phone,email=@mail where UserName=@user", conn);
+                MySqlCommand mySqlCommand1 = new MySqlCommand("UPDATE wp_users SET display_name=@hoten,user_pass=@passwd,user_email=@mail where user_login=@user", conn);
+                mySqlCommand.Parameters.AddWithValue("@user", user);
+                mySqlCommand.Parameters.AddWithValue("@hoten", hoten);
+                mySqlCommand.Parameters.AddWithValue("@passwd", passwd);
+                mySqlCommand.Parameters.AddWithValue("@phone", phone);
+                mySqlCommand.Parameters.AddWithValue("@mail", mail);
+                mySqlCommand.ExecuteNonQuery();
+                mySqlCommand1.Parameters.AddWithValue("@user", user);
+                mySqlCommand1.Parameters.AddWithValue("@hoten", hoten);
+                mySqlCommand1.Parameters.AddWithValue("@passwd", passwd);
+                mySqlCommand1.Parameters.AddWithValue("@mail", mail);
+                mySqlCommand1.ExecuteNonQuery();
+                MessageBox.Show("Sửa Thông Tin khách hàng thành công!");
+                account.Text = "";
+                hovten.Text = "";
+                matkhau.Text = "";
+                phonenb.Text = "";
+                tkmail.Text = "";
+                conn.Close();
+
+
+            }
+            else
+            {
+                MessageBox.Show("Hủy Thành Công!");
+            }
+        }
     }
 }

@@ -33,8 +33,6 @@
             label14 = new Label();
             TTCustomers = new DataGridView();
             addKH = new TabPage();
-            delKH = new TabPage();
-            updateKH = new TabPage();
             AddAdmin = new Panel();
             them = new Button();
             tkemail = new TextBox();
@@ -48,11 +46,29 @@
             username = new TextBox();
             uname = new Label();
             label4 = new Label();
+            delKH = new TabPage();
+            updateKH = new TabPage();
+            panel3 = new Panel();
+            tkmail = new TextBox();
+            suaBG = new Button();
+            label2 = new Label();
+            phonenb = new TextBox();
+            label15 = new Label();
+            matkhau = new TextBox();
+            label16 = new Label();
+            hovten = new TextBox();
+            label17 = new Label();
+            account = new TextBox();
+            label18 = new Label();
+            label13 = new Label();
+            label6 = new Label();
             TTKH.SuspendLayout();
             TTSP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)TTCustomers).BeginInit();
             addKH.SuspendLayout();
             AddAdmin.SuspendLayout();
+            updateKH.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // TTKH
@@ -117,26 +133,6 @@
             addKH.TabIndex = 1;
             addKH.Text = "Thêm Khách hàng";
             addKH.UseVisualStyleBackColor = true;
-            // 
-            // delKH
-            // 
-            delKH.Location = new Point(4, 29);
-            delKH.Name = "delKH";
-            delKH.Padding = new Padding(3);
-            delKH.Size = new Size(1235, 712);
-            delKH.TabIndex = 2;
-            delKH.Text = "Xóa Khách hàng";
-            delKH.UseVisualStyleBackColor = true;
-            // 
-            // updateKH
-            // 
-            updateKH.Location = new Point(4, 29);
-            updateKH.Name = "updateKH";
-            updateKH.Padding = new Padding(3);
-            updateKH.Size = new Size(1235, 712);
-            updateKH.TabIndex = 3;
-            updateKH.Text = "Sửa Thông tin khách hàng";
-            updateKH.UseVisualStyleBackColor = true;
             // 
             // AddAdmin
             // 
@@ -259,6 +255,159 @@
             label4.TabIndex = 12;
             label4.Text = "Thêm Tài khoản khách hàng";
             // 
+            // delKH
+            // 
+            delKH.Location = new Point(4, 29);
+            delKH.Name = "delKH";
+            delKH.Padding = new Padding(3);
+            delKH.Size = new Size(1235, 712);
+            delKH.TabIndex = 2;
+            delKH.Text = "Xóa Khách hàng";
+            delKH.UseVisualStyleBackColor = true;
+            // 
+            // updateKH
+            // 
+            updateKH.Controls.Add(panel3);
+            updateKH.Controls.Add(label13);
+            updateKH.Controls.Add(label6);
+            updateKH.Location = new Point(4, 29);
+            updateKH.Name = "updateKH";
+            updateKH.Padding = new Padding(3);
+            updateKH.Size = new Size(1235, 712);
+            updateKH.TabIndex = 3;
+            updateKH.Text = "Sửa Thông tin khách hàng";
+            updateKH.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(tkmail);
+            panel3.Controls.Add(suaBG);
+            panel3.Controls.Add(label2);
+            panel3.Controls.Add(phonenb);
+            panel3.Controls.Add(label15);
+            panel3.Controls.Add(matkhau);
+            panel3.Controls.Add(label16);
+            panel3.Controls.Add(hovten);
+            panel3.Controls.Add(label17);
+            panel3.Controls.Add(account);
+            panel3.Controls.Add(label18);
+            panel3.Location = new Point(286, 119);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(636, 443);
+            panel3.TabIndex = 17;
+            // 
+            // tkmail
+            // 
+            tkmail.Location = new Point(133, 277);
+            tkmail.Name = "tkmail";
+            tkmail.Size = new Size(268, 27);
+            tkmail.TabIndex = 9;
+            // 
+            // suaBG
+            // 
+            suaBG.BackColor = Color.Green;
+            suaBG.Location = new Point(304, 356);
+            suaBG.Name = "suaBG";
+            suaBG.Size = new Size(97, 38);
+            suaBG.TabIndex = 10;
+            suaBG.Text = "Sửa";
+            suaBG.UseVisualStyleBackColor = false;
+            suaBG.Click += suaBG_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(60, 277);
+            label2.Name = "label2";
+            label2.Size = new Size(46, 20);
+            label2.TabIndex = 8;
+            label2.Text = "Email";
+            // 
+            // phonenb
+            // 
+            phonenb.Location = new Point(133, 218);
+            phonenb.Name = "phonenb";
+            phonenb.Size = new Size(268, 27);
+            phonenb.TabIndex = 7;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(13, 218);
+            label15.Name = "label15";
+            label15.Size = new Size(97, 20);
+            label15.TabIndex = 6;
+            label15.Text = "Số điện thoại";
+            // 
+            // matkhau
+            // 
+            matkhau.Location = new Point(133, 158);
+            matkhau.Name = "matkhau";
+            matkhau.Size = new Size(268, 27);
+            matkhau.TabIndex = 5;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(32, 158);
+            label16.Name = "label16";
+            label16.Size = new Size(70, 20);
+            label16.TabIndex = 4;
+            label16.Text = "mật khẩu";
+            // 
+            // hovten
+            // 
+            hovten.Location = new Point(133, 99);
+            hovten.Name = "hovten";
+            hovten.Size = new Size(268, 27);
+            hovten.TabIndex = 3;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(32, 99);
+            label17.Name = "label17";
+            label17.Size = new Size(73, 20);
+            label17.TabIndex = 2;
+            label17.Text = "Họ và tên";
+            // 
+            // account
+            // 
+            account.Location = new Point(133, 42);
+            account.Name = "account";
+            account.Size = new Size(268, 27);
+            account.TabIndex = 1;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(32, 42);
+            label18.Name = "label18";
+            label18.Size = new Size(78, 20);
+            label18.TabIndex = 0;
+            label18.Text = "UserName";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(136, 96);
+            label13.Name = "label13";
+            label13.Size = new Size(751, 20);
+            label13.TabIndex = 16;
+            label13.Text = "Nhập đầy đủ các thông tin cần sửa, những thông tin không sửa vui lòng nhập như cũ (UserName không thay đổi)";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = SystemColors.HotTrack;
+            label6.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label6.ForeColor = Color.Cornsilk;
+            label6.Location = new Point(0, 3);
+            label6.Name = "label6";
+            label6.Size = new Size(401, 41);
+            label6.TabIndex = 15;
+            label6.Text = "Sửa thông tin Khách hàng\r\n";
+            // 
             // TTKhachHang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -275,6 +424,10 @@
             addKH.PerformLayout();
             AddAdmin.ResumeLayout(false);
             AddAdmin.PerformLayout();
+            updateKH.ResumeLayout(false);
+            updateKH.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -300,5 +453,19 @@
         private TextBox username;
         private Label uname;
         private Label label4;
+        private Panel panel3;
+        private TextBox tkmail;
+        private Button suaBG;
+        private Label label2;
+        private TextBox phonenb;
+        private Label label15;
+        private TextBox matkhau;
+        private Label label16;
+        private TextBox hovten;
+        private Label label17;
+        private TextBox account;
+        private Label label18;
+        private Label label13;
+        private Label label6;
     }
 }
