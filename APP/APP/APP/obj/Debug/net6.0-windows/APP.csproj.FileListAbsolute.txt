@@ -37,3 +37,4 @@ C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\APP\APP\obj\Debug
 C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\APP\APP\obj\Debug\net6.0-windows\APP.TTKhachHang.resources
 C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\APP\APP\obj\Debug\net6.0-windows\APP.ThongTinAdmin.resources
 C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\APP\APP\obj\Debug\net6.0-windows\APP.ThongtinBoardGame.resources
+C:\Users\hongp\OneDrive\Desktop\Do An\DoAnNMCNPM\Boardgame\APP\APP\APP\obj\Debug\net6.0-windows\APP.ThueBoardGame.resources

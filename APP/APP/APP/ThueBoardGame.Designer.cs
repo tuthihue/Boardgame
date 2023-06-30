@@ -1,0 +1,141 @@
+﻿namespace APP
+{
+    partial class ThueBoardGame
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThueBoardGame));
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            label14 = new Label();
+            TTThueBoardGame = new DataGridView();
+            button1 = new Button();
+            tabPage2 = new TabPage();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)TTThueBoardGame).BeginInit();
+            SuspendLayout();
+            // 
+            // tabControl1
+            // 
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Location = new Point(0, 0);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1234, 727);
+            tabControl1.TabIndex = 14;
+            // 
+            // tabPage1
+            // 
+            tabPage1.BackgroundImage = (Image)resources.GetObject("tabPage1.BackgroundImage");
+            tabPage1.BackgroundImageLayout = ImageLayout.Stretch;
+            tabPage1.Controls.Add(label14);
+            tabPage1.Controls.Add(TTThueBoardGame);
+            tabPage1.Controls.Add(button1);
+            tabPage1.Location = new Point(4, 29);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1226, 694);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Thông tin thuê BoardGame";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.BackColor = Color.Transparent;
+            label14.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label14.ForeColor = Color.Black;
+            label14.Location = new Point(30, 6);
+            label14.Name = "label14";
+            label14.Size = new Size(431, 41);
+            label14.TabIndex = 11;
+            label14.Text = "Thông Tin Thuê BoardGame";
+            // 
+            // TTThueBoardGame
+            // 
+            TTThueBoardGame.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            TTThueBoardGame.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            TTThueBoardGame.BackgroundColor = SystemColors.ButtonHighlight;
+            TTThueBoardGame.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            TTThueBoardGame.Location = new Point(27, 93);
+            TTThueBoardGame.Name = "TTThueBoardGame";
+            TTThueBoardGame.ReadOnly = true;
+            TTThueBoardGame.RowHeadersWidth = 51;
+            TTThueBoardGame.RowTemplate.Height = 29;
+            TTThueBoardGame.Size = new Size(791, 491);
+            TTThueBoardGame.TabIndex = 10;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.LightBlue;
+            button1.Location = new Point(683, 604);
+            button1.Name = "button1";
+            button1.Size = new Size(135, 37);
+            button1.TabIndex = 12;
+            button1.Text = "Làm mới";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // tabPage2
+            // 
+            tabPage2.BackgroundImage = (Image)resources.GetObject("tabPage2.BackgroundImage");
+            tabPage2.BackgroundImageLayout = ImageLayout.Stretch;
+            tabPage2.Location = new Point(4, 29);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1226, 694);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Thông tin sản phẩm thuê";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // ThueBoardGame
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1227, 745);
+            Controls.Add(tabControl1);
+            Name = "ThueBoardGame";
+            Text = "ThueBoardGame";
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)TTThueBoardGame).EndInit();
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private Label label14;
+        public DataGridView TTThueBoardGame;
+        private Button button1;
+        private TabPage tabPage2;
+    }
+}

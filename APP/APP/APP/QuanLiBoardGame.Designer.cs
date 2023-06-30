@@ -259,6 +259,7 @@
             thôngTinThuêBoardGameToolStripMenuItem.Name = "thôngTinThuêBoardGameToolStripMenuItem";
             thôngTinThuêBoardGameToolStripMenuItem.Size = new Size(202, 24);
             thôngTinThuêBoardGameToolStripMenuItem.Text = "Thông tin thuê BoardGame";
+            thôngTinThuêBoardGameToolStripMenuItem.Click += thôngTinThuêBoardGameToolStripMenuItem_Click;
             // 
             // thôngTinTrảBoardGameToolStripMenuItem
             // 

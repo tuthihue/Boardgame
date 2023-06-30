@@ -97,5 +97,11 @@ namespace APP
             tt.ShowDialog();
             conn.Close();
         }
+
+        private void thôngTinThuêBoardGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThueBoardGame TTThue = new ThueBoardGame();
+            TTThue.ShowDialog();
+        }
     }
 }
