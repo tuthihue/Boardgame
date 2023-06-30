@@ -252,6 +252,7 @@
             thôngTinSảnPhẩmToolStripMenuItem.Name = "thôngTinSảnPhẩmToolStripMenuItem";
             thôngTinSảnPhẩmToolStripMenuItem.Size = new Size(154, 24);
             thôngTinSảnPhẩmToolStripMenuItem.Text = "Thông tin sản phẩm";
+            thôngTinSảnPhẩmToolStripMenuItem.Click += thôngTinSảnPhẩmToolStripMenuItem_Click;
             // 
             // thôngTinThuêBoardGameToolStripMenuItem
             // 

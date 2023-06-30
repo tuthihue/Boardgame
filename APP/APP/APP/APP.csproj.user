@@ -13,6 +13,9 @@
     <Compile Update="ThongTinAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ThongtinBoardGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TTAcount.cs">
       <SubType>Form</SubType>
     </Compile>

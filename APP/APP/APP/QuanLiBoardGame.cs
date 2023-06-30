@@ -83,5 +83,19 @@ namespace APP
             tt.ShowDialog();
             conn.Close();
         }
+
+        private void thôngTinSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongtinBoardGame tt = new ThongtinBoardGame();
+            conn.Open();
+            MySqlCommand mySqlComman = new MySqlCommand("select * from boardgame", conn);
+            MySqlDataReader reader = mySqlComman.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+            tt.TTBoardGame.DataSource = dt;
+
+            tt.ShowDialog();
+            conn.Close();
+        }
     }
 }
