@@ -368,6 +368,7 @@
             // 
             // update
             // 
+            update.BackgroundImage = (Image)resources.GetObject("update.BackgroundImage");
             update.BackgroundImageLayout = ImageLayout.Stretch;
             update.Controls.Add(label12);
             update.Controls.Add(label11);
@@ -384,7 +385,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.BackColor = Color.Transparent;
+            label12.BackColor = Color.LightBlue;
             label12.Location = new Point(344, 180);
             label12.Margin = new Padding(6, 0, 6, 0);
             label12.Name = "label12";
@@ -395,9 +396,9 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.BackColor = SystemColors.HotTrack;
+            label11.BackColor = Color.Transparent;
             label11.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label11.ForeColor = Color.Cornsilk;
+            label11.ForeColor = Color.Black;
             label11.Location = new Point(423, 82);
             label11.Margin = new Padding(6, 0, 6, 0);
             label11.Name = "label11";
@@ -427,7 +428,7 @@
             // 
             // button10
             // 
-            button10.BackColor = Color.DarkGray;
+            button10.BackColor = Color.LightBlue;
             button10.Location = new Point(720, 657);
             button10.Margin = new Padding(6);
             button10.Name = "button10";
