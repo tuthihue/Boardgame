@@ -238,6 +238,7 @@
             thôngTinKháchHàngToolStripMenuItem.Name = "thôngTinKháchHàngToolStripMenuItem";
             thôngTinKháchHàngToolStripMenuItem.Size = new Size(165, 24);
             thôngTinKháchHàngToolStripMenuItem.Text = "Thông tin khách hàng";
+            thôngTinKháchHàngToolStripMenuItem.Click += thôngTinKháchHàngToolStripMenuItem_Click;
             // 
             // thôngTinQuảnTrịViênToolStripMenuItem
             // 

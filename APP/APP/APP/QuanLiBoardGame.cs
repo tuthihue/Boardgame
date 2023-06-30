@@ -57,5 +57,18 @@ namespace APP
             TTAcount TTacc = new TTAcount(Admin);
             TTacc.ShowDialog();
         }
+
+        private void thôngTinKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TTKhachHang tt = new TTKhachHang();
+            conn.Open();
+            MySqlCommand mySqlComman = new MySqlCommand("select * from customers", conn);
+            MySqlDataReader reader = mySqlComman.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+            tt.TTCustomers.DataSource = dt;
+            tt.ShowDialog();
+            conn.Close();
+        }
     }
 }
