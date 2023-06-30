@@ -219,22 +219,23 @@
             // thôngTinTàiKhoảnToolStripMenuItem
             // 
             thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
-            thôngTinTàiKhoảnToolStripMenuItem.Size = new Size(220, 26);
+            thôngTinTàiKhoảnToolStripMenuItem.Size = new Size(224, 26);
             thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản";
             thôngTinTàiKhoảnToolStripMenuItem.Click += thôngTinTàiKhoảnToolStripMenuItem_Click;
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
             đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            đổiMậtKhẩuToolStripMenuItem.Size = new Size(220, 26);
+            đổiMậtKhẩuToolStripMenuItem.Size = new Size(224, 26);
             đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
             đổiMậtKhẩuToolStripMenuItem.Click += đổiMậtKhẩuToolStripMenuItem_Click;
             // 
             // đăngXuấtToolStripMenuItem
             // 
             đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            đăngXuấtToolStripMenuItem.Size = new Size(220, 26);
+            đăngXuấtToolStripMenuItem.Size = new Size(224, 26);
             đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
+            đăngXuấtToolStripMenuItem.Click += đăngXuấtToolStripMenuItem_Click;
             // 
             // thôngTinKháchHàngToolStripMenuItem
             // 

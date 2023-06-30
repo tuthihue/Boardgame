@@ -197,5 +197,10 @@ namespace APP
             conn.Close();
             label6.Text = "Xin chào quản trị viên " + HoVaTen + ",";
         }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
