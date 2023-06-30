@@ -81,5 +81,10 @@ namespace APP
                 MessageBox.Show("Hủy Thành Công!");
             }
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

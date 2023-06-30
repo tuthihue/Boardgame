@@ -86,7 +86,7 @@
             info.Margin = new Padding(6);
             info.Name = "info";
             info.Padding = new Padding(6);
-            info.Size = new Size(1932, 1149);
+            info.Size = new Size(2040, 1213);
             info.TabIndex = 0;
             info.Text = "Thông Tin quản trị viên";
             info.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@
             insert.Margin = new Padding(6);
             insert.Name = "insert";
             insert.Padding = new Padding(6);
-            insert.Size = new Size(1932, 1149);
+            insert.Size = new Size(2040, 1213);
             insert.TabIndex = 1;
             insert.Text = "Thêm quản trị viên";
             insert.UseVisualStyleBackColor = true;
@@ -295,11 +295,12 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.BackColor = Color.LightBlue;
-            label5.Location = new Point(497, 407);
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(477, 392);
             label5.Margin = new Padding(6, 0, 6, 0);
             label5.Name = "label5";
-            label5.Size = new Size(339, 111);
+            label5.Size = new Size(453, 144);
             label5.TabIndex = 15;
             label5.Text = "\r\nNhập tên Username để xóa\r\n\r\n";
             // 
@@ -309,17 +310,18 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(497, 248);
+            label4.Location = new Point(477, 246);
             label4.Margin = new Padding(6, 0, 6, 0);
             label4.Name = "label4";
             label4.Size = new Size(496, 72);
             label4.TabIndex = 14;
             label4.Text = "Xóa Quản trị viên";
+            label4.Click += label4_Click;
             // 
             // button1
             // 
             button1.BackColor = Color.LightBlue;
-            button1.Location = new Point(1020, 709);
+            button1.Location = new Point(1085, 701);
             button1.Margin = new Padding(6);
             button1.Name = "button1";
             button1.Size = new Size(206, 85);
@@ -334,16 +336,17 @@
             tentk.Location = new Point(690, 594);
             tentk.Margin = new Padding(6);
             tentk.Name = "tentk";
-            tentk.Size = new Size(536, 43);
+            tentk.Size = new Size(601, 43);
             tentk.TabIndex = 12;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(497, 594);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(477, 594);
             label3.Margin = new Padding(6, 0, 6, 0);
             label3.Name = "label3";
-            label3.Size = new Size(141, 37);
+            label3.Size = new Size(187, 48);
             label3.TabIndex = 11;
             label3.Text = "UserName";
             // 
