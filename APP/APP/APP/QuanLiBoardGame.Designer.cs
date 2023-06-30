@@ -218,6 +218,7 @@
             thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
             thôngTinTàiKhoảnToolStripMenuItem.Size = new Size(224, 26);
             thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản";
+            thôngTinTàiKhoảnToolStripMenuItem.Click += thôngTinTàiKhoảnToolStripMenuItem_Click;
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 

@@ -51,5 +51,11 @@ namespace APP
             DoiMatKhau change = new DoiMatKhau();
             change.ShowDialog();
         }
+
+        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TTAcount TTacc = new TTAcount(Admin);
+            TTacc.ShowDialog();
+        }
     }
 }
