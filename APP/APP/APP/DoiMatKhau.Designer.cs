@@ -57,16 +57,16 @@
             panel1.Controls.Add(textBox1);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(388, 222);
-            panel1.Margin = new Padding(6, 6, 6, 6);
+            panel1.Margin = new Padding(6);
             panel1.Name = "panel1";
             panel1.Size = new Size(1041, 603);
             panel1.TabIndex = 2;
             // 
             // exit
             // 
-            exit.BackColor = Color.Transparent;
+            exit.BackColor = Color.LightBlue;
             exit.Location = new Point(594, 446);
-            exit.Margin = new Padding(6, 6, 6, 6);
+            exit.Margin = new Padding(6);
             exit.Name = "exit";
             exit.Size = new Size(201, 72);
             exit.TabIndex = 9;
@@ -75,9 +75,9 @@
             // 
             // update
             // 
-            update.BackColor = Color.Transparent;
+            update.BackColor = Color.LightBlue;
             update.Location = new Point(345, 446);
-            update.Margin = new Padding(6, 6, 6, 6);
+            update.Margin = new Padding(6);
             update.Name = "update";
             update.Size = new Size(188, 72);
             update.TabIndex = 8;
@@ -89,7 +89,7 @@
             // 
             textBox4.BackColor = SystemColors.ControlLight;
             textBox4.Location = new Point(272, 320);
-            textBox4.Margin = new Padding(6, 6, 6, 6);
+            textBox4.Margin = new Padding(6);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(688, 43);
             textBox4.TabIndex = 7;
@@ -109,7 +109,7 @@
             // 
             textBox3.BackColor = SystemColors.ControlLight;
             textBox3.Location = new Point(272, 231);
-            textBox3.Margin = new Padding(6, 6, 6, 6);
+            textBox3.Margin = new Padding(6);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(688, 43);
             textBox3.TabIndex = 5;
@@ -129,7 +129,7 @@
             // 
             textBox2.BackColor = SystemColors.ControlLight;
             textBox2.Location = new Point(272, 133);
-            textBox2.Margin = new Padding(6, 6, 6, 6);
+            textBox2.Margin = new Padding(6);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(688, 43);
             textBox2.TabIndex = 3;
@@ -149,7 +149,7 @@
             // 
             textBox1.BackColor = SystemColors.ControlLight;
             textBox1.Location = new Point(272, 44);
-            textBox1.Margin = new Padding(6, 6, 6, 6);
+            textBox1.Margin = new Padding(6);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(688, 43);
             textBox1.TabIndex = 1;
@@ -168,11 +168,12 @@
             // 
             AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1817, 1049);
             Controls.Add(panel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "DoiMatKhau";
             Text = "DoiMatKhau";
             panel1.ResumeLayout(false);
