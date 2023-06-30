@@ -70,5 +70,18 @@ namespace APP
             tt.ShowDialog();
             conn.Close();
         }
+
+        private void thôngTinQuảnTrịViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongTinAdmin tt = new ThongTinAdmin();
+            conn.Open();
+            MySqlCommand mySqlComman = new MySqlCommand("select * from admins", conn);
+            MySqlDataReader reader = mySqlComman.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+            tt.TTAdmin.DataSource = dt;
+            tt.ShowDialog();
+            conn.Close();
+        }
     }
 }
