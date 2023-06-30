@@ -115,5 +115,29 @@ namespace APP
                 MessageBox.Show("Hủy Thành Công!");
             }
         }
+
+        private void delSp_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Xóa tài khoản của khách hàng này ?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                string account = tentk.Text;
+                conn.Open();
+                MySqlCommand mySqlCommand = new MySqlCommand("delete from customers where UserName =@account ", conn);
+                MySqlCommand mySqlCommand1 = new MySqlCommand("delete from wp_users where user_login =@account ", conn);
+                mySqlCommand.Parameters.AddWithValue("@account", account);
+                mySqlCommand1.Parameters.AddWithValue("@account", account);
+                mySqlCommand.ExecuteNonQuery();
+                mySqlCommand1.ExecuteNonQuery();
+                MessageBox.Show("xóa thành công!");
+                conn.Close();
+                tentk.Text = "";
+
+            }
+            else
+            {
+                MessageBox.Show("Hủy Thành Công!");
+                tentk.Text = "";
+            }
+        }
     }
 }
