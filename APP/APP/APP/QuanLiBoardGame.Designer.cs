@@ -71,58 +71,65 @@
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(72, 89);
+            panel1.Location = new Point(135, 165);
+            panel1.Margin = new Padding(6, 6, 6, 6);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1300, 756);
+            panel1.Size = new Size(2438, 1399);
             panel1.TabIndex = 17;
             panel1.Paint += panel1_Paint;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(147, 222);
+            label9.Location = new Point(276, 411);
+            label9.Margin = new Padding(6, 0, 6, 0);
             label9.Name = "label9";
-            label9.Size = new Size(446, 20);
+            label9.Size = new Size(800, 37);
             label9.TabIndex = 15;
             label9.Text = "Danh sách top 3 các khách hàng thuê game với doanh số cao nhất";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(22, 67);
+            label8.Location = new Point(41, 124);
+            label8.Margin = new Padding(6, 0, 6, 0);
             label8.Name = "label8";
-            label8.Size = new Size(62, 20);
+            label8.Size = new Size(112, 37);
             label8.TabIndex = 14;
             label8.Text = "Từ ngày";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(424, 67);
+            label7.Location = new Point(795, 124);
+            label7.Margin = new Padding(6, 0, 6, 0);
             label7.Name = "label7";
-            label7.Size = new Size(70, 20);
+            label7.Size = new Size(127, 37);
             label7.TabIndex = 13;
             label7.Text = "đến ngày";
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(517, 62);
+            dateTimePicker2.Location = new Point(969, 115);
+            dateTimePicker2.Margin = new Padding(6, 6, 6, 6);
             dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(259, 27);
+            dateTimePicker2.Size = new Size(482, 43);
             dateTimePicker2.TabIndex = 12;
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(136, 67);
+            dateTimePicker1.Location = new Point(255, 124);
+            dateTimePicker1.Margin = new Padding(6, 6, 6, 6);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(259, 27);
+            dateTimePicker1.Size = new Size(482, 43);
             dateTimePicker1.TabIndex = 11;
             // 
             // button1
             // 
-            button1.Location = new Point(886, 67);
+            button1.Location = new Point(1661, 124);
+            button1.Margin = new Padding(6, 6, 6, 6);
             button1.Name = "button1";
-            button1.Size = new Size(131, 41);
+            button1.Size = new Size(246, 76);
             button1.TabIndex = 10;
             button1.Text = "Xem thống kê";
             button1.UseVisualStyleBackColor = true;
@@ -134,68 +141,75 @@
             TKSP.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             TKSP.BackgroundColor = SystemColors.ButtonHighlight;
             TKSP.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            TKSP.Location = new Point(226, 245);
+            TKSP.Location = new Point(424, 453);
+            TKSP.Margin = new Padding(6, 6, 6, 6);
             TKSP.Name = "TKSP";
             TKSP.ReadOnly = true;
             TKSP.RowHeadersWidth = 51;
             TKSP.RowTemplate.Height = 29;
-            TKSP.Size = new Size(791, 430);
+            TKSP.Size = new Size(1483, 796);
             TKSP.TabIndex = 9;
             TKSP.CellContentClick += TKSP_CellContentClick;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(65, 18);
+            label6.Location = new Point(122, 33);
+            label6.Margin = new Padding(6, 0, 6, 0);
             label6.Name = "label6";
-            label6.Size = new Size(0, 20);
+            label6.Size = new Size(0, 37);
             label6.TabIndex = 4;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(874, 169);
+            label5.Location = new Point(1639, 313);
+            label5.Margin = new Padding(6, 0, 6, 0);
             label5.Name = "label5";
-            label5.Size = new Size(301, 20);
+            label5.Size = new Size(528, 37);
             label5.TabIndex = 3;
             label5.Text = "                                                                         ";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(568, 169);
+            label4.Location = new Point(1065, 313);
+            label4.Margin = new Padding(6, 0, 6, 0);
             label4.Name = "label4";
-            label4.Size = new Size(301, 20);
+            label4.Size = new Size(528, 37);
             label4.TabIndex = 2;
             label4.Text = "                                                                         ";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(277, 169);
+            label3.Location = new Point(519, 313);
+            label3.Margin = new Padding(6, 0, 6, 0);
             label3.Name = "label3";
-            label3.Size = new Size(301, 20);
+            label3.Size = new Size(528, 37);
             label3.TabIndex = 1;
             label3.Text = "                                                                         ";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(136, 114);
+            label2.Location = new Point(255, 211);
+            label2.Margin = new Padding(6, 0, 6, 0);
             label2.Name = "label2";
-            label2.Size = new Size(301, 20);
+            label2.Size = new Size(528, 37);
             label2.TabIndex = 0;
             label2.Text = "                                                                         ";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.HotTrack;
+            label1.BackColor = Color.RoyalBlue;
             label1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = Color.Cornsilk;
-            label1.Location = new Point(419, 45);
+            label1.Location = new Point(786, 83);
+            label1.Margin = new Padding(6, 0, 6, 0);
             label1.Name = "label1";
-            label1.Size = new Size(551, 41);
+            label1.Size = new Size(991, 72);
             label1.TabIndex = 15;
             label1.Text = "Trang Quản Lý cho thuê BoardGame\r\n";
             // 
@@ -205,7 +219,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { adminToolStripMenuItem, thôngTinKháchHàngToolStripMenuItem, thôngTinQuảnTrịViênToolStripMenuItem, thôngTinSảnPhẩmToolStripMenuItem, thôngTinThuêBoardGameToolStripMenuItem, thôngTinTrảBoardGameToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1397, 28);
+            menuStrip1.Padding = new Padding(11, 4, 0, 4);
+            menuStrip1.Size = new Size(2619, 49);
             menuStrip1.TabIndex = 16;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -213,73 +228,75 @@
             // 
             adminToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { thôngTinTàiKhoảnToolStripMenuItem, đổiMậtKhẩuToolStripMenuItem, đăngXuấtToolStripMenuItem });
             adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            adminToolStripMenuItem.Size = new Size(67, 24);
+            adminToolStripMenuItem.Size = new Size(117, 41);
             adminToolStripMenuItem.Text = "Admin";
             // 
             // thôngTinTàiKhoảnToolStripMenuItem
             // 
             thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
-            thôngTinTàiKhoảnToolStripMenuItem.Size = new Size(224, 26);
+            thôngTinTàiKhoảnToolStripMenuItem.Size = new Size(398, 48);
             thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản";
             thôngTinTàiKhoảnToolStripMenuItem.Click += thôngTinTàiKhoảnToolStripMenuItem_Click;
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
             đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            đổiMậtKhẩuToolStripMenuItem.Size = new Size(224, 26);
+            đổiMậtKhẩuToolStripMenuItem.Size = new Size(398, 48);
             đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
             đổiMậtKhẩuToolStripMenuItem.Click += đổiMậtKhẩuToolStripMenuItem_Click;
             // 
             // đăngXuấtToolStripMenuItem
             // 
             đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            đăngXuấtToolStripMenuItem.Size = new Size(224, 26);
+            đăngXuấtToolStripMenuItem.Size = new Size(398, 48);
             đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             đăngXuấtToolStripMenuItem.Click += đăngXuấtToolStripMenuItem_Click;
             // 
             // thôngTinKháchHàngToolStripMenuItem
             // 
             thôngTinKháchHàngToolStripMenuItem.Name = "thôngTinKháchHàngToolStripMenuItem";
-            thôngTinKháchHàngToolStripMenuItem.Size = new Size(165, 24);
+            thôngTinKháchHàngToolStripMenuItem.Size = new Size(296, 41);
             thôngTinKháchHàngToolStripMenuItem.Text = "Thông tin khách hàng";
             thôngTinKháchHàngToolStripMenuItem.Click += thôngTinKháchHàngToolStripMenuItem_Click;
             // 
             // thôngTinQuảnTrịViênToolStripMenuItem
             // 
             thôngTinQuảnTrịViênToolStripMenuItem.Name = "thôngTinQuảnTrịViênToolStripMenuItem";
-            thôngTinQuảnTrịViênToolStripMenuItem.Size = new Size(172, 24);
+            thôngTinQuảnTrịViênToolStripMenuItem.Size = new Size(308, 41);
             thôngTinQuảnTrịViênToolStripMenuItem.Text = "Thông tin quản trị viên";
             thôngTinQuảnTrịViênToolStripMenuItem.Click += thôngTinQuảnTrịViênToolStripMenuItem_Click;
             // 
             // thôngTinSảnPhẩmToolStripMenuItem
             // 
             thôngTinSảnPhẩmToolStripMenuItem.Name = "thôngTinSảnPhẩmToolStripMenuItem";
-            thôngTinSảnPhẩmToolStripMenuItem.Size = new Size(154, 24);
+            thôngTinSảnPhẩmToolStripMenuItem.Size = new Size(275, 41);
             thôngTinSảnPhẩmToolStripMenuItem.Text = "Thông tin sản phẩm";
             thôngTinSảnPhẩmToolStripMenuItem.Click += thôngTinSảnPhẩmToolStripMenuItem_Click;
             // 
             // thôngTinThuêBoardGameToolStripMenuItem
             // 
             thôngTinThuêBoardGameToolStripMenuItem.Name = "thôngTinThuêBoardGameToolStripMenuItem";
-            thôngTinThuêBoardGameToolStripMenuItem.Size = new Size(202, 24);
+            thôngTinThuêBoardGameToolStripMenuItem.Size = new Size(360, 41);
             thôngTinThuêBoardGameToolStripMenuItem.Text = "Thông tin thuê BoardGame";
             thôngTinThuêBoardGameToolStripMenuItem.Click += thôngTinThuêBoardGameToolStripMenuItem_Click;
             // 
             // thôngTinTrảBoardGameToolStripMenuItem
             // 
             thôngTinTrảBoardGameToolStripMenuItem.Name = "thôngTinTrảBoardGameToolStripMenuItem";
-            thôngTinTrảBoardGameToolStripMenuItem.Size = new Size(191, 24);
+            thôngTinTrảBoardGameToolStripMenuItem.Size = new Size(339, 41);
             thôngTinTrảBoardGameToolStripMenuItem.Text = "Thông tin trả BoardGame";
             thôngTinTrảBoardGameToolStripMenuItem.Click += thôngTinTrảBoardGameToolStripMenuItem_Click;
             // 
             // QuanLiBoardGame
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1397, 906);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(2619, 1676);
             Controls.Add(panel1);
             Controls.Add(label1);
             Controls.Add(menuStrip1);
+            Margin = new Padding(6, 6, 6, 6);
             Name = "QuanLiBoardGame";
             Text = "QuanLiBoardGame";
             Load += QuanLiBoardGame_Load;
