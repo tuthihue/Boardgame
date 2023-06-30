@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLiBoardGame));
             panel1 = new Panel();
             label9 = new Label();
             label8 = new Label();
@@ -59,6 +60,8 @@
             // 
             // panel1
             // 
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(label9);
             panel1.Controls.Add(label8);
             panel1.Controls.Add(label7);
@@ -72,7 +75,7 @@
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Location = new Point(135, 165);
-            panel1.Margin = new Padding(6, 6, 6, 6);
+            panel1.Margin = new Padding(6);
             panel1.Name = "panel1";
             panel1.Size = new Size(2438, 1399);
             panel1.TabIndex = 17;
@@ -81,58 +84,68 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(276, 411);
+            label9.BackColor = Color.LightBlue;
+            label9.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Location = new Point(424, 397);
             label9.Margin = new Padding(6, 0, 6, 0);
             label9.Name = "label9";
-            label9.Size = new Size(800, 37);
+            label9.Size = new Size(1070, 48);
             label9.TabIndex = 15;
             label9.Text = "Danh sách top 3 các khách hàng thuê game với doanh số cao nhất";
             // 
             // label8
             // 
             label8.AutoSize = true;
+            label8.BackColor = Color.LightBlue;
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label8.Location = new Point(41, 124);
             label8.Margin = new Padding(6, 0, 6, 0);
             label8.Name = "label8";
-            label8.Size = new Size(112, 37);
+            label8.Size = new Size(146, 48);
             label8.TabIndex = 14;
             label8.Text = "Từ ngày";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(795, 124);
+            label7.BackColor = Color.LightBlue;
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(1019, 124);
             label7.Margin = new Padding(6, 0, 6, 0);
             label7.Name = "label7";
-            label7.Size = new Size(127, 37);
+            label7.Size = new Size(166, 48);
             label7.TabIndex = 13;
             label7.Text = "đến ngày";
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(969, 115);
-            dateTimePicker2.Margin = new Padding(6, 6, 6, 6);
+            dateTimePicker2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dateTimePicker2.Location = new Point(1352, 119);
+            dateTimePicker2.Margin = new Padding(6);
             dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(482, 43);
+            dateTimePicker2.Size = new Size(577, 55);
             dateTimePicker2.TabIndex = 12;
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             dateTimePicker1.Location = new Point(255, 124);
-            dateTimePicker1.Margin = new Padding(6, 6, 6, 6);
+            dateTimePicker1.Margin = new Padding(6);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(482, 43);
+            dateTimePicker1.Size = new Size(620, 55);
             dateTimePicker1.TabIndex = 11;
             // 
             // button1
             // 
-            button1.Location = new Point(1661, 124);
-            button1.Margin = new Padding(6, 6, 6, 6);
+            button1.BackColor = Color.LightBlue;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(1639, 231);
+            button1.Margin = new Padding(6);
             button1.Name = "button1";
-            button1.Size = new Size(246, 76);
+            button1.Size = new Size(290, 76);
             button1.TabIndex = 10;
             button1.Text = "Xem thống kê";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // TKSP
@@ -142,7 +155,7 @@
             TKSP.BackgroundColor = SystemColors.ButtonHighlight;
             TKSP.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             TKSP.Location = new Point(424, 453);
-            TKSP.Margin = new Padding(6, 6, 6, 6);
+            TKSP.Margin = new Padding(6);
             TKSP.Name = "TKSP";
             TKSP.ReadOnly = true;
             TKSP.RowHeadersWidth = 51;
@@ -203,10 +216,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.RoyalBlue;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.ForeColor = Color.Cornsilk;
-            label1.Location = new Point(786, 83);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(135, 72);
             label1.Margin = new Padding(6, 0, 6, 0);
             label1.Name = "label1";
             label1.Size = new Size(991, 72);
@@ -291,12 +304,13 @@
             // 
             AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(2619, 1676);
             Controls.Add(panel1);
             Controls.Add(label1);
             Controls.Add(menuStrip1);
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "QuanLiBoardGame";
             Text = "QuanLiBoardGame";
             Load += QuanLiBoardGame_Load;
