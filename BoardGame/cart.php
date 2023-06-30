@@ -68,8 +68,27 @@
 
             </div>
             <br><br>
-
-        </div>
+            <div>
+            <h2>Vui lòng nhập thông tin thanh toán: </h2>
+            <form action="insert_purchase.php" method="post">
+                <input type="hidden" name="name_product" value="<?php echo $_POST['name_product']; ?>" required>
+                <input type="hidden" name="price" value="<?php echo $_POST['price']; ?>" required>
+                <input type="hidden" name="code" value="<?php echo $_POST['code']; ?>" required>
+                <input type="hidden" name="quantity" value="<?php echo $_POST['quantity']; ?>" required>
+                <input type="hidden" name="describe" value="<?php echo $_POST['describe']; ?>" required>
+                <div style="border: 1px solid #ccc; padding: 10px;">
+                <div style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+                    <label class="cart" style="width: 50%;">Họ và tên:</label>
+                    <input type="text" class="form-control" style="border: none; outline: none; width: 100%;" id="name" name="name" required>
+                </div>
+                <div style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+                    <label class="cart" style="width: 50%;">Số điện thoại:</label>
+                    <input type="text" class="form-control" style="border: none; outline: none; width: 100%;" id="phone" name="phone" required>
+                </div>
+                </div>
+                <button type="submit" class="btn">Thanh toán <i class="fas fa-shopping-cart"></i></button>
+            </form>
+            </div>
     </div>  
     <?php
     }
