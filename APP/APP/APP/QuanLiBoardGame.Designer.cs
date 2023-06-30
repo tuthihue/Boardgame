@@ -75,6 +75,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1300, 756);
             panel1.TabIndex = 17;
+            panel1.Paint += panel1_Paint;
             // 
             // label9
             // 
@@ -125,6 +126,7 @@
             button1.TabIndex = 10;
             button1.Text = "Xem thống kê";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // TKSP
             // 
@@ -139,6 +141,7 @@
             TKSP.RowTemplate.Height = 29;
             TKSP.Size = new Size(791, 430);
             TKSP.TabIndex = 9;
+            TKSP.CellContentClick += TKSP_CellContentClick;
             // 
             // label6
             // 

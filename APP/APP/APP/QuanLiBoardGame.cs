@@ -15,6 +15,10 @@ namespace APP
     {
         static MySqlConnection conn;
         public string Admin;
+        public string slkh = "0";
+        public string ds = "0";
+        public string slgame = "0";
+        public string HoVaTen = "0";
         public QuanLiBoardGame(string Account_Admin)
         {
             InitializeComponent();
@@ -108,6 +112,90 @@ namespace APP
         {
             TraBoardGame TTTra = new TraBoardGame();
             TTTra.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime selectedDate1 = dateTimePicker1.Value;
+            string date1 = selectedDate1.ToString("yyyy-MM-dd");
+            DateTime selectedDate2 = dateTimePicker2.Value;
+            string date2 = selectedDate2.ToString("yyyy-MM-dd");
+            if (conn.State != System.Data.ConnectionState.Closed)
+            {
+                conn.Close();
+            }
+            conn.Open();
+            MySqlCommand mySqlComman = new MySqlCommand("select count(*) as soluong from customers where date(ngaytao) between @date1 and @date2 ", conn);
+            mySqlComman.Parameters.AddWithValue("@date1", date1);
+            mySqlComman.Parameters.AddWithValue("@date2", date2);
+            MySqlDataReader Reader = mySqlComman.ExecuteReader();
+            while (Reader.Read())
+            {
+                slkh = Reader.GetString("soluong");
+            }
+            Reader.Close();
+            MySqlCommand mySqlComman1 = new MySqlCommand("select IFNULL(SUM(tongtien), 0) as dt from thue where ngaythue between @date1 and @date2 ", conn);
+            mySqlComman1.Parameters.AddWithValue("@date1", date1);
+            mySqlComman1.Parameters.AddWithValue("@date2", date2);
+            MySqlDataReader Reader1 = mySqlComman1.ExecuteReader();
+            while (Reader1.Read())
+            {
+                ds = Reader1.GetString("dt");
+            }
+            Reader1.Close();
+            MySqlCommand mySqlComman2 = new MySqlCommand("select IFNULL(SUM(soluong), 0) as slg from thuegame join thue on thuegame.id_thue=thue.id_thue where ngaythue between @date1 and @date2 ", conn);
+            mySqlComman2.Parameters.AddWithValue("@date1", date1);
+            mySqlComman2.Parameters.AddWithValue("@date2", date2);
+            MySqlDataReader Reader2 = mySqlComman2.ExecuteReader();
+            while (Reader2.Read())
+            {
+                slgame = Reader2.GetString("slg");
+            }
+            Reader2.Close();
+            conn.Close();
+            conn.Open();
+            MySqlCommand Command1 = new MySqlCommand("WITH temp AS (SELECT t.USERNAME, HOTEN, sdt,IFNULL(SUM(tongtien), 0) AS DoanhSo FROM thue t JOIN customers c ON t.username = c.username WHERE ngaythue BETWEEN @date1 AND @date2 GROUP BY t.username, hoten, sdt ORDER BY SUM(tongtien) DESC LIMIT 3) select USERNAME,HOTEN,sdt,concat(DoanhSo,'000') as DoanhSo from temp", conn);
+            Command1.Parameters.AddWithValue("@date1", date1);
+            Command1.Parameters.AddWithValue("@date2", date2);
+            MySqlDataReader reader = Command1.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+            TKSP.DataSource = dt;
+            conn.Close();
+            string date3 = selectedDate1.ToString("dd-MM-yyyy");
+            string date4 = selectedDate2.ToString("dd-MM-yyyy");
+            label2.Text = "Tính từ ngày " + date3 + " tới ngày " + date4;
+            label3.Text = "Có tổng " + slkh + " đăng kí tài khoản trên website";
+            label4.Text = "Doanh thu thu được là: " + ds + "000 VNĐ" + "";
+            label5.Text = "Có tổng " + slgame + " game được thuê";
+        }
+
+        private void TKSP_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            DateTime selectedDate1 = dateTimePicker1.Value;
+            string date1 = selectedDate1.ToString("yyyy-MM-dd");
+            DateTime selectedDate2 = dateTimePicker2.Value;
+            string date2 = selectedDate2.ToString("yyyy-MM-dd");
+            if (conn.State != System.Data.ConnectionState.Closed)
+            {
+                conn.Close();
+            }
+            conn.Open();
+            MySqlCommand mySqlComman3 = new MySqlCommand("select hoten from admins where username=@Admin ", conn);
+            mySqlComman3.Parameters.AddWithValue("@Admin", Admin);
+            MySqlDataReader Reader3 = mySqlComman3.ExecuteReader();
+            while (Reader3.Read())
+            {
+                HoVaTen = Reader3.GetString("hoten");
+            }
+            Reader3.Close();
+            conn.Close();
+            label6.Text = "Xin chào quản trị viên " + HoVaTen + ",";
         }
     }
 }
