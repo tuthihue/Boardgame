@@ -51,5 +51,16 @@ namespace APP
             TTThueBoardGame.DataSource = dt;
             conn.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            MySqlCommand mySqlComman = new MySqlCommand("select ID_THUE,MASP,TENSP, sum(soluong) from thuegame group by ID_THUE, MASP,TENSP", conn);
+            MySqlDataReader reader = mySqlComman.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+            TTSPThue.DataSource = dt;
+            conn.Close();
+        }
     }
 }
