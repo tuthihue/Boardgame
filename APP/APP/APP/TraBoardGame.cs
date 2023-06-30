@@ -46,5 +46,46 @@ namespace APP
             TTTraBoardGame.DataSource = dt;
             conn.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string idthue = mahd.Text;
+            DateTime selectedDate1 = dateTimePicker1.Value;
+            string date1 = selectedDate1.ToString("yyyy-MM-dd");
+            if (string.IsNullOrEmpty(mahd.Text))
+            {
+                MessageBox.Show("Mã hóa đơn không được để trống !");
+            }
+            else
+            {
+                conn.Open();
+                MySqlCommand mySqlCommand = new MySqlCommand("insert into tragame(ID_THUE,ngaytra) values(@mahd,@date)", conn);
+                mySqlCommand.Parameters.AddWithValue("@mahd", idthue);
+                mySqlCommand.Parameters.AddWithValue("@date", date1);
+                mySqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Cập nhật thành công!");
+                conn.Close();
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void mahd_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+        }
     }
 }

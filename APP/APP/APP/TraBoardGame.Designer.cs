@@ -34,9 +34,16 @@
             label14 = new Label();
             TTTraBoardGame = new DataGridView();
             tabPage2 = new TabPage();
+            dateTimePicker1 = new DateTimePicker();
+            button2 = new Button();
+            label3 = new Label();
+            label2 = new Label();
+            mahd = new TextBox();
+            label1 = new Label();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)TTTraBoardGame).BeginInit();
+            tabPage2.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -100,6 +107,12 @@
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(dateTimePicker1);
+            tabPage2.Controls.Add(button2);
+            tabPage2.Controls.Add(label3);
+            tabPage2.Controls.Add(label2);
+            tabPage2.Controls.Add(mahd);
+            tabPage2.Controls.Add(label1);
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
@@ -107,6 +120,61 @@
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Cập nhật thông tin trả BoardGame";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(306, 179);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(257, 27);
+            dateTimePicker1.TabIndex = 13;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(465, 280);
+            button2.Name = "button2";
+            button2.Size = new Size(128, 44);
+            button2.TabIndex = 12;
+            button2.Text = "Cập nhật";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(148, 184);
+            label3.Name = "label3";
+            label3.Size = new Size(66, 20);
+            label3.TabIndex = 11;
+            label3.Text = "Ngày trả";
+            label3.Click += label3_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(148, 155);
+            label2.Name = "label2";
+            label2.Size = new Size(0, 20);
+            label2.TabIndex = 10;
+            label2.Click += label2_Click;
+            // 
+            // mahd
+            // 
+            mahd.Location = new Point(306, 97);
+            mahd.Name = "mahd";
+            mahd.Size = new Size(177, 27);
+            mahd.TabIndex = 9;
+            mahd.TextChanged += mahd_TextChanged;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(148, 97);
+            label1.Name = "label1";
+            label1.Size = new Size(89, 20);
+            label1.TabIndex = 8;
+            label1.Text = "Mã hóa đơn";
+            label1.Click += label1_Click;
             // 
             // TraBoardGame
             // 
@@ -120,6 +188,8 @@
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)TTTraBoardGame).EndInit();
+            tabPage2.ResumeLayout(false);
+            tabPage2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -131,5 +201,11 @@
         private Label label14;
         public DataGridView TTTraBoardGame;
         private TabPage tabPage2;
+        private DateTimePicker dateTimePicker1;
+        private Button button2;
+        private Label label3;
+        private Label label2;
+        public TextBox mahd;
+        private Label label1;
     }
 }
