@@ -30,6 +30,7 @@
         {
             tabControl1 = new TabControl();
             TTSP = new TabPage();
+            label1 = new Label();
             label14 = new Label();
             TTBoardGame = new DataGridView();
             addBG = new TabPage();
@@ -49,14 +50,29 @@
             MaBG = new TextBox();
             label = new Label();
             delBG = new TabPage();
-            updateBG = new TabPage();
-            label1 = new Label();
             label3 = new Label();
             label2 = new Label();
             panel1 = new Panel();
             delSp = new Button();
             label6 = new Label();
             masp = new TextBox();
+            updateBG = new TabPage();
+            label13 = new Label();
+            label7 = new Label();
+            panel2 = new Panel();
+            Mota1 = new TextBox();
+            label8 = new Label();
+            suaBG = new Button();
+            SL1 = new TextBox();
+            label9 = new Label();
+            Theloai1 = new TextBox();
+            label10 = new Label();
+            Gia1 = new TextBox();
+            label11 = new Label();
+            TenBG1 = new TextBox();
+            label12 = new Label();
+            MaBG1 = new TextBox();
+            label15 = new Label();
             tabControl1.SuspendLayout();
             TTSP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)TTBoardGame).BeginInit();
@@ -64,6 +80,8 @@
             AddAdmin.SuspendLayout();
             delBG.SuspendLayout();
             panel1.SuspendLayout();
+            updateBG.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -92,6 +110,19 @@
             TTSP.TabIndex = 0;
             TTSP.Text = "Thông tin BoardGame";
             TTSP.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = SystemColors.HotTrack;
+            label1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.ForeColor = Color.Cornsilk;
+            label1.Location = new Point(0, 0);
+            label1.Margin = new Padding(6, 0, 6, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(345, 72);
+            label1.TabIndex = 13;
+            label1.Text = "BoardGame";
             // 
             // label14
             // 
@@ -296,30 +327,6 @@
             delBG.Text = "Xóa BoardGame";
             delBG.UseVisualStyleBackColor = true;
             // 
-            // updateBG
-            // 
-            updateBG.Location = new Point(10, 55);
-            updateBG.Margin = new Padding(6);
-            updateBG.Name = "updateBG";
-            updateBG.Padding = new Padding(6);
-            updateBG.Size = new Size(2311, 1313);
-            updateBG.TabIndex = 3;
-            updateBG.Text = "Sửa BoardGame";
-            updateBG.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = SystemColors.HotTrack;
-            label1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.ForeColor = Color.Cornsilk;
-            label1.Location = new Point(0, 0);
-            label1.Margin = new Padding(6, 0, 6, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(345, 72);
-            label1.TabIndex = 13;
-            label1.Text = "BoardGame";
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -383,6 +390,184 @@
             masp.Size = new Size(561, 43);
             masp.TabIndex = 1;
             // 
+            // updateBG
+            // 
+            updateBG.Controls.Add(label13);
+            updateBG.Controls.Add(label7);
+            updateBG.Controls.Add(panel2);
+            updateBG.Location = new Point(10, 55);
+            updateBG.Margin = new Padding(6);
+            updateBG.Name = "updateBG";
+            updateBG.Padding = new Padding(6);
+            updateBG.Size = new Size(2311, 1313);
+            updateBG.TabIndex = 3;
+            updateBG.Text = "Sửa BoardGame";
+            updateBG.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(80, 148);
+            label13.Margin = new Padding(6, 0, 6, 0);
+            label13.Name = "label13";
+            label13.Size = new Size(1414, 37);
+            label13.TabIndex = 16;
+            label13.Text = "Nhập đầy đủ các thông tin cần sửa, những thông tin không sửa vui lòng nhập như cũ (Mã BoardGame không thay đổi)";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = SystemColors.HotTrack;
+            label7.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label7.ForeColor = Color.Cornsilk;
+            label7.Location = new Point(0, 6);
+            label7.Margin = new Padding(6, 0, 6, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(461, 72);
+            label7.TabIndex = 15;
+            label7.Text = "Sửa BoardGame";
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(Mota1);
+            panel2.Controls.Add(label8);
+            panel2.Controls.Add(suaBG);
+            panel2.Controls.Add(SL1);
+            panel2.Controls.Add(label9);
+            panel2.Controls.Add(Theloai1);
+            panel2.Controls.Add(label10);
+            panel2.Controls.Add(Gia1);
+            panel2.Controls.Add(label11);
+            panel2.Controls.Add(TenBG1);
+            panel2.Controls.Add(label12);
+            panel2.Controls.Add(MaBG1);
+            panel2.Controls.Add(label15);
+            panel2.Location = new Point(362, 191);
+            panel2.Margin = new Padding(6);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1192, 820);
+            panel2.TabIndex = 14;
+            // 
+            // Mota1
+            // 
+            Mota1.Location = new Point(249, 618);
+            Mota1.Margin = new Padding(6);
+            Mota1.Name = "Mota1";
+            Mota1.Size = new Size(499, 43);
+            Mota1.TabIndex = 12;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(88, 618);
+            label8.Margin = new Padding(6, 0, 6, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(87, 37);
+            label8.TabIndex = 11;
+            label8.Text = "Mô tả";
+            // 
+            // suaBG
+            // 
+            suaBG.BackColor = Color.Green;
+            suaBG.Location = new Point(656, 712);
+            suaBG.Margin = new Padding(6);
+            suaBG.Name = "suaBG";
+            suaBG.Size = new Size(182, 70);
+            suaBG.TabIndex = 10;
+            suaBG.Text = "Sửa";
+            suaBG.UseVisualStyleBackColor = false;
+            suaBG.Click += suaBG_Click;
+            // 
+            // SL1
+            // 
+            SL1.Location = new Point(249, 512);
+            SL1.Margin = new Padding(6);
+            SL1.Name = "SL1";
+            SL1.Size = new Size(499, 43);
+            SL1.TabIndex = 9;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(47, 512);
+            label9.Margin = new Padding(6, 0, 6, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(124, 37);
+            label9.TabIndex = 8;
+            label9.Text = "Số lượng";
+            // 
+            // Theloai1
+            // 
+            Theloai1.Location = new Point(249, 403);
+            Theloai1.Margin = new Padding(6);
+            Theloai1.Name = "Theloai1";
+            Theloai1.Size = new Size(499, 43);
+            Theloai1.TabIndex = 7;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(47, 409);
+            label10.Margin = new Padding(6, 0, 6, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(117, 37);
+            label10.TabIndex = 6;
+            label10.Text = "Thể Loại";
+            // 
+            // Gia1
+            // 
+            Gia1.Location = new Point(249, 292);
+            Gia1.Margin = new Padding(6);
+            Gia1.Name = "Gia1";
+            Gia1.Size = new Size(499, 43);
+            Gia1.TabIndex = 5;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(88, 292);
+            label11.Margin = new Padding(6, 0, 6, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(57, 37);
+            label11.TabIndex = 4;
+            label11.Text = "Giá";
+            // 
+            // TenBG1
+            // 
+            TenBG1.Location = new Point(249, 183);
+            TenBG1.Margin = new Padding(6);
+            TenBG1.Name = "TenBG1";
+            TenBG1.Size = new Size(499, 43);
+            TenBG1.TabIndex = 3;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(26, 183);
+            label12.Margin = new Padding(6, 0, 6, 0);
+            label12.Name = "label12";
+            label12.Size = new Size(204, 37);
+            label12.TabIndex = 2;
+            label12.Text = "Tên BoardGame";
+            // 
+            // MaBG1
+            // 
+            MaBG1.Location = new Point(249, 78);
+            MaBG1.Margin = new Padding(6);
+            MaBG1.Name = "MaBG1";
+            MaBG1.Size = new Size(499, 43);
+            MaBG1.TabIndex = 1;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(26, 78);
+            label15.Margin = new Padding(6, 0, 6, 0);
+            label15.Name = "label15";
+            label15.Size = new Size(202, 37);
+            label15.TabIndex = 0;
+            label15.Text = "Mã BoardGame";
+            // 
             // ThongtinBoardGame
             // 
             AutoScaleDimensions = new SizeF(15F, 37F);
@@ -404,6 +589,10 @@
             delBG.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            updateBG.ResumeLayout(false);
+            updateBG.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -438,5 +627,21 @@
         private Button delSp;
         private Label label6;
         private TextBox masp;
+        private Label label13;
+        private Label label7;
+        private Panel panel2;
+        private TextBox Mota1;
+        private Label label8;
+        private Button suaBG;
+        private TextBox SL1;
+        private Label label9;
+        private TextBox Theloai1;
+        private Label label10;
+        private TextBox Gia1;
+        private Label label11;
+        private TextBox TenBG1;
+        private Label label12;
+        private TextBox MaBG1;
+        private Label label15;
     }
 }

@@ -65,7 +65,7 @@ namespace APP
 
         private void delSp_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Xóa sản phẩm BoardGame này ?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            if (MessageBox.Show("Xóa sản phẩm BoardGame này ?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
             {
                 string Masp = masp.Text;
                 conn.Open();
@@ -80,6 +80,40 @@ namespace APP
             else
             {
                 MessageBox.Show("Hủy Thành Công!");
+            }
+        }
+
+        private void suaBG_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Sửa sản phẩm BoardGame này ?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                string masp = MaBG1.Text;
+                string tensp = TenBG1.Text;
+                string gia = Gia1.Text;
+                string TL = Theloai1.Text;
+                string Soluong = SL1.Text;
+                string mt = Mota1.Text;
+                conn.Open();
+                MySqlCommand mySqlCommand = new MySqlCommand("update boardgame set TENSP=@tensp,GIA=@gia,THELOAI=@TL,SOLUONG=@Soluong,MOTA=@mt where MASP=@masp ", conn);
+                mySqlCommand.Parameters.AddWithValue("@masp", masp);
+                mySqlCommand.Parameters.AddWithValue("@tensp", tensp);
+                mySqlCommand.Parameters.AddWithValue("@gia", gia);
+                mySqlCommand.Parameters.AddWithValue("@TL", TL);
+                mySqlCommand.Parameters.AddWithValue("@Soluong", Soluong);
+                mySqlCommand.Parameters.AddWithValue("@mt", mt);
+                mySqlCommand.ExecuteNonQuery();
+                MessageBox.Show("sửa BoardGame thành công!");
+                conn.Close();
+                MaBG.Text = "";
+                TenBG.Text = "";
+                Gia.Text = "";
+                Theloai.Text = "";
+                SL.Text = "";
+                Mota.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Hủy thành công !");
             }
         }
     }
