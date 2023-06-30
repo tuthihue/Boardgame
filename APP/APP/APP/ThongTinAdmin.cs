@@ -86,5 +86,38 @@ namespace APP
         {
 
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Sửa tài khoản admin này ?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                string user = account.Text;
+                string passwd = matkhau.Text;
+                string hoten = hovten.Text;
+                string phone = phonenb.Text;
+                string mail = tkmail.Text;
+                conn.Open();
+                MySqlCommand mySqlCommand = new MySqlCommand("UPDATE admins SET HOTEN=@hoten,PassWord=@passwd,sdt=@phone,email=@mail where UserName=@user", conn);
+                mySqlCommand.Parameters.AddWithValue("@user", user);
+                mySqlCommand.Parameters.AddWithValue("@hoten", hoten);
+                mySqlCommand.Parameters.AddWithValue("@passwd", passwd);
+                mySqlCommand.Parameters.AddWithValue("@phone", phone);
+                mySqlCommand.Parameters.AddWithValue("@mail", mail);
+                mySqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Sửa Thông Tin Quản trị viên thành công!");
+                account.Text = "";
+                hovten.Text = "";
+                matkhau.Text = "";
+                phonenb.Text = "";
+                tkmail.Text = "";
+                conn.Close();
+
+
+            }
+            else
+            {
+                MessageBox.Show("Hủy Thành Công!");
+            }
+        }
     }
 }
