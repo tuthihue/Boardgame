@@ -1,25 +1,22 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+
 namespace APP
 {
-    public partial class QuanLiBoardGame : Form
+    public partial class DoiMatKhau : Form
     {
         static MySqlConnection conn;
-        public string Admin;
-        public QuanLiBoardGame(string Account_Admin)
+        public DoiMatKhau()
         {
             InitializeComponent();
-            Connection();
-            Admin = Account_Admin;
         }
         static void Connection()
         {
@@ -37,19 +34,17 @@ namespace APP
             {
                 conn.Close();
             }
-
-
-
         }
-        private void QuanLiBoardGame_Load(object sender, EventArgs e)
+        private void update_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DoiMatKhau change = new DoiMatKhau();
-            change.ShowDialog();
+            string user = textBox1.Text;
+            string passwd = textBox3.Text;
+            conn.Open();
+            MySqlCommand mySqlCommand = new MySqlCommand("update admins set password=@passwd where username=@user ", conn);
+            mySqlCommand.Parameters.AddWithValue("@user", user);
+            mySqlCommand.Parameters.AddWithValue("@passwd", passwd);
+            mySqlCommand.ExecuteNonQuery();
+            MessageBox.Show("Cập nhật mật khẩu thành công!");
         }
     }
 }
