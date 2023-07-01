@@ -14,7 +14,7 @@
     width: 100%;
     height: 16.5vh;
     font-family: 'Roboto', sans-serif;
-    color: hsl(252, 30%, 17%);
+    color: hsl(252, 38%, 25%);
     overflow: hidden ; 
 }
 .container {
@@ -22,6 +22,8 @@
     margin: 0px auto;
 }
 #header{
+    display: flex;
+    justify-content: space-between ;
     width: 100%;
     background-color: hsl(252, 30%, 100%);
     padding: 0.7rem 0;
@@ -34,41 +36,114 @@
     align-items:center ;
     justify-content:space-between;
 }
-#header .logo {
-    width: 15%;
-    float: left;
-}
-#header .logo img{
-    width: 100%;
-}
-.search-bar{
-    background-color: hsl(252, 30%, 95%);
-    border-radius: 2rem;
-    padding: 0.6rem 1rem;
-}
-.search-bar input{
-    background: transparent;
-    width: 30vw;
-    margin-left: 1rem;
-    font-size: 0.9rem;
-    background-color: hsl(252, 30%, 95%);
-}
-.button{
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  /* CSS cho thanh công cụ */
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 2rem;
-}
-.button a {
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+    position: relative;
+  }
+
+  nav ul li a {
     text-decoration: none;
-}
+    color: #333;
+  }
+
+  nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f2f2f2;
+    padding: 10px;
+    z-index: 1;
+    width: 200px;
+  }
+
+  nav ul li:hover .sub-menu {
+    display: block;
+  }
+
+  nav ul li .sub-menu li {
+    margin-bottom: 10px;
+  }
+
+  nav ul li .sub-menu li a {
+    color: #333;
+  }
+
+  /* CSS cho tìm kiếm và giỏ hàng */
+  .search-bar {
+    display: flex;
+  }
+
+  .search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+  }
+
+  .search-bar button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+  }
+
+  .cart-icon {
+    position: relative;
+  }
+
+  .cart-icon i {
+    font-size: 18px;
+  }
+
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+  }
+  .name {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
 .btn {
     display: inline-block;
     padding: 00.6rem 2rem;
     font-weight: 500;
     border-radius: 2rem;
     cursor:pointer;
-    color: white;
-    background-color:crimson;
+    color: rgb(3, 0, 0);
+    background-color:rgb(244, 242, 242);
     transition: all 300ms ease;
 }
 .btn:hover {
