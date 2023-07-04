@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThueBoardGame));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.searchBar = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.TTThueBoardGame = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
@@ -38,8 +40,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.TTSPThue = new System.Windows.Forms.DataGridView();
-            this.searchBar = new System.Windows.Forms.TextBox();
-            this.searchButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TTThueBoardGame)).BeginInit();
@@ -68,11 +68,31 @@
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1226, 694);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thông tin thuê BoardGame";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // searchButton
+            // 
+            this.searchButton.BackColor = System.Drawing.Color.LightBlue;
+            this.searchButton.Location = new System.Drawing.Point(535, 601);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(94, 50);
+            this.searchButton.TabIndex = 14;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // searchBar
+            // 
+            this.searchBar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.searchBar.Location = new System.Drawing.Point(27, 609);
+            this.searchBar.Name = "searchBar";
+            this.searchBar.Size = new System.Drawing.Size(454, 31);
+            this.searchBar.TabIndex = 13;
             // 
             // label14
             // 
@@ -99,6 +119,7 @@
             this.TTThueBoardGame.RowTemplate.Height = 29;
             this.TTThueBoardGame.Size = new System.Drawing.Size(791, 491);
             this.TTThueBoardGame.TabIndex = 10;
+            this.TTThueBoardGame.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TTThueBoardGame_CellContentClick);
             // 
             // button1
             // 
@@ -119,7 +140,7 @@
             this.tabPage2.Controls.Add(this.TTSPThue);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1226, 694);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Thông tin sản phẩm thuê";
@@ -160,24 +181,6 @@
             this.TTSPThue.RowTemplate.Height = 29;
             this.TTSPThue.Size = new System.Drawing.Size(791, 491);
             this.TTSPThue.TabIndex = 14;
-            // 
-            // searchBar
-            // 
-            this.searchBar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.searchBar.Location = new System.Drawing.Point(27, 609);
-            this.searchBar.Name = "searchBar";
-            this.searchBar.Size = new System.Drawing.Size(454, 31);
-            this.searchBar.TabIndex = 13;
-            // 
-            // searchButton
-            // 
-            this.searchButton.BackColor = System.Drawing.Color.LightBlue;
-            this.searchButton.Location = new System.Drawing.Point(535, 601);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(94, 50);
-            this.searchButton.TabIndex = 14;
-            this.searchButton.Text = "Search";
-            this.searchButton.UseVisualStyleBackColor = false;
             // 
             // ThueBoardGame
             // 
