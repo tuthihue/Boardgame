@@ -116,5 +116,50 @@ namespace APP
                 MessageBox.Show("Hủy thành công !");
             }
         }
+
+        private void TTSP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updateBG_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updateBG_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -87,5 +87,10 @@ namespace APP
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

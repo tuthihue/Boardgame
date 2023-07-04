@@ -139,5 +139,15 @@ namespace APP
                 tentk.Text = "";
             }
         }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addKH_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

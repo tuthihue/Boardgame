@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Boardgame\\APP\\APP\\APP\\APP.csproj": {}
+    "C:\\Users\\hthan\\Downloads\\APP\\APP\\APP\\APP\\APP.csproj": {}
   },
   "projects": {
-    "C:\\Boardgame\\APP\\APP\\APP\\APP.csproj": {
+    "C:\\Users\\hthan\\Downloads\\APP\\APP\\APP\\APP\\APP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Boardgame\\APP\\APP\\APP\\APP.csproj",
+        "projectUniqueName": "C:\\Users\\hthan\\Downloads\\APP\\APP\\APP\\APP\\APP.csproj",
         "projectName": "APP",
-        "projectPath": "C:\\Boardgame\\APP\\APP\\APP\\APP.csproj",
-        "packagesPath": "C:\\Users\\Dell Pre 5540\\.nuget\\packages\\",
-        "outputPath": "C:\\Boardgame\\APP\\APP\\APP\\obj\\",
+        "projectPath": "C:\\Users\\hthan\\Downloads\\APP\\APP\\APP\\APP\\APP.csproj",
+        "packagesPath": "C:\\Users\\hthan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hthan\\Downloads\\APP\\APP\\APP\\APP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dell Pre 5540\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hthan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "LiveCharts.WinForms": {
+              "target": "Package",
+              "version": "[0.9.7.1, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.33, )"
@@ -64,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

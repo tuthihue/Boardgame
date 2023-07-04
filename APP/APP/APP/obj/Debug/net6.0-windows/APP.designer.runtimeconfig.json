@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Dell Pre 5540\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Dell Pre 5540\\.nuget\\packages"
+      "C:\\Users\\hthan\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\hthan\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
