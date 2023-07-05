@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TraBoardGame));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.searchBar = new System.Windows.Forms.TextBox();
             this.refreshButton = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.TTTraBoardGame = new System.Windows.Forms.DataGridView();
@@ -41,8 +43,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.mahd = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.searchBar = new System.Windows.Forms.TextBox();
-            this.searchButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TTTraBoardGame)).BeginInit();
@@ -75,6 +75,25 @@
             this.tabPage1.Text = "Thông Tin Trả BoardGame";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // searchButton
+            // 
+            this.searchButton.BackColor = System.Drawing.Color.LightBlue;
+            this.searchButton.Location = new System.Drawing.Point(716, 673);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(94, 50);
+            this.searchButton.TabIndex = 17;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // searchBar
+            // 
+            this.searchBar.Location = new System.Drawing.Point(115, 685);
+            this.searchBar.Name = "searchBar";
+            this.searchBar.Size = new System.Drawing.Size(524, 27);
+            this.searchBar.TabIndex = 16;
+            this.searchBar.TextChanged += new System.EventHandler(this.searchBar_TextChanged);
+            // 
             // refreshButton
             // 
             this.refreshButton.BackColor = System.Drawing.Color.LightBlue;
@@ -84,6 +103,7 @@
             this.refreshButton.TabIndex = 15;
             this.refreshButton.Text = "Làm mới";
             this.refreshButton.UseVisualStyleBackColor = false;
+            this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
             // 
             // label14
             // 
@@ -174,24 +194,6 @@
             this.label1.Size = new System.Drawing.Size(89, 20);
             this.label1.TabIndex = 8;
             this.label1.Text = "Mã hóa đơn";
-            // 
-            // searchBar
-            // 
-            this.searchBar.Location = new System.Drawing.Point(115, 685);
-            this.searchBar.Name = "searchBar";
-            this.searchBar.Size = new System.Drawing.Size(524, 27);
-            this.searchBar.TabIndex = 16;
-            // 
-            // searchButton
-            // 
-            this.searchButton.BackColor = System.Drawing.Color.LightBlue;
-            this.searchButton.Location = new System.Drawing.Point(716, 673);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(94, 50);
-            this.searchButton.TabIndex = 17;
-            this.searchButton.Text = "Search";
-            this.searchButton.UseVisualStyleBackColor = false;
-            this.searchButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // TraBoardGame
             // 

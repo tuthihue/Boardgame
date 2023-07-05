@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TTKhachHang));
             this.TTKH = new System.Windows.Forms.TabControl();
             this.TTSP = new System.Windows.Forms.TabPage();
+            this.refreshButton = new System.Windows.Forms.Button();
             this.searchButton = new System.Windows.Forms.Button();
             this.searchBar = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -97,6 +98,7 @@
             // TTSP
             // 
             this.TTSP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TTSP.BackgroundImage")));
+            this.TTSP.Controls.Add(this.refreshButton);
             this.TTSP.Controls.Add(this.searchButton);
             this.TTSP.Controls.Add(this.searchBar);
             this.TTSP.Controls.Add(this.label14);
@@ -109,15 +111,27 @@
             this.TTSP.Text = "Thông tin khách hàng";
             this.TTSP.UseVisualStyleBackColor = true;
             // 
+            // refreshButton
+            // 
+            this.refreshButton.BackColor = System.Drawing.Color.LightBlue;
+            this.refreshButton.Location = new System.Drawing.Point(1030, 607);
+            this.refreshButton.Name = "refreshButton";
+            this.refreshButton.Size = new System.Drawing.Size(94, 50);
+            this.refreshButton.TabIndex = 12;
+            this.refreshButton.Text = "Làm mới";
+            this.refreshButton.UseVisualStyleBackColor = false;
+            this.refreshButton.Click += new System.EventHandler(this.button1_Click);
+            // 
             // searchButton
             // 
             this.searchButton.BackColor = System.Drawing.Color.LightBlue;
-            this.searchButton.Location = new System.Drawing.Point(865, 607);
+            this.searchButton.Location = new System.Drawing.Point(840, 607);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(94, 50);
             this.searchButton.TabIndex = 11;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // searchBar
             // 
@@ -572,5 +586,6 @@
         private TextBox tentk;
         private Button searchButton;
         private TextBox searchBar;
+        private Button refreshButton;
     }
 }

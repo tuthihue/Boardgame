@@ -90,7 +90,28 @@ namespace APP
 
         private void button3_Click(object sender, EventArgs e)
         {
+            string searchValue = searchBar.Text.ToString();
+            search(searchValue);
+        }
 
+        private void searchBar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        public void search(string searchValue)
+        {
+            string query = "SELECT * FROM `tragame`" +
+                " WHERE CONCAT(`ID_TRA`, `ID_THUE`, `NGAYTRA`) like '%" + searchValue+ "%'";
+            MySqlCommand command = new MySqlCommand(query, conn);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            TTTraBoardGame.DataSource= table; 
+        }
+
+        private void refreshButton_Click(object sender, EventArgs e)
+        {
+            search("");
         }
     }
 }

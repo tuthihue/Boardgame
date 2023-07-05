@@ -149,5 +149,26 @@ namespace APP
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            search("");
+        }
+        public void search(string searchValue)
+        {
+            string query = "SELECT * FROM `customers` " +
+                "WHERE CONCAT(`USERNAME`, `HOTEN`, `PassWord`, `sdt`, `email`, `ngaytao`) like '%" + searchValue+ "%'";
+            MySqlCommand command = new MySqlCommand(query, conn);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            TTCustomers.DataSource= table;
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            string searchValue = searchBar.Text.ToString();
+            search(searchValue);
+        }
     }
 }

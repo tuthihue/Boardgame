@@ -65,7 +65,7 @@ namespace APP
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
-            search("");
+            
         }
         public void search(string searcValue)
         {
@@ -74,7 +74,8 @@ namespace APP
             MySqlCommand command= new MySqlCommand(query, conn); 
             MySqlDataAdapter adapter= new MySqlDataAdapter(command);
             DataTable table = new DataTable();  
-            TTThueBoardGame.DataSource=adapter;
+            adapter.Fill(table);
+            TTThueBoardGame.DataSource=table;
         }
 
         private void TTThueBoardGame_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -86,6 +87,11 @@ namespace APP
         {
             string searchValue = searchBar.Text.ToString();
             search(searchValue);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            search("");
         }
     }
 }
