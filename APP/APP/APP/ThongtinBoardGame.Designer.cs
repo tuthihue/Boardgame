@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongtinBoardGame));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.TTSP = new System.Windows.Forms.TabPage();
+            this.refreshButton = new System.Windows.Forms.Button();
             this.searchButton = new System.Windows.Forms.Button();
             this.searchBar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -102,6 +103,7 @@
             // TTSP
             // 
             this.TTSP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TTSP.BackgroundImage")));
+            this.TTSP.Controls.Add(this.refreshButton);
             this.TTSP.Controls.Add(this.searchButton);
             this.TTSP.Controls.Add(this.searchBar);
             this.TTSP.Controls.Add(this.label1);
@@ -116,6 +118,17 @@
             this.TTSP.UseVisualStyleBackColor = true;
             this.TTSP.Click += new System.EventHandler(this.TTSP_Click);
             // 
+            // refreshButton
+            // 
+            this.refreshButton.BackColor = System.Drawing.Color.LightBlue;
+            this.refreshButton.Location = new System.Drawing.Point(1059, 632);
+            this.refreshButton.Name = "refreshButton";
+            this.refreshButton.Size = new System.Drawing.Size(94, 53);
+            this.refreshButton.TabIndex = 16;
+            this.refreshButton.Text = "Làm mới";
+            this.refreshButton.UseVisualStyleBackColor = false;
+            this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
+            // 
             // searchButton
             // 
             this.searchButton.BackColor = System.Drawing.Color.LightBlue;
@@ -125,6 +138,7 @@
             this.searchButton.TabIndex = 15;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // searchBar
             // 
@@ -641,5 +655,6 @@
         private Label label15;
         private Button searchButton;
         private TextBox searchBar;
+        private Button refreshButton;
     }
 }

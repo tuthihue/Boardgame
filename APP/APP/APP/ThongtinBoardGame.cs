@@ -161,5 +161,26 @@ namespace APP
         {
 
         }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            string searchValue = searchBar.Text.ToString();
+            search(searchValue);
+        }
+        public void search(string searchValue)
+        {
+            string query = "SELECT * FROM `boardgame` " +
+                "WHERE CONCAT(`MASP`, `TENSP`, `GIA`, `THELOAI`, `SOLUONG`, `MOTA`) like '%" + searchValue + "%'";
+            MySqlCommand command = new MySqlCommand(query, conn);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            TTBoardGame.DataSource= table;
+        }
+
+        private void refreshButton_Click(object sender, EventArgs e)
+        {
+            search("");
+        }
     }
 }
