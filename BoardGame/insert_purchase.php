@@ -13,14 +13,8 @@ if (!$conn) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    $masp = mysqli_real_escape_string($conn, $_POST["code"]);
-    $name_product = mysqli_real_escape_string($conn, $_POST["name_product"]);
     $hoten = mysqli_real_escape_string($conn, $_POST["name"]);
     $sdt = mysqli_real_escape_string($conn, $_POST["phone"]);
-    $soluong = mysqli_real_escape_string($conn, $_POST["quantity"]);
-    $gia = mysqli_real_escape_string($conn, $_POST["price"]);
-    $mota = mysqli_real_escape_string($conn, $_POST["describe"]);
     $currentDate = date('Y-m-d'); 
     $existingNumbers = [];
 
@@ -28,10 +22,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $randomNumber = str_pad(rand(0, 9999), 4, '0', STR_PAD_LEFT);
     } while (in_array($randomNumber, $existingNumbers));
     session_start();
-    $_SESSION['randomNumber'] = $randomNumber; 
-    $sql = "INSERT INTO thue (id_thue,username, ngaythue, tongtien) VALUES ('$randomNumber','$hoten', '$currentDate', '$gia')";
-    $insert_tg ="INSERT INTO thuegame (id_thue,masp, tensp,soluong ) VALUES ('$randomNumber','$masp', '$name_product', '$soluong')";
-     if (mysqli_query($conn, $sql) && mysqli_query($conn,$insert_tg) ) {
+    $_SESSION['randomNumber'] = $randomNumber;
+    $username = isset($_SESSION['username']) ? $_SESSION['username'] : "";
+    $tt = "SELECT SUM(GIA) AS total FROM carts WHERE USERNAME='$username' GROUP BY USERNAME";
+    $result = mysqli_query($conn, $tt);
+    if(mysqli_num_rows($result) <= 0)
+    { echo"Lỗi truy vấn ";}
+    $row = mysqli_fetch_assoc($result);
+    $tongtien = $row['total'];
+ 
+    $sql = "INSERT INTO thue (id_thue,username, ngaythue, tongtien) VALUES ('$randomNumber','$hoten', '$currentDate', '$tongtien')";
+    $insert_tg = "INSERT INTO thuegame (id_thue, masp, tensp, soluong)
+              SELECT '$randomNumber', masp, tensp, quantity FROM carts";
+    $delete_temp="delete from carts where USERNAME='$username'";
+    if (mysqli_query($conn, $sql) && mysqli_query($conn,$insert_tg) && mysqli_query($conn,$delete_temp) ) {
         echo '<script>alert("Thanh toán thành công"); window.location.href = "purchase_infor.php";</script>';
         exit;
     } else {
