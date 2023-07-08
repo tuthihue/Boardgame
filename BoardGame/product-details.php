@@ -109,7 +109,7 @@
                         </div>
                         <h2>Về sản phẩm: </h2>
                         <p class = "product-detail"> </p>
-                        <form action="cart.php" method="post">
+                        <form action="save_to_cart.php" method="post">
                           <input type="hidden" name="name_product" value="">
                           <input type="hidden" name="code" value="">
                           <input type="hidden" name="price" value="">
@@ -118,7 +118,6 @@
                           
                           <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
                         </form>
-                        <!-- <button type = "button" class = "btn">Thanh toán</button> -->
                       </div>
 
                     </div>
