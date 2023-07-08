@@ -60,7 +60,7 @@
             session_start();
             $randomNumber = $_SESSION['randomNumber'];
             $sql = "SELECT t.ID_THUE,t.USERNAME,t.NGAYTHUE,t.TONGTIEN,tg.TENSP,tg.SOLUONG FROM THUE t JOIN THUEGAME tg ON t.ID_THUE=tg.ID_THUE  WHERE t.id_thue='$randomNumber'";
-
+            $TT="SELECT * from thue";
             $result = mysqli_query($conn, $sql);
             if ($result) {
                 if (mysqli_num_rows($result) > 0) { ?>
@@ -73,7 +73,6 @@
                     <th>Mã Hóa Đơn</th>
                     <th>Họ Và Tên</th>
                     <th>Ngày Thuê</th>
-                    <th>Tổng tiền</th>
                     <th>Tên Sản Phẩm</th>
                     <th>Số lượng</th>
                     </tr>
@@ -87,14 +86,21 @@
                         echo '<td>' . $row['USERNAME'] . '</td>';
                         $ngayThue = date('d-m-Y', strtotime($row['NGAYTHUE']));
                         echo '<td>' . $ngayThue . '</td>';
-                        echo '<td>' . $row['TONGTIEN'] . '.000VND</td>';
+                        
                         echo '<td>' . $row['TENSP'] . '</td>';
                         echo '<td>' . $row['SOLUONG'] . '</td>';
                         echo '</tr>';
                     }
-                
+                    
                     echo '</tbody>';
                     echo '</table>';
+                    $res=mysqli_query($conn, $TT);
+                    $tt=mysqli_fetch_assoc($res);
+                ?>
+                    <div style="text-align: right;">
+                        <h2 style="margin-top: 20px;">TỔNG TIỀN: <?php echo $tt['TONGTIEN'] . '.000VND'; ?></h2>
+                    </div>
+                <?php
                 } else {
                     echo '<p>Không tìm thấy dữ liệu.</p>';
                 }
