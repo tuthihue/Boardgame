@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ | BoardGame</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <header>
@@ -86,7 +86,7 @@
                     <div class="products"> 
                         <div class="product">   
                             <div class="image">
-                                <a href="/BoardGame/product-details.php?id=1"><img src="SanPham\asmodee-chess-luxury-version.webp" alt=""></a>
+                                <a href="/BoardGame/product-details.php?id=32"><img src="SanPham\asmodee-chess-luxury-version.webp" alt=""></a>
                             </div>
                             <div class="product-info">
                                 <h4>Chess: Luxury Version</h4>
@@ -114,7 +114,7 @@
                         </div>
                         <div class="product">
                             <div class="image">
-                                <a href="/BoardGame/product-details.php?id=2"><img src="SanPham\chessplus-chessplus.jpg" alt=""></a>
+                                <a href="/BoardGame/product-details.php?id=33"><img src="SanPham\chessplus-chessplus.jpg" alt=""></a>
                             </div>
                             <div class="product-info">
                                 <h4>Chessplus</h4>
@@ -142,7 +142,7 @@
                         </div>
                         <div class="product">   
                     <div class="image">
-                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\cmon-marvel-united-guardians-of-the-galaxy-remix.jpg" alt=""></a>
+                        <a href="/BoardGame/product-details.php?id=9"><img src="Sanpham\cmon-marvel-united-guardians-of-the-galaxy-remix.jpg" alt=""></a>
                     </div>
                     <div class="product-info">
                         <h4>Marvel United: Guardians of the Galaxy Remix</h4>
@@ -174,7 +174,7 @@
             <div class="products"> 
                 <div class="product">   
                     <div class="image">
-                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\cmon-masters-of-the-universe-the-board-game-clash.jpg" alt=""></a>
+                        <a href="/BoardGame/product-details.php?id=10"><img src="Sanpham\cmon-masters-of-the-universe-the-board-game-clash.jpg" alt=""></a>
                     </div>
                     <div class="product-info">
                         <h4>Masters of the Universe: The Board Game - Clash For Eternia</h4>
@@ -202,7 +202,7 @@
 
                 <div class="product">   
                     <div class="image">
-                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\pegasus-spiele-beast.jpg" alt=""></a>
+                        <a href="/BoardGame/product-details.php?id=11"><img src="Sanpham\pegasus-spiele-beast.jpg" alt=""></a>
                     </div>
                     <div class="product-info">
                         <h4>Beast</h4>
@@ -230,7 +230,7 @@
 
                 <div class="product">   
                     <div class="image">
-                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\fantasy-flight-games-arkham-horror-final-hour.jpg" alt=""></a>
+                        <a href="/BoardGame/product-details.php?id=12"><img src="Sanpham\fantasy-flight-games-arkham-horror-final-hour.jpg" alt=""></a>
                     </div>
                     <div class="product-info">
                         <h4>Arkham Horror: Final Hour</h4>
@@ -262,7 +262,7 @@
             <div class="products"> 
                 <div class="product">   
                     <div class="image">
-                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\renegade-game-studios-legacy-of-yu-1.webp" alt=""></a>
+                        <a href="/BoardGame/product-details.php?id=13"><img src="Sanpham\renegade-game-studios-legacy-of-yu-1.webp" alt=""></a>
                     </div>
                     <div class="product-info">
                         <h4>Legacy of Yu</h4>
@@ -290,7 +290,7 @@
 
                 <div class="product">   
                     <div class="image">
-                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\inside-up-games-earth.jpg" alt=""></a>
+                        <a href="/BoardGame/product-details.php?id=14"><img src="Sanpham\inside-up-games-earth.jpg" alt=""></a>
                     </div>
                     <div class="product-info">
                         <h4>Earth</h4>
@@ -318,7 +318,7 @@
 
                 <div class="product">   
                     <div class="image">
-                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\renegade-game-studios-my-fathers-work-1.png" alt=""></a>
+                        <a href="/BoardGame/product-details.php?id=15"><img src="Sanpham\renegade-game-studios-my-fathers-work-1.png" alt=""></a>
                     </div>
                     <div class="product-info">
                         <h4>My Father's Work</h4>
@@ -350,7 +350,7 @@
             <div class="products"> 
                 <div class="product">   
                     <div class="image">
-                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\fantasy-flight-games-twilight-imperium-prophecy-of.webp" alt=""></a>
+                        <a href="/BoardGame/product-details.php?id=16"><img src="Sanpham\fantasy-flight-games-twilight-imperium-prophecy-of.webp" alt=""></a>
                     </div>
                     <div class="product-info">
                         <h4>Twilight Imperium: Prophecy of Kings</h4>
@@ -378,7 +378,7 @@
 
                 <div class="product">   
                     <div class="image">
-                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\plaid-hat-games-abomination-the-heir-of-frankenste.jpg" alt=""></a>
+                        <a href="/BoardGame/product-details.php?id=17"><img src="Sanpham\plaid-hat-games-abomination-the-heir-of-frankenste.jpg" alt=""></a>
                     </div>
                     <div class="product-info">
                         <h4>Abomination: The Heir of Frankenstein</h4>
@@ -406,7 +406,7 @@
 
                 <div class="product">   
                     <div class="image">
-                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\devir-americas-mille-fiori.jpg" alt=""></a>
+                        <a href="/BoardGame/product-details.php?id=18"><img src="Sanpham\devir-americas-mille-fiori.jpg" alt=""></a>
                     </div>
                     <div class="product-info">
                         <h4>Mille Fiori</h4>
@@ -438,7 +438,7 @@
             <div class="products"> 
                 <div class="product">   
                     <div class="image">
-                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\renegade-game-studios-transformers-deck-building-g-1.webp" alt=""></a>
+                        <a href="/BoardGame/product-details.php?id=19"><img src="Sanpham\renegade-game-studios-transformers-deck-building-g-1.webp" alt=""></a>
                     </div>
                     <div class="product-info">
                         <h4>Transformers Deck-Building Game</h4>
@@ -466,7 +466,7 @@
 
                 <div class="product">   
                     <div class="image">
-                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\cryptozoic-entertainment-epic-spell-wars-of-the-ba.webp" alt=""></a>
+                        <a href="/BoardGame/product-details.php?id=20"><img src="Sanpham\cryptozoic-entertainment-epic-spell-wars-of-the-ba.webp" alt=""></a>
                     </div>
                     <div class="product-info">
                         <h4>Epic Spell Wars of the Battle Wizards: Rumble at Castle Tentakill</h4>
@@ -494,7 +494,7 @@
 
                 <div class="product">   
                     <div class="image">
-                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\renegade-game-studios-gi-joe-deck-building-game.jpg" alt=""></a>
+                        <a href="/BoardGame/product-details.php?id=21"><img src="Sanpham\renegade-game-studios-gi-joe-deck-building-game.jpg" alt=""></a>
                     </div>
                     <div class="product-info">
                         <h4>G.I. JOE Deck-Building Game</h4>
