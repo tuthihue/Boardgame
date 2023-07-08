@@ -9,40 +9,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<div id="wrapper">
-        <div id="header">
-            <div class="container">
-                <div class="logo">
-                    <img src="logo-boardgame.png" alt="">
-                </div>
-                <div class="search-bar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="search" placeholder="Tìm kiếm">
-                </div>
-                <div class="button">
-                <form action="cart.php" method="post">
-                          <input type="hidden" name="name_product" value="">
-                          <input type="hidden" name="code" value="">
-                          <input type="hidden" name="price" value="">
-                          <input type="hidden" name="describe" value="">
-                          <input type="hidden" name="quantity" value="1">
-                          
-                          <button type="submit" class="btn">Giỏ hàng <i class="fa-solid fa-shopping-cart"></i></button>
-                        </form>
-                <a href="/BoardGame/register.php"><p class="link"><i class="fa-solid fa-right-to-bracket"></i> Đăng nhập/Đăng Ký</p></a>
-            </div>
-            </div>
-            <div id="menu">
-              <div class="container">
-              <div class="menu-area">
-                  <ul>
-                      <li><a href="/BoardGame/index.php">Trang chủ</a></li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-          </div>
-      </div>
+<header>
+    <div class="logo">BOARDGAME</div>
+    <nav>
+      <ul>
+        <li><a href="index.php">Trang chủ</a></li>
+        <li><a href="product.php">Sản phẩm</a></li>
+        <li>
+          <a href="#">Thể loại</a>
+          <!-- Thêm danh sách cho mục "Thể loại" -->
+          <ul class="sub-menu">
+            <li><a href="cardgame.php">Card Games</a></li> 
+            <li><a href="dicegame.php">Dice Games</a></li> 
+            <li><a href="chess.php">Chess</a></li> 
+            <li><a href="family.php">Family</a></li> 
+            <li><a href="livingcardgame.php">Living Card Games</a></li> 
+            <li><a href="deckbuilders.php">Deckbuilders</a></li> 
+            <li><a href="wargame&strategy.php">Wargame & Strategy</a></li> 
+            <li><a href="cooperative.php">Cooperative</a></li> 
+            <li><a href="dungeoncral&minis.php">Dungeon Crawl & Minis</a></li> 
+            <li><a href="partygames.php">Party Games</a></li> 
+            <li><a href="starwars.php">Star Wars</a></li> 
+          </ul>
+        </li>
+        <li><a href="contact.php">Liên hệ</a></li>
+        <li><a href="account.php">Tài khoản</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Tìm kiếm">
+      <button type="submit">Tìm kiếm</button>
+    </div>
+    <?php 
+    session_start();
+    $username = isset($_SESSION['username']) ? $_SESSION['username'] : "";
+    if ($username != "") { 
+?>
+<div class="account-icon">
+    <i class="fas fa-user"></i>
+    <span class="name">Xin chào, <?php echo $username ?></span>
+</div>
+<?php } else { ?>
+<a href="login.php">
+    <div class="account-icon">
+        <i class="fas fa-user"></i>
+    </div>
+</a>
+<?php } ?>
+<div class="cart-icon">
+  <a href="cart.php">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">
+      <?php
+        // Kết nối cơ sở dữ liệu và thực hiện truy vấn
+        include 'connect.php';
+        $query = "SELECT SUM(quantity) AS totalQuantity FROM carts";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        $cartItemCount = $row['totalQuantity'];
+        
+        // Hiển thị tổng số sản phẩm trong giỏ hàng
+        echo $cartItemCount;
+      ?>
+    </span>
+  </a>
+</div>
+  </header>
+  <div id="main">
             <?php
             // Kết nối tới cơ sở dữ liệu
             $servername = "localhost";
@@ -56,8 +89,7 @@
             if (!$conn) {
                 die("Không thể kết nối đến cơ sở dữ liệu: " . mysqli_connect_error());
             }
-
-            session_start();
+            //session_start();
             $randomNumber = $_SESSION['randomNumber'];
             $sql = "SELECT t.ID_THUE,t.USERNAME,t.NGAYTHUE,t.TONGTIEN,tg.TENSP,tg.SOLUONG FROM THUE t JOIN THUEGAME tg ON t.ID_THUE=tg.ID_THUE  WHERE t.id_thue='$randomNumber'";
             $TT="SELECT * from thue";
@@ -65,7 +97,7 @@
             if ($result) {
                 if (mysqli_num_rows($result) > 0) { ?>
                 <br><br><br>
-                <div>
+                <div class="title-cart">
                     <h2>Thông tin hóa đơn (vui lòng chụp lại mang theo để xác nhận):</h2>
                     <table class="invoice-table">
                     <thead>
@@ -112,6 +144,30 @@
             // Đóng kết nối
             mysqli_close($conn);
             ?>
+        </div>
+        </div>
+        <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Thông tin</h4>
+                    <ul>
+                        <li><a href="contact.php">Liên hệ</a></li>
+                        <li><a href="policy.php">Chính sách</a></li>
+                        <li><a href="https://www.google.com/maps/search/Duong+Hàn+Huyên,+Khu+pho+6,+Phuong+Linh+Trung,+Tp.Thù+Đức,+Tp.HCM"  target="_blank"Đường Hàn Huyên, Khu phố 6, Phường Linh Trung, Tp.Thủ Đức, Tp.HCM>Địa chỉ</a></li>
+                        <li><a href="respond.php">Phản hồi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Theo dõi chúng tôi</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
 </body>
 
