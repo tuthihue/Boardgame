@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     session_start();
     $_SESSION['randomNumber'] = $randomNumber;
     $username = isset($_SESSION['username']) ? $_SESSION['username'] : "";
-    $tt = "SELECT SUM(GIA) AS total FROM carts WHERE USERNAME='$username' GROUP BY USERNAME";
+    $tt = "SELECT SUM(GIA* quantity) AS total FROM carts WHERE USERNAME='$username' GROUP BY USERNAME";
     $result = mysqli_query($conn, $tt);
     if(mysqli_num_rows($result) <= 0)
     { echo"Lỗi truy vấn ";}
