@@ -18,17 +18,17 @@
           <a href="#">Thể loại</a>
           <!-- Thêm danh sách cho mục "Thể loại" -->
           <ul class="sub-menu">
-            <li><a href="#">Card Games</a></li> 
-            <li><a href="#">Dice Games</a></li> 
-            <li><a href="#">Chess</a></li> 
-            <li><a href="#">Family</a></li> 
-            <li><a href="#">Living Card Games</a></li> 
-            <li><a href="#">Deckbuilders</a></li> 
-            <li><a href="#">Wargame & Strategy</a></li> 
-            <li><a href="#">Cooperative</a></li> 
-            <li><a href="#">Dungeon Crawl & Minis</a></li> 
-            <li><a href="#">Party Games</a></li> 
-            <li><a href="#">Star Wars</a></li> 
+            <li><a href="cardgame.php">Card Games</a></li> 
+            <li><a href="dicegame.php">Dice Games</a></li> 
+            <li><a href="chess.php">Chess</a></li> 
+            <li><a href="family.php">Family</a></li> 
+            <li><a href="livingcardgame.php">Living Card Games</a></li> 
+            <li><a href="deckbuilders.php">Deckbuilders</a></li> 
+            <li><a href="wargame&strategy.php">Wargame & Strategy</a></li> 
+            <li><a href="cooperative.php">Cooperative</a></li> 
+            <li><a href="dungeoncral&minis.php">Dungeon Crawl & Minis</a></li> 
+            <li><a href="partygames.php">Party Games</a></li> 
+            <li><a href="starwars.php">Star Wars</a></li> 
           </ul>
         </li>
         <li><a href="contact.php">Liên hệ</a></li>
@@ -55,12 +55,24 @@
     </div>
 </a>
 <?php } ?>
-    <div class="cart-icon">
-    <a href="cart.php">
-      <i class="fas fa-shopping-cart"></i>
-      <span class="cart-count">0</span>
-    </a>
-    </div>
+<div class="cart-icon">
+  <a href="cart.php">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">
+      <?php
+        // Kết nối cơ sở dữ liệu và thực hiện truy vấn
+        include 'connect.php';
+        $query = "SELECT SUM(quantity) AS totalQuantity FROM carts";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        $cartItemCount = $row['totalQuantity'];
+        
+        // Hiển thị tổng số sản phẩm trong giỏ hàng
+        echo $cartItemCount;
+      ?>
+    </span>
+  </a>
+</div>
   </header>
         <!-- end header -->
         <div id="main">
@@ -68,7 +80,7 @@
                     <div class="banner">
                         <img src="banner.jpg" alt="">
                     </div>
-                 <div class="main-product">
+                <div class="main-product">
                     <div class="title">
                     </div>
                     <div class="products"> 
@@ -80,16 +92,24 @@
                                 <h4>Chess: Luxury Version</h4>
                                 <span>64.999đ</span>
                             </div>
-                            <p>Mã SP: BGOO1 </p>
+                            <p>Mã SP: BGO32 </p>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
-                            </div>
+                                </div>
                             <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
+                            <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="Chess: Luxury Version">
+                            <input type="hidden" name="code" value="BGO32">
+                            <input type="hidden" name="price" value="64.999">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                          
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                            </form>
                             </div>
                         </div>
                         <div class="product">
@@ -100,7 +120,7 @@
                                 <h4>Chessplus</h4>
                                 <span>34.999đ</span>
                             </div>
-                            <p>Mã SP: BG002 </p>
+                            <p>Mã SP: BG033 </p>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -109,291 +129,400 @@
                                 <i class="fa-regular fa-star"></i>
                             </div>
                             <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
+                            <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="Chessplus">
+                            <input type="hidden" name="code" value="BG033">
+                            <input type="hidden" name="price" value="34.999">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                          
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                            </form>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="image">
-                                <a href="/BoardGame/product-details.php?id=3"><img src=" SanPham\cmon-marvel-united-guardians-of-the-galaxy-remix.jpg" alt=""></a>
-                            </div>
-                            <div class="product-info">
-                                <h4>Marvel United: Guardians of the Galaxy Remix</h4>
-                                <span>34.999đ</span>
-                            </div>
-                            <p>Mã SP: BG003 </p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
-                            </div>
-                        </div>
-                        
+                        <div class="product">   
+                    <div class="image">
+                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\cmon-marvel-united-guardians-of-the-galaxy-remix.jpg" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h4>Marvel United: Guardians of the Galaxy Remix</h4>
+                        <span>34.99</span>
+                    </div>
+                    <p>Mã SP: BG009 </p>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="pay">
+                        <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="Marvel United: Guardians of the Galaxy Remix">
+                            <input type="hidden" name="code" value="BG009">
+                            <input type="hidden" name="price" value="34.99">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
                     </div>
                 </div>
-            <!-- BG2 -->
-                <div class="main-product">
-                    <div class="products"> 
-                        <div class="product">
-                            <div class="image">
-                                <a href="/DoAnTKWeb/product-details"><img src=" SanPham\cmon-masters-of-the-universe-the-board-game-clash.jpg" alt=""></a>
-                            </div>
-                            <div class="product-info">
-                                <h4>Masters of the Universe: The Board Game - Clash For Eternia</h4>
-                                <span>109.999đ</span>
-                            </div>
-                            <p>Mã SP: BG004 </p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image">
-                                <a href="/DoAnTKWeb/product-details"><img src=" SanPham\cryptozoic-entertainment-epic-spell-wars-of-the-ba.webp" alt=""></a>
-                            </div>
-                            <div class="product-info">
-                                <h4>Epic Spell Wars of the Battle Wizards: Rumble at Castle Tentakill</h4>
-                                <span>34.999₫</span>
-                            </div>
-                            <p>Mã SP: BG005 </p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image">
-                                <a href="/DoAnTKWeb/product-details"><img src=" SanPham\devir-americas-mille-fiori.jpg" alt=""></a>
-                            </div>
-                            <div class="product-info">
-                                <h4>Mille Fiori</h4>
-                                <span>49.999đ</span>
-                            </div>
-                            <p>Mã SP: BG006 </p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
-                            </div>
-                        </div>
+            </div>
+        </div>
+            <!-- 4 -->
+        <div class="main-product">
+            <div class="products"> 
+                <div class="product">   
+                    <div class="image">
+                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\cmon-masters-of-the-universe-the-board-game-clash.jpg" alt=""></a>
                     </div>
-                </div> 
-                <div class="main-product">
-                    <div class="products"> 
-                        <div class="product">
-                            <div class="image">
-                                <a href="/DoAnTKWeb/product-details"><img src=" SanPham\fantasy-flight-games-agot-lcg-2nd-ed-for-family-ho.png" alt=""></a>
-                            </div>
-                            <div class="product-info">
-                                <h4>AGOT LCG 2nd Ed: For Family Honor</h4>
-                                <span>14.999₫</span>
-                            </div>
-                            <p>Mã SP: BG007</p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image">
-                                <a href="/DoAnTKWeb/product-details"><img src=" SanPham\fantasy-flight-games-arkham-horror-final-hour.jpg" alt=""></a>
-                            </div>
-                            <div class="product-info">
-                                <h4>Arkham Horror: The Card Game - Fortune and Folly Scenario Pack</h4>
-                                <span>24.999₫</span>
-                            </div>
-                            <p>Mã SP: BG008 </p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image">
-                                <a href="/DoAnTKWeb/product-details"><img src=" SanPham\gen-42-hive-.webp" alt=""></a>
-                            </div>
-                            <div class="product-info">
-                                <h4>Hive Classic</h4>
-                                <span>49.999₫</span>
-                            </div>
-                            <p>Mã SP: BG009 </p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
-                            </div>
-                        </div>
+                    <div class="product-info">
+                        <h4>Masters of the Universe: The Board Game - Clash For Eternia</h4>
+                        <span>109.99</span>
                     </div>
-                </div> 
-                <div class="main-product">
-                    <div class="products"> 
-                        <div class="product">
-                            <div class="image">
-                                <a href="/DoAnTKWeb/product-details"><img src=" SanPham\hasbro-d-d-bedlam-in-neverwinter.jpg" alt=""></a>
-                            </div>
-                            <div class="product-info">
-                                <h4>D&D: Bedlam in Neverwinter</h4>
-                                <span>49.999đ</span>
-                            </div>
-                            <p>Mã SP: BG010</p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image">
-                                <a href="/DoAnTKWeb/product-details"><img src=" SanPham\aeg-smash-up-big-in-japan.jpg" alt=""></a>
-                            </div>
-                            <div class="product-info">
-                                <h4>Smash Up: Big in Japan</h4>
-                                <span>24.999đ</span>
-                            </div>
-                            <p>Mã SP: BG011 </p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image">
-                                <a href="/DoAnTKWeb/product-details"><img src=" SanPham\horrible-guild-game-studios-railroad-ink-challenge.jpg" alt=""></a>
-                            </div>
-                            <div class="product-info">
-                                <h4>Railroad Ink: Challenge: Shining Yellow</h4>
-                                <span>26.990₫</span>
-                            </div>
-                            <p>Mã SP: BG012 </p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
-                            </div>
-                        </div>
-                        
+                    <p>Mã SP: BG010 </p>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="pay">
+                        <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="Masters of the Universe: The Board Game - Clash For Eternia">
+                            <input type="hidden" name="code" value="BG010">
+                            <input type="hidden" name="price" value="109.99">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
                     </div>
                 </div>
-                <div class="main-product">
-                    <div class="products"> 
-                        <div class="product">
-                            <div class="image">
-                                <a href="/DoAnTKWeb/product-details"><img src=" SanPham\plaid-hat-games-abomination-the-heir-of-frankenste.jpg" alt=""></a>
-                            </div>
-                            <div class="product-info">
-                                <h4>Abomination: The Heir of Frankenstein</h4>
-                                <span>64.999₫</span>
-                            </div>
-                            <p>Mã SP: BG013 </p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image">
-                                <a href="/DoAnTKWeb/product-details"><img src=" SanPham\steve-jackson-games-munchkin-apocalypse-2-sheep-im.jpg" alt=""></a>
-                            </div>
-                            <div class="product-info">
-                                <h4>Munchkin Apocalypse 2 Sheep Impact Game</h4>
-                                <span>19.999₫</span>
-                            </div>
-                            <p>Mã SP: BG014 </p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image">
-                                <a href="/DoAnTKWeb/product-details"><img src=" SanPham\thames-kosmos-high-score.jpg" alt=""></a>
-                            </div>
-                            <div class="product-info">
-                                <h4>High Score</h4>
-                                <span>14.999₫</span>
-                            </div>
-                            <p>Mã SP: BG015 </p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="pay">
-                                <button>Thêm vào giỏ <i class="fa-solid fa-cart-shopping"></i></button>
-                            </div>
-                        </div>
-                        
+
+                <div class="product">   
+                    <div class="image">
+                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\pegasus-spiele-beast.jpg" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h4>Beast</h4>
+                        <span>69.99</span>
+                    </div>
+                    <p>Mã SP: BG011 </p>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="pay">
+                        <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="Beast">
+                            <input type="hidden" name="code" value="BG011">
+                            <input type="hidden" name="price" value="69.99">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
                     </div>
                 </div>
+
+                <div class="product">   
+                    <div class="image">
+                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\fantasy-flight-games-arkham-horror-final-hour.jpg" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h4>Arkham Horror: Final Hour</h4>
+                        <span>39.99</span>
+                    </div>
+                    <p>Mã SP: BG012 </p>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="pay">
+                        <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="Arkham Horror: Final Hour">
+                            <input type="hidden" name="code" value="BG012">
+                            <input type="hidden" name="price" value="39.99">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- 5 -->
+        <div class="main-product">
+            <div class="products"> 
+                <div class="product">   
+                    <div class="image">
+                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\renegade-game-studios-legacy-of-yu-1.webp" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h4>Legacy of Yu</h4>
+                        <span>59.99</span>
+                    </div>
+                    <p>Mã SP: BG013 </p>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="pay">
+                        <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="Legacy of Yu">
+                            <input type="hidden" name="code" value="BG013">
+                            <input type="hidden" name="price" value="59.99">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product">   
+                    <div class="image">
+                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\inside-up-games-earth.jpg" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h4>Earth</h4>
+                        <span>49.99</span>
+                    </div>
+                    <p>Mã SP: BG014 </p>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="pay">
+                        <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="Earth">
+                            <input type="hidden" name="code" value="BG014">
+                            <input type="hidden" name="price" value="49.99">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product">   
+                    <div class="image">
+                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\renegade-game-studios-my-fathers-work-1.png" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h4>My Father's Work</h4>
+                        <span>124.99</span>
+                    </div>
+                    <p>Mã SP: BG015 </p>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="pay">
+                        <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="My Father's Work">
+                            <input type="hidden" name="code" value="BG015">
+                            <input type="hidden" name="price" value="124.99">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- 6 -->
+        <div class="main-product">
+            <div class="products"> 
+                <div class="product">   
+                    <div class="image">
+                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\fantasy-flight-games-twilight-imperium-prophecy-of.webp" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h4>Twilight Imperium: Prophecy of Kings</h4>
+                        <span>99.95</span>
+                    </div>
+                    <p>Mã SP: BG016 </p>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="pay">
+                        <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="Twilight Imperium: Prophecy of Kings">
+                            <input type="hidden" name="code" value="BG016">
+                            <input type="hidden" name="price" value="99.95">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product">   
+                    <div class="image">
+                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\plaid-hat-games-abomination-the-heir-of-frankenste.jpg" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h4>Abomination: The Heir of Frankenstein</h4>
+                        <span>64.99</span>
+                    </div>
+                    <p>Mã SP: BG017 </p>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="pay">
+                        <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="Abomination: The Heir of Frankenstein">
+                            <input type="hidden" name="code" value="BG017">
+                            <input type="hidden" name="price" value="64.99">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product">   
+                    <div class="image">
+                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\devir-americas-mille-fiori.jpg" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h4>Mille Fiori</h4>
+                        <span>49.99</span>
+                    </div>
+                    <p>Mã SP: BG018 </p>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="pay">
+                        <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="Mille Fiori">
+                            <input type="hidden" name="code" value="BG018">
+                            <input type="hidden" name="price" value="49.99">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- 7 -->
+        <div class="main-product">
+            <div class="products"> 
+                <div class="product">   
+                    <div class="image">
+                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\renegade-game-studios-transformers-deck-building-g-1.webp" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h4>Transformers Deck-Building Game</h4>
+                        <span>44.99</span>
+                    </div>
+                    <p>Mã SP: BG019 </p>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="pay">
+                        <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="Transformers Deck-Building Game">
+                            <input type="hidden" name="code" value="BG019">
+                            <input type="hidden" name="price" value="44.99">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product">   
+                    <div class="image">
+                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\cryptozoic-entertainment-epic-spell-wars-of-the-ba.webp" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h4>Epic Spell Wars of the Battle Wizards: Rumble at Castle Tentakill</h4>
+                        <span>34.99</span>
+                    </div>
+                    <p>Mã SP: BG020 </p>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="pay">
+                        <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="Epic Spell Wars of the Battle Wizards: Rumble at Castle Tentakill">
+                            <input type="hidden" name="code" value="BG020">
+                            <input type="hidden" name="price" value="34.99">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="product">   
+                    <div class="image">
+                        <a href="/BoardGame/product-details.php?id=1"><img src="Sanpham\renegade-game-studios-gi-joe-deck-building-game.jpg" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <h4>G.I. JOE Deck-Building Game</h4>
+                        <span>45.00</span>
+                    </div>
+                    <p>Mã SP: BG021 </p>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="pay">
+                        <form action="save_to_cart.php" method="post">
+                            <input type="hidden" name="name_product" value="G.I. JOE Deck-Building Game">
+                            <input type="hidden" name="code" value="BG021">
+                            <input type="hidden" name="price" value="45.00">
+                            <input type="hidden" name="describe" value="">
+                            <input type="hidden" name="quantity" value="1">
+                            <button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    </div>
+                </div>   
             </div>
             </div>
         </div>
@@ -406,7 +535,7 @@
                             <ul>
                                 <li><a href="contact.php">Liên hệ</a></li>
                                 <li><a href="policy.php">Chính sách</a></li>
-                                <li><a href="address.php">Địa chỉ</a></li>
+                                <li><a href="https://www.google.com/maps/search/Duong+Hàn+Huyên,+Khu+pho+6,+Phuong+Linh+Trung,+Tp.Thù+Đức,+Tp.HCM"  target="_blank"Đường Hàn Huyên, Khu phố 6, Phường Linh Trung, Tp.Thủ Đức, Tp.HCM>Địa chỉ</a></li>
                                 <li><a href="respond.php">Phản hồi</a></li>
                             </ul>
                         </div>
