@@ -156,6 +156,39 @@
   .content-item.active {
     display: block;
   }
+  /* CSS cho lịch sử đơn hàng */
+#history {
+  margin-top: 10px; /* Tạo khoảng cách trên cho lịch sử đơn hàng */
+}
+
+#history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#history th,
+#history td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+#history th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#history tr:hover {
+  background-color: #f9f9f9;
+}
+
+#history td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: table-cell;
+}
+
   #edit-info {
     max-width: 1000px;
     margin: 0 auto;

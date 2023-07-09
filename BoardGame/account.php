@@ -105,6 +105,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </ul>
         </div>
         <div class="account-content">
+        <div id="history" class="content-item">
+                <!-- Nội dung cho Lịch sử đặt hàng -->
+                <h2>Lịch sử đặt hàng</h2>
+                <?php
+                   $username = isset($_SESSION['username']) ? $_SESSION['username'] : "";
+                   $query = "SELECT thue.ID_THUE, GROUP_CONCAT(TENSP SEPARATOR ', ') AS TENSP, SOLUONG, NGAYTHUE, TONGTIEN 
+                             FROM thue
+                             INNER JOIN thuegame ON thue.ID_THUE = thuegame.ID_THUE
+                             WHERE username='$username'
+                             GROUP BY thue.ID_THUE";
+
+                  // Thực thi câu truy vấn
+                  $result = mysqli_query($conn, $query);
+
+                  // Kiểm tra và hiển thị kết quả
+                  if (mysqli_num_rows($result) > 0) {
+                    echo "<table>";
+                    echo "<tr><th>Mã đơn hàng</th><th>Tên sản phẩm</th><th>Số lượng</th><th>Ngày thuê</th><th>Tổng tiền</th></tr>";
+                    
+                    while ($row = mysqli_fetch_assoc($result)) {
+                      echo "<tr>";
+                      echo "<td>" . $row['ID_THUE'] . "</td>";
+                      echo "<td>" . $row['TENSP'] . "</td>";
+                      echo "<td>" . $row['SOLUONG'] . "</td>";
+                      echo "<td>" . $row['NGAYTHUE'] . "</td>";
+                      echo "<td>" . $row['TONGTIEN'] . "</td>";
+                      echo "</tr>";
+                    }
+                    
+                    echo "</table>";
+                  } else {
+                    echo "Không có đơn hàng nào.";
+                  }
+                  // Đóng kết nối
+                  mysqli_close($conn);
+                  ?>
+            </div>
             <div id="personal-info" class="content-item">
                 <!-- Nội dung cho Thông tin cá nhân -->
                 <h2>Thông tin cá nhân</h2>
