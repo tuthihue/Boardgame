@@ -104,7 +104,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <li class="menu-item" data-content="logout"><a href="#">Đăng xuất</a></li>
             </ul>
         </div>
-  
+        <div class="account-content">
+            <div id="personal-info" class="content-item">
+                <!-- Nội dung cho Thông tin cá nhân -->
+                <h2>Thông tin cá nhân</h2>
+                <p><strong>Họ và tên:</strong> <?php echo $userInfo['HOTEN']; ?></p>
+                <p><strong>Tên đăng nhập:</strong> <?php echo $userInfo['USERNAME']; ?></p>
+                <p><strong>Email:</strong> <?php echo $userInfo['email']; ?></p>
+                <p><strong>Điện thoại:</strong> <?php echo $userInfo['sdt']; ?></p>
+            </div>
             <div id="edit-info" class="content-item">
             <!-- Nội dung cho Sửa đổi thông tin cá nhân -->
             <h2>Sửa đổi thông tin cá nhân</h2>
@@ -135,7 +143,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <button type="submit" class="btn-submit">Cập nhật thông tin</button>
               </form>
             </div>
-
+        </div>
     </div> 
     <script src="account.js"></script>
 </body>
