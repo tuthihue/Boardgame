@@ -136,7 +136,20 @@ body {
     font-weight: bold;
     text-transform: capitalize;
   }
+ /* CSS cho liên kết sắp xếp */
+ .sort-links {
+  margin-top: 20px;
+}
 
+.sort-links a {
+  margin-right: 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.sort-links a:hover {
+  text-decoration: underline;
+}
 body {
   font-family: 'Times New Roman', Times, serif;
 }

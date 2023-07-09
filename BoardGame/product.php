@@ -602,6 +602,16 @@
                      
                     ];
 
+                        // Hàm so sánh giá tăng dần
+                        function comparePriceAsc($a, $b) {
+                            return $a['price'] <=> $b['price'];
+                        }
+
+                        // Hàm so sánh giá giảm dần
+                        function comparePriceDesc($a, $b) {
+                            return $b['price'] <=> $a['price'];
+                        }
+
                         // Kiểm tra và gán giá trị cho biến $currentPage
                         if (isset($_GET['page'])) {
                             $currentPage = intval($_GET['page']);
@@ -616,6 +626,13 @@
                         $startIndex = ($currentPage - 1) * $productsPerPage;
                         $endIndex = $startIndex + $productsPerPage - 1;
 
+                        // Lựa chọn hàm so sánh dựa trên tham số 'sort' truyền vào từ URL
+                        $sort = isset($_GET['sort']) ? $_GET['sort'] : '';
+                        if ($sort === 'asc') {
+                            usort($products, 'comparePriceAsc');
+                        } elseif ($sort === 'desc') {
+                            usort($products, 'comparePriceDesc');
+                        }
                         // Lặp qua các sản phẩm trên trang hiện tại và hiển thị
                         for ($i = $startIndex; $i <= $endIndex && $i < count($products); $i++) {
                         $product = $products[$i];
@@ -647,6 +664,17 @@
                         echo '</div>';
                         echo '</div>';
                     }
+                    
+                    // Tạo link sắp xếp tăng dần và giảm dần theo giá
+                    $currentSort = isset($_GET['sort']) ? $_GET['sort'] : 'asc';
+                    $sortAscUrl = '?page=' . $currentPage . '&sort=asc';
+                    $sortDescUrl = '?page=' . $currentPage . '&sort=desc';
+
+                    // Hiển thị link sắp xếp
+                    echo '<div class="sort-links">';
+                    echo '<a href="' . $sortAscUrl . '">GIÁ THẤP ĐẾN CAO</a>';
+                    echo '<a href="' . $sortDescUrl . '">GIÁ CAO ĐẾN THẤP</a>';
+                    echo '</div>';
 
                     // Hiển thị phân trang
                     echo '<div class="pagination">';
