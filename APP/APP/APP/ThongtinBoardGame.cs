@@ -175,12 +175,14 @@ namespace APP
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
             DataTable table = new DataTable();
             adapter.Fill(table);
-            TTBoardGame.DataSource= table;
+            TTBoardGame.DataSource = table;
         }
 
         private void refreshButton_Click(object sender, EventArgs e)
         {
             search("");
         }
+
+
     }
 }
