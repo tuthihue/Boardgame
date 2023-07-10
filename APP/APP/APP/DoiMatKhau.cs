@@ -17,6 +17,7 @@ namespace APP
         public DoiMatKhau()
         {
             InitializeComponent();
+            Connection();
         }
         static void Connection()
         {
@@ -45,6 +46,13 @@ namespace APP
             mySqlCommand.Parameters.AddWithValue("@passwd", passwd);
             mySqlCommand.ExecuteNonQuery();
             MessageBox.Show("Cập nhật mật khẩu thành công!");
+            conn.Close();
+            this.Close();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -29,177 +29,177 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThueBoardGame));
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.searchButton = new System.Windows.Forms.Button();
-            this.searchBar = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.TTThueBoardGame = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TTSPThue = new System.Windows.Forms.DataGridView();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TTThueBoardGame)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TTSPThue)).BeginInit();
-            this.SuspendLayout();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            searchButton = new Button();
+            searchBar = new TextBox();
+            label14 = new Label();
+            TTThueBoardGame = new DataGridView();
+            button1 = new Button();
+            tabPage2 = new TabPage();
+            button2 = new Button();
+            label1 = new Label();
+            TTSPThue = new DataGridView();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)TTThueBoardGame).BeginInit();
+            tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)TTSPThue).BeginInit();
+            SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1234, 727);
-            this.tabControl1.TabIndex = 14;
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Location = new Point(0, 0);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1234, 727);
+            tabControl1.TabIndex = 14;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
-            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage1.Controls.Add(this.searchButton);
-            this.tabPage1.Controls.Add(this.searchBar);
-            this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.TTThueBoardGame);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1226, 694);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Thông tin thuê BoardGame";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            tabPage1.BackgroundImage = (Image)resources.GetObject("tabPage1.BackgroundImage");
+            tabPage1.BackgroundImageLayout = ImageLayout.Stretch;
+            tabPage1.Controls.Add(searchButton);
+            tabPage1.Controls.Add(searchBar);
+            tabPage1.Controls.Add(label14);
+            tabPage1.Controls.Add(TTThueBoardGame);
+            tabPage1.Controls.Add(button1);
+            tabPage1.Location = new Point(4, 29);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1226, 694);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Thông tin thuê BoardGame";
+            tabPage1.UseVisualStyleBackColor = true;
+            tabPage1.Click += tabPage1_Click;
             // 
             // searchButton
             // 
-            this.searchButton.BackColor = System.Drawing.Color.LightBlue;
-            this.searchButton.Location = new System.Drawing.Point(535, 601);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(94, 50);
-            this.searchButton.TabIndex = 14;
-            this.searchButton.Text = "Search";
-            this.searchButton.UseVisualStyleBackColor = false;
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            searchButton.BackColor = Color.LightBlue;
+            searchButton.Location = new Point(535, 601);
+            searchButton.Name = "searchButton";
+            searchButton.Size = new Size(94, 50);
+            searchButton.TabIndex = 14;
+            searchButton.Text = "Search";
+            searchButton.UseVisualStyleBackColor = false;
+            searchButton.Click += searchButton_Click;
             // 
             // searchBar
             // 
-            this.searchBar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.searchBar.Location = new System.Drawing.Point(27, 609);
-            this.searchBar.Name = "searchBar";
-            this.searchBar.Size = new System.Drawing.Size(454, 31);
-            this.searchBar.TabIndex = 13;
+            searchBar.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            searchBar.Location = new Point(27, 609);
+            searchBar.Name = "searchBar";
+            searchBar.Size = new Size(454, 31);
+            searchBar.TabIndex = 13;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(32, 35);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(431, 41);
-            this.label14.TabIndex = 11;
-            this.label14.Text = "Thông Tin Thuê BoardGame";
+            label14.AutoSize = true;
+            label14.BackColor = Color.Transparent;
+            label14.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label14.ForeColor = Color.Black;
+            label14.Location = new Point(32, 35);
+            label14.Name = "label14";
+            label14.Size = new Size(431, 41);
+            label14.TabIndex = 11;
+            label14.Text = "Thông Tin Thuê BoardGame";
             // 
             // TTThueBoardGame
             // 
-            this.TTThueBoardGame.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.TTThueBoardGame.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.TTThueBoardGame.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TTThueBoardGame.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TTThueBoardGame.Location = new System.Drawing.Point(27, 93);
-            this.TTThueBoardGame.Name = "TTThueBoardGame";
-            this.TTThueBoardGame.ReadOnly = true;
-            this.TTThueBoardGame.RowHeadersWidth = 51;
-            this.TTThueBoardGame.RowTemplate.Height = 29;
-            this.TTThueBoardGame.Size = new System.Drawing.Size(791, 491);
-            this.TTThueBoardGame.TabIndex = 10;
-            this.TTThueBoardGame.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TTThueBoardGame_CellContentClick);
+            TTThueBoardGame.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            TTThueBoardGame.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            TTThueBoardGame.BackgroundColor = SystemColors.ButtonHighlight;
+            TTThueBoardGame.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            TTThueBoardGame.Location = new Point(27, 93);
+            TTThueBoardGame.Name = "TTThueBoardGame";
+            TTThueBoardGame.ReadOnly = true;
+            TTThueBoardGame.RowHeadersWidth = 51;
+            TTThueBoardGame.RowTemplate.Height = 29;
+            TTThueBoardGame.Size = new Size(791, 491);
+            TTThueBoardGame.TabIndex = 10;
+            TTThueBoardGame.CellContentClick += TTThueBoardGame_CellContentClick;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LightBlue;
-            this.button1.Location = new System.Drawing.Point(683, 601);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 50);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Làm mới";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            button1.BackColor = Color.LightBlue;
+            button1.Location = new Point(683, 601);
+            button1.Name = "button1";
+            button1.Size = new Size(135, 50);
+            button1.TabIndex = 12;
+            button1.Text = "Làm mới";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // tabPage2
             // 
-            this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
-            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.TTSPThue);
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1226, 694);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Thông tin sản phẩm thuê";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            tabPage2.BackgroundImage = (Image)resources.GetObject("tabPage2.BackgroundImage");
+            tabPage2.BackgroundImageLayout = ImageLayout.Stretch;
+            tabPage2.Controls.Add(button2);
+            tabPage2.Controls.Add(label1);
+            tabPage2.Controls.Add(TTSPThue);
+            tabPage2.Location = new Point(4, 29);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1226, 694);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Thông tin sản phẩm thuê";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.LightBlue;
-            this.button2.Location = new System.Drawing.Point(693, 606);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 37);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Làm mới";
-            this.button2.UseVisualStyleBackColor = false;
+            button2.BackColor = Color.LightBlue;
+            button2.Location = new Point(693, 606);
+            button2.Name = "button2";
+            button2.Size = new Size(135, 37);
+            button2.TabIndex = 16;
+            button2.Text = "Làm mới";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(37, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(524, 41);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Thông Tin BoardGame Được Thuê ";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(37, 34);
+            label1.Name = "label1";
+            label1.Size = new Size(524, 41);
+            label1.TabIndex = 15;
+            label1.Text = "Thông Tin BoardGame Được Thuê ";
             // 
             // TTSPThue
             // 
-            this.TTSPThue.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.TTSPThue.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.TTSPThue.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TTSPThue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TTSPThue.Location = new System.Drawing.Point(37, 94);
-            this.TTSPThue.Name = "TTSPThue";
-            this.TTSPThue.ReadOnly = true;
-            this.TTSPThue.RowHeadersWidth = 51;
-            this.TTSPThue.RowTemplate.Height = 29;
-            this.TTSPThue.Size = new System.Drawing.Size(791, 491);
-            this.TTSPThue.TabIndex = 14;
+            TTSPThue.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            TTSPThue.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            TTSPThue.BackgroundColor = SystemColors.ButtonHighlight;
+            TTSPThue.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            TTSPThue.Location = new Point(37, 94);
+            TTSPThue.Name = "TTSPThue";
+            TTSPThue.ReadOnly = true;
+            TTSPThue.RowHeadersWidth = 51;
+            TTSPThue.RowTemplate.Height = 29;
+            TTSPThue.Size = new Size(791, 491);
+            TTSPThue.TabIndex = 14;
             // 
             // ThueBoardGame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1227, 745);
-            this.Controls.Add(this.tabControl1);
-            this.Name = "ThueBoardGame";
-            this.Text = "ThueBoardGame";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TTThueBoardGame)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TTSPThue)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1227, 745);
+            Controls.Add(tabControl1);
+            Name = "ThueBoardGame";
+            Text = "ThueBoardGame";
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)TTThueBoardGame).EndInit();
+            tabPage2.ResumeLayout(false);
+            tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)TTSPThue).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

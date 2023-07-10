@@ -65,17 +65,17 @@ namespace APP
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
-            
+
         }
         public void search(string searcValue)
         {
             string query = "SELECT * FROM `thuegame`" +
                 " WHERE CONCAT(`ID_THUE`, `MASP`, `TENSP`, `SOLUONG`) like '%" + searcValue + "%'";
-            MySqlCommand command= new MySqlCommand(query, conn); 
-            MySqlDataAdapter adapter= new MySqlDataAdapter(command);
-            DataTable table = new DataTable();  
+            MySqlCommand command = new MySqlCommand(query, conn);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
             adapter.Fill(table);
-            TTThueBoardGame.DataSource=table;
+            TTThueBoardGame.DataSource = table;
         }
 
         private void TTThueBoardGame_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -93,5 +93,7 @@ namespace APP
         {
             search("");
         }
+
+
     }
 }
