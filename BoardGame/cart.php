@@ -108,7 +108,7 @@
                             <td><?php echo $row['MASP']; ?></td>
                             <td><?php echo $row['TENSP']; ?></td>
                             <td><?php echo $row['quantity']; ?></td>
-                            <td><?php echo $row['GIA'] . ".000VND"; ?></td>
+                            <td><?php echo $row['GIA'] . " VND"; ?></td>
                         </tr>
 
                        <?php }?>

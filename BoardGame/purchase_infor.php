@@ -92,7 +92,7 @@
             //session_start();
             $randomNumber = $_SESSION['randomNumber'];
             $sql = "SELECT t.ID_THUE,t.USERNAME,t.NGAYTHUE,t.TONGTIEN,tg.TENSP,tg.SOLUONG FROM THUE t JOIN THUEGAME tg ON t.ID_THUE=tg.ID_THUE  WHERE t.id_thue='$randomNumber'";
-            $TT="SELECT * from thue";
+            $TT="SELECT * from thue WHERE id_thue='$randomNumber'";
             $result = mysqli_query($conn, $sql);
             if ($result) {
                 if (mysqli_num_rows($result) > 0) { ?>
@@ -130,7 +130,7 @@
                     $tt=mysqli_fetch_assoc($res);
                 ?>
                     <div style="text-align: right;">
-                        <h2 style="margin-top: 20px;">TỔNG TIỀN: <?php echo $tt['TONGTIEN'] . '.000VND'; ?></h2>
+                        <h2 style="margin-top: 20px;">TỔNG TIỀN: <?php echo $tt['TONGTIEN'] . ' VND'; ?></h2>
                     </div>
                 <?php
                 } else {
