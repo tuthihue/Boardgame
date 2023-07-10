@@ -24,6 +24,10 @@ namespace APP
             InitializeComponent();
             Connection();
             Admin = Account_Admin;
+            label2.Text = "";
+            label3.Text = "";
+            label4.Text = "";
+            label5.Text = "";
         }
         static void Connection()
         {
@@ -166,7 +170,7 @@ namespace APP
             string date4 = selectedDate2.ToString("dd-MM-yyyy");
             label2.Text = "Tính từ ngày " + date3 + " tới ngày " + date4;
             label3.Text = "Có tổng " + slkh + " đăng kí tài khoản trên website";
-            label4.Text = "Doanh thu thu được là: " + ds + "000 VNĐ" + "";
+            label4.Text = "Doanh thu thu được là: " + ds + " VNĐ" + "";
             label5.Text = "Có tổng " + slgame + " game được thuê";
         }
 
@@ -202,5 +206,33 @@ namespace APP
         {
             this.Close();
         }
+
+        private void thôngTinTrảBoardGameToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TraBoardGame TTTra = new TraBoardGame();
+            TTTra.ShowDialog();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

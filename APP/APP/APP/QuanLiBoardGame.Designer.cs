@@ -29,280 +29,291 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLiBoardGame));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.TKSP = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thôngTinTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thôngTinKháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thôngTinQuảnTrịViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thôngTinSảnPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thôngTinThuêBoardGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thôngTinTrảBoardGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TKSP)).BeginInit();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            dateTimePicker2 = new DateTimePicker();
+            dateTimePicker1 = new DateTimePicker();
+            button1 = new Button();
+            TKSP = new DataGridView();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            menuStrip1 = new MenuStrip();
+            adminToolStripMenuItem = new ToolStripMenuItem();
+            thôngTinTàiKhoảnToolStripMenuItem = new ToolStripMenuItem();
+            đổiMậtKhẩuToolStripMenuItem = new ToolStripMenuItem();
+            đăngXuấtToolStripMenuItem = new ToolStripMenuItem();
+            thôngTinKháchHàngToolStripMenuItem = new ToolStripMenuItem();
+            thôngTinQuảnTrịViênToolStripMenuItem = new ToolStripMenuItem();
+            thôngTinSảnPhẩmToolStripMenuItem = new ToolStripMenuItem();
+            thôngTinThuêBoardGameToolStripMenuItem = new ToolStripMenuItem();
+            thôngTinTrảBoardGameToolStripMenuItem = new ToolStripMenuItem();
+            thôngTinTrảBoardGameToolStripMenuItem1 = new ToolStripMenuItem();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)TKSP).BeginInit();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.dateTimePicker2);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.TKSP);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(72, 89);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1300, 756);
-            this.panel1.TabIndex = 17;
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(label9);
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(dateTimePicker2);
+            panel1.Controls.Add(dateTimePicker1);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(TKSP);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label2);
+            panel1.Location = new Point(72, 89);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1300, 756);
+            panel1.TabIndex = 17;
+            panel1.Paint += panel1_Paint;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.LightBlue;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(22, 131);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(587, 28);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Danh sách top 3 các khách hàng thuê game với doanh số cao nhất";
+            label9.AutoSize = true;
+            label9.BackColor = Color.LightBlue;
+            label9.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Location = new Point(22, 276);
+            label9.Name = "label9";
+            label9.Size = new Size(587, 28);
+            label9.TabIndex = 15;
+            label9.Text = "Danh sách top 3 các khách hàng thuê game với doanh số cao nhất";
+            label9.Click += label9_Click;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.LightBlue;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(22, 67);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 28);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Từ ngày";
+            label8.AutoSize = true;
+            label8.BackColor = Color.LightBlue;
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(22, 67);
+            label8.Name = "label8";
+            label8.Size = new Size(82, 28);
+            label8.TabIndex = 14;
+            label8.Text = "Từ ngày";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.LightBlue;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(543, 67);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 28);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "đến ngày";
+            label7.AutoSize = true;
+            label7.BackColor = Color.LightBlue;
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(543, 67);
+            label7.Name = "label7";
+            label7.Size = new Size(93, 28);
+            label7.TabIndex = 13;
+            label7.Text = "đến ngày";
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker2.Location = new System.Drawing.Point(721, 64);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(310, 34);
-            this.dateTimePicker2.TabIndex = 12;
+            dateTimePicker2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dateTimePicker2.Location = new Point(721, 64);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new Size(310, 34);
+            dateTimePicker2.TabIndex = 12;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Location = new System.Drawing.Point(136, 67);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(333, 34);
-            this.dateTimePicker1.TabIndex = 11;
+            dateTimePicker1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dateTimePicker1.Location = new Point(136, 67);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(333, 34);
+            dateTimePicker1.TabIndex = 11;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LightBlue;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(874, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 41);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Xem thống kê";
-            this.button1.UseVisualStyleBackColor = false;
+            button1.BackColor = Color.LightBlue;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(874, 125);
+            button1.Name = "button1";
+            button1.Size = new Size(155, 41);
+            button1.TabIndex = 10;
+            button1.Text = "Xem thống kê";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // TKSP
             // 
-            this.TKSP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.TKSP.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.TKSP.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TKSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TKSP.Location = new System.Drawing.Point(22, 169);
-            this.TKSP.Name = "TKSP";
-            this.TKSP.ReadOnly = true;
-            this.TKSP.RowHeadersWidth = 51;
-            this.TKSP.RowTemplate.Height = 29;
-            this.TKSP.Size = new System.Drawing.Size(631, 581);
-            this.TKSP.TabIndex = 9;
+            TKSP.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            TKSP.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            TKSP.BackgroundColor = SystemColors.ButtonHighlight;
+            TKSP.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            TKSP.Location = new Point(22, 319);
+            TKSP.Name = "TKSP";
+            TKSP.ReadOnly = true;
+            TKSP.RowHeadersWidth = 51;
+            TKSP.RowTemplate.Height = 29;
+            TKSP.Size = new Size(631, 431);
+            TKSP.TabIndex = 9;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(65, 18);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 20);
-            this.label6.TabIndex = 4;
+            label6.AutoSize = true;
+            label6.Location = new Point(65, 18);
+            label6.Name = "label6";
+            label6.Size = new Size(36, 20);
+            label6.TabIndex = 4;
+            label6.Text = "QTV";
+            label6.Click += label6_Click;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(874, 169);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(301, 20);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "                                                                         ";
+            label5.AutoSize = true;
+            label5.Location = new Point(473, 138);
+            label5.Name = "label5";
+            label5.Size = new Size(342, 20);
+            label5.TabIndex = 3;
+            label5.Text = "             label5                                                            ";
+            label5.Click += label5_Click;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(568, 169);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(301, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "                                                                         ";
+            label4.AutoSize = true;
+            label4.Location = new Point(494, 216);
+            label4.Name = "label4";
+            label4.Size = new Size(342, 20);
+            label4.TabIndex = 2;
+            label4.Text = "     label4                                                                    ";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(277, 169);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(301, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "                                                                         ";
+            label3.AutoSize = true;
+            label3.Location = new Point(75, 203);
+            label3.Name = "label3";
+            label3.Size = new Size(342, 20);
+            label3.TabIndex = 1;
+            label3.Text = "          label3                                                               ";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(136, 114);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(301, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "                                                                         ";
+            label2.AutoSize = true;
+            label2.Location = new Point(38, 125);
+            label2.Name = "label2";
+            label2.Size = new Size(338, 20);
+            label2.TabIndex = 0;
+            label2.Text = "          label2                                                              ";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(72, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(551, 41);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Trang Quản Lý cho thuê BoardGame\r\n";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(72, 39);
+            label1.Name = "label1";
+            label1.Size = new Size(551, 41);
+            label1.TabIndex = 15;
+            label1.Text = "Trang Quản Lý cho thuê BoardGame\r\n";
             // 
             // menuStrip1
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.adminToolStripMenuItem,
-            this.thôngTinKháchHàngToolStripMenuItem,
-            this.thôngTinQuảnTrịViênToolStripMenuItem,
-            this.thôngTinSảnPhẩmToolStripMenuItem,
-            this.thôngTinThuêBoardGameToolStripMenuItem,
-            this.thôngTinTrảBoardGameToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1367, 28);
-            this.menuStrip1.TabIndex = 16;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { adminToolStripMenuItem, thôngTinKháchHàngToolStripMenuItem, thôngTinQuảnTrịViênToolStripMenuItem, thôngTinSảnPhẩmToolStripMenuItem, thôngTinThuêBoardGameToolStripMenuItem, thôngTinTrảBoardGameToolStripMenuItem, thôngTinTrảBoardGameToolStripMenuItem1 });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1367, 28);
+            menuStrip1.TabIndex = 16;
+            menuStrip1.Text = "menuStrip1";
+            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
             // 
             // adminToolStripMenuItem
             // 
-            this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thôngTinTàiKhoảnToolStripMenuItem,
-            this.đổiMậtKhẩuToolStripMenuItem,
-            this.đăngXuấtToolStripMenuItem});
-            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
-            this.adminToolStripMenuItem.Text = "Admin";
+            adminToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { thôngTinTàiKhoảnToolStripMenuItem, đổiMậtKhẩuToolStripMenuItem, đăngXuấtToolStripMenuItem });
+            adminToolStripMenuItem.Name = "adminToolStripMenuItem";
+            adminToolStripMenuItem.Size = new Size(67, 24);
+            adminToolStripMenuItem.Text = "Admin";
             // 
             // thôngTinTàiKhoảnToolStripMenuItem
             // 
-            this.thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
-            this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản";
+            thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
+            thôngTinTàiKhoảnToolStripMenuItem.Size = new Size(224, 26);
+            thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản";
+            thôngTinTàiKhoảnToolStripMenuItem.Click += thôngTinTàiKhoảnToolStripMenuItem_Click;
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
-            this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
+            đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
+            đổiMậtKhẩuToolStripMenuItem.Size = new Size(224, 26);
+            đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
+            đổiMậtKhẩuToolStripMenuItem.Click += đổiMậtKhẩuToolStripMenuItem_Click;
             // 
             // đăngXuấtToolStripMenuItem
             // 
-            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
+            đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
+            đăngXuấtToolStripMenuItem.Size = new Size(224, 26);
+            đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
+            đăngXuấtToolStripMenuItem.Click += đăngXuấtToolStripMenuItem_Click;
             // 
             // thôngTinKháchHàngToolStripMenuItem
             // 
-            this.thôngTinKháchHàngToolStripMenuItem.Name = "thôngTinKháchHàngToolStripMenuItem";
-            this.thôngTinKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
-            this.thôngTinKháchHàngToolStripMenuItem.Text = "Thông tin khách hàng";
+            thôngTinKháchHàngToolStripMenuItem.Name = "thôngTinKháchHàngToolStripMenuItem";
+            thôngTinKháchHàngToolStripMenuItem.Size = new Size(165, 24);
+            thôngTinKháchHàngToolStripMenuItem.Text = "Thông tin khách hàng";
+            thôngTinKháchHàngToolStripMenuItem.Click += thôngTinKháchHàngToolStripMenuItem_Click;
             // 
             // thôngTinQuảnTrịViênToolStripMenuItem
             // 
-            this.thôngTinQuảnTrịViênToolStripMenuItem.Name = "thôngTinQuảnTrịViênToolStripMenuItem";
-            this.thôngTinQuảnTrịViênToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
-            this.thôngTinQuảnTrịViênToolStripMenuItem.Text = "Thông tin quản trị viên";
+            thôngTinQuảnTrịViênToolStripMenuItem.Name = "thôngTinQuảnTrịViênToolStripMenuItem";
+            thôngTinQuảnTrịViênToolStripMenuItem.Size = new Size(172, 24);
+            thôngTinQuảnTrịViênToolStripMenuItem.Text = "Thông tin quản trị viên";
             // 
             // thôngTinSảnPhẩmToolStripMenuItem
             // 
-            this.thôngTinSảnPhẩmToolStripMenuItem.Name = "thôngTinSảnPhẩmToolStripMenuItem";
-            this.thôngTinSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(154, 24);
-            this.thôngTinSảnPhẩmToolStripMenuItem.Text = "Thông tin sản phẩm";
+            thôngTinSảnPhẩmToolStripMenuItem.Name = "thôngTinSảnPhẩmToolStripMenuItem";
+            thôngTinSảnPhẩmToolStripMenuItem.Size = new Size(154, 24);
+            thôngTinSảnPhẩmToolStripMenuItem.Text = "Thông tin sản phẩm";
+            thôngTinSảnPhẩmToolStripMenuItem.Click += thôngTinSảnPhẩmToolStripMenuItem_Click;
             // 
             // thôngTinThuêBoardGameToolStripMenuItem
             // 
-            this.thôngTinThuêBoardGameToolStripMenuItem.Name = "thôngTinThuêBoardGameToolStripMenuItem";
-            this.thôngTinThuêBoardGameToolStripMenuItem.Size = new System.Drawing.Size(202, 24);
-            this.thôngTinThuêBoardGameToolStripMenuItem.Text = "Thông tin thuê BoardGame";
+            thôngTinThuêBoardGameToolStripMenuItem.Name = "thôngTinThuêBoardGameToolStripMenuItem";
+            thôngTinThuêBoardGameToolStripMenuItem.Size = new Size(202, 24);
+            thôngTinThuêBoardGameToolStripMenuItem.Text = "Thông tin thuê BoardGame";
+            thôngTinThuêBoardGameToolStripMenuItem.Click += thôngTinThuêBoardGameToolStripMenuItem_Click;
             // 
             // thôngTinTrảBoardGameToolStripMenuItem
             // 
-            this.thôngTinTrảBoardGameToolStripMenuItem.Name = "thôngTinTrảBoardGameToolStripMenuItem";
-            this.thôngTinTrảBoardGameToolStripMenuItem.Size = new System.Drawing.Size(27, 24);
-            this.thôngTinTrảBoardGameToolStripMenuItem.Text = " ";
+            thôngTinTrảBoardGameToolStripMenuItem.Name = "thôngTinTrảBoardGameToolStripMenuItem";
+            thôngTinTrảBoardGameToolStripMenuItem.Size = new Size(27, 24);
+            thôngTinTrảBoardGameToolStripMenuItem.Text = " ";
+            // 
+            // thôngTinTrảBoardGameToolStripMenuItem1
+            // 
+            thôngTinTrảBoardGameToolStripMenuItem1.Name = "thôngTinTrảBoardGameToolStripMenuItem1";
+            thôngTinTrảBoardGameToolStripMenuItem1.Size = new Size(193, 24);
+            thôngTinTrảBoardGameToolStripMenuItem1.Text = "Thông tin Trả BoardGame";
+            thôngTinTrảBoardGameToolStripMenuItem1.Click += thôngTinTrảBoardGameToolStripMenuItem1_Click;
             // 
             // QuanLiBoardGame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1367, 851);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.panel1);
-            this.Name = "QuanLiBoardGame";
-            this.Text = "QuanLiBoardGame";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TKSP)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1367, 851);
+            Controls.Add(label1);
+            Controls.Add(menuStrip1);
+            Controls.Add(panel1);
+            Name = "QuanLiBoardGame";
+            Text = "QuanLiBoardGame";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)TKSP).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -331,5 +342,6 @@
         private ToolStripMenuItem thôngTinSảnPhẩmToolStripMenuItem;
         private ToolStripMenuItem thôngTinThuêBoardGameToolStripMenuItem;
         private ToolStripMenuItem thôngTinTrảBoardGameToolStripMenuItem;
+        private ToolStripMenuItem thôngTinTrảBoardGameToolStripMenuItem1;
     }
 }
