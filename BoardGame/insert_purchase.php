@@ -31,19 +31,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     { echo"Lỗi truy vấn ";}
     $row = mysqli_fetch_assoc($result);
     $tongtien = $row['total'];
-    $point_retrieve= "SELECT diem,used FROM tich_diem WHERE USERNAME='$username' ";
+    $point_retrieve= "SELECT diem,score_used FROM tich_diem WHERE USERNAME='$username' ";
     $result = mysqli_query($conn, $point_retrieve);
     $row = mysqli_fetch_assoc($result);
     $point_have = $row['diem'];
-    $point_used=$row['used'];
+    $point_used=$row['score_used'];
     if ($point> $point_have)
     {
         echo '<script>alert("Số điểm tích lũy không đủ");window.location.href = "cart.php";</script>';
         exit;
     }
     else{
-            $update_point="UPDATE tich_diem set diem= '$point_have'-'$point',used='$point_used'+'$point' where USERNAME= '$username'";
-            $sql = "INSERT INTO thue (id_thue,username, ngaythue, tongtien) VALUES ('$randomNumber','$hoten', '$currentDate', '$tongtien')";
+            $update_point="UPDATE tich_diem set diem= '$point_have'-'$point',score_used='$point_used'+'$point' where USERNAME= '$username'";
+            $sql = "INSERT INTO thue (id_thue,username, ngaythue, tongtien, diem) VALUES ('$randomNumber','$hoten', '$currentDate', '$tongtien','$point')";
             $insert_tg = "INSERT INTO thuegame (id_thue, masp, tensp, soluong)
                     SELECT '$randomNumber', masp, tensp, quantity FROM carts";
             $delete_temp="delete from carts where USERNAME='$username'";
