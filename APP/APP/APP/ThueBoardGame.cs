@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace APP
 {
@@ -69,8 +70,8 @@ namespace APP
         }
         public void search(string searcValue)
         {
-            string query = "SELECT * FROM `thuegame`" +
-                " WHERE CONCAT(`ID_THUE`, `MASP`, `TENSP`, `SOLUONG`) like '%" + searcValue + "%'";
+            string query = "SELECT * FROM `thue` " +
+                " WHERE CONCAT(`USERNAME`, `NGAYTHUE`, `TONGTIEN`, `ID_THUE`) like '%" + searcValue + "%'";
             MySqlCommand command = new MySqlCommand(query, conn);
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
             DataTable table = new DataTable();
@@ -94,6 +95,25 @@ namespace APP
             search("");
         }
 
+        private void searchButtonBGRent_Click(object sender, EventArgs e)
+        {
+            string searchValue = searchBarBGRent.Text.ToString();
+            search(searchValue);
+        }
+        public void searchBGRent(string searchValue)
+        {
+            string query = "SELECT * FROM `thuegame`" +
+                " WHERE CONCAT(`ID_THUE`, `MASP`, `TENSP`, `SOLUONG`) like '%" + searchValue + "%'";
+            MySqlCommand command = new MySqlCommand(query, conn);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            TTSPThue.DataSource = table;
+        }
 
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            search("");
+        }
     }
 }
