@@ -668,6 +668,47 @@ Mỗi Hộp phim truyện đều có hai mặt, với các bìa được minh h�
                                         };
                   </script>
 
+                    <!-- Phần các sản phẩm có thể bạn quan tâm -->
+
+                    <h4 class="text-center">CÁC SẢN PHẨM CÓ THỂ BẠN QUAN TÂM</h4>
+    <div class="row px-1"> 
+                        
+                            
+                                          <?php 
+                                              $select_query = "SELECT * FROM `boardgame`LIMIT 3";
+                                              $result_query = mysqli_query($conn,$select_query);
+                                              while($row = mysqli_fetch_assoc($result_query)){
+                                                $MASP = $row['MASP'];
+                                                $TENSP = $row['TENSP'];
+                                                $GIA = $row['GIA'];
+                                                $THELOAI = $row['THELOAI'];
+                                                $SOLUONG = $row['SOLUONG'];
+                                                $MOTA = $row['MOTA'];
+                                                echo "<div class='col-md-4 mb-2'>
+                                                <div class='card'>
+                                                        <img src='./SanPham/asmodee-chess-luxury-version.webp' class='card-img-top' alt='$TENSP'>
+                                                        <div class='card-body'>
+                                                              <h5 class='card-title'>$TENSP </h5>
+                                                              <h6 class='card-id'>$MASP</h6>
+                                                              <h6 class='card-price'>$GIA</h6>
+                                                              <h6 class='card-category'>$THELOAI</h6>
+                                                              <h6 class='card-quantity'>$SOLUONG</h6>
+                                                              <h6 class='card-description'>$MASP</h6>
+                                                        </div>
+
+                                                </div>
+                                            </div>";
+                                                
+                                              }
+                                          ?>
+                                  
+                       
+                    </div>
+
+                    <!-- Kết thúc phần các sản phẩm có thể bạn quan tâm -->
+
+
+
 
                     </div>
           
