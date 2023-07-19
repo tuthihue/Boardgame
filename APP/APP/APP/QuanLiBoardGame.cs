@@ -54,19 +54,19 @@ namespace APP
 
         }
 
-        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        private void đổiMậtKhẩuToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             DoiMatKhau change = new DoiMatKhau();
             change.ShowDialog();
         }
 
-        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        private void thôngTinTàiKhoảnToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             TTAcount TTacc = new TTAcount(Admin);
             TTacc.ShowDialog();
         }
 
-        private void thôngTinKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        private void thôngTinKháchHàngToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             TTKhachHang tt = new TTKhachHang();
             conn.Open();
@@ -79,7 +79,7 @@ namespace APP
             conn.Close();
         }
 
-        private void thôngTinQuảnTrịViênToolStripMenuItem_Click(object sender, EventArgs e)
+        private void thôngTinQuảnTrịViênToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             ThongTinAdmin tt = new ThongTinAdmin();
             conn.Open();
@@ -92,7 +92,7 @@ namespace APP
             conn.Close();
         }
 
-        private void thôngTinSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        private void thôngTinSảnPhẩmToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             ThongtinBoardGame tt = new ThongtinBoardGame();
             conn.Open();
@@ -106,19 +106,19 @@ namespace APP
             conn.Close();
         }
 
-        private void thôngTinThuêBoardGameToolStripMenuItem_Click(object sender, EventArgs e)
+        private void thôngTinThuêBoardGameToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             ThueBoardGame TTThue = new ThueBoardGame();
             TTThue.ShowDialog();
         }
 
-        private void thôngTinTrảBoardGameToolStripMenuItem_Click(object sender, EventArgs e)
+        private void thôngTinTrảBoardGameToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             TraBoardGame TTTra = new TraBoardGame();
             TTTra.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             DateTime selectedDate1 = dateTimePicker1.Value;
             string date1 = selectedDate1.ToString("yyyy-MM-dd");
@@ -179,7 +179,7 @@ namespace APP
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
             DateTime selectedDate1 = dateTimePicker1.Value;
             string date1 = selectedDate1.ToString("yyyy-MM-dd");
@@ -202,12 +202,12 @@ namespace APP
             label6.Text = "Xin chào quản trị viên " + HoVaTen + ",";
         }
 
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        private void đăngXuấtToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void thôngTinTrảBoardGameToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void thôngTinTrảBoardGameToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
             TraBoardGame TTTra = new TraBoardGame();
             TTTra.ShowDialog();
@@ -234,5 +234,11 @@ namespace APP
 
         }
 
+       
+
+        private void TKSP_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

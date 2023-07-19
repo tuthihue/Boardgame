@@ -29,197 +29,188 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TraBoardGame));
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.searchButton = new System.Windows.Forms.Button();
-            this.searchBar = new System.Windows.Forms.TextBox();
-            this.refreshButton = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.TTTraBoardGame = new System.Windows.Forms.DataGridView();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.mahd = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TTTraBoardGame)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.SuspendLayout();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            searchButton = new Button();
+            searchBar = new TextBox();
+            refreshButton = new Button();
+            label14 = new Label();
+            TTTraBoardGame = new DataGridView();
+            tabPage2 = new TabPage();
+            dateTimePicker1 = new DateTimePicker();
+            button2 = new Button();
+            label3 = new Label();
+            label2 = new Label();
+            mahd = new TextBox();
+            label1 = new Label();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)TTTraBoardGame).BeginInit();
+            tabPage2.SuspendLayout();
+            SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(2, 2);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(982, 574);
-            this.tabControl1.TabIndex = 16;
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Location = new Point(2, 3);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1122, 765);
+            tabControl1.TabIndex = 16;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
-            this.tabPage1.Controls.Add(this.searchButton);
-            this.tabPage1.Controls.Add(this.searchBar);
-            this.tabPage1.Controls.Add(this.refreshButton);
-            this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.TTTraBoardGame);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(974, 546);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Thông Tin Trả BoardGame";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            tabPage1.BackgroundImage = (Image)resources.GetObject("tabPage1.BackgroundImage");
+            tabPage1.Controls.Add(searchButton);
+            tabPage1.Controls.Add(searchBar);
+            tabPage1.Controls.Add(refreshButton);
+            tabPage1.Controls.Add(label14);
+            tabPage1.Controls.Add(TTTraBoardGame);
+            tabPage1.Location = new Point(4, 29);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1114, 732);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Thông Tin Trả BoardGame";
+            tabPage1.UseVisualStyleBackColor = true;
             // 
             // searchButton
             // 
-            this.searchButton.BackColor = System.Drawing.Color.LightBlue;
-            this.searchButton.Location = new System.Drawing.Point(626, 505);
-            this.searchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(82, 38);
-            this.searchButton.TabIndex = 17;
-            this.searchButton.Text = "Search";
-            this.searchButton.UseVisualStyleBackColor = false;
+            searchButton.BackColor = Color.LightBlue;
+            searchButton.Location = new Point(715, 673);
+            searchButton.Name = "searchButton";
+            searchButton.Size = new Size(94, 51);
+            searchButton.TabIndex = 17;
+            searchButton.Text = "Search";
+            searchButton.UseVisualStyleBackColor = false;
+            searchButton.Click += searchButton_Click;
             // 
             // searchBar
             // 
-            this.searchBar.Location = new System.Drawing.Point(101, 514);
-            this.searchBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.searchBar.Name = "searchBar";
-            this.searchBar.Size = new System.Drawing.Size(459, 23);
-            this.searchBar.TabIndex = 16;
+            searchBar.Location = new Point(115, 685);
+            searchBar.Name = "searchBar";
+            searchBar.Size = new Size(524, 27);
+            searchBar.TabIndex = 16;
             // 
             // refreshButton
             // 
-            this.refreshButton.BackColor = System.Drawing.Color.LightBlue;
-            this.refreshButton.Location = new System.Drawing.Point(769, 505);
-            this.refreshButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.refreshButton.Name = "refreshButton";
-            this.refreshButton.Size = new System.Drawing.Size(109, 38);
-            this.refreshButton.TabIndex = 15;
-            this.refreshButton.Text = "Làm mới";
-            this.refreshButton.UseVisualStyleBackColor = false;
+            refreshButton.BackColor = Color.LightBlue;
+            refreshButton.Location = new Point(879, 673);
+            refreshButton.Name = "refreshButton";
+            refreshButton.Size = new Size(125, 51);
+            refreshButton.TabIndex = 15;
+            refreshButton.Text = "Làm mới";
+            refreshButton.UseVisualStyleBackColor = false;
+            refreshButton.Click += refreshButton_Click_1;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.label14.Location = new System.Drawing.Point(33, 26);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(325, 32);
-            this.label14.TabIndex = 14;
-            this.label14.Text = "Thông Tin Trả BoardGame";
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label14.ForeColor = Color.MediumOrchid;
+            label14.Location = new Point(38, 35);
+            label14.Name = "label14";
+            label14.Size = new Size(408, 41);
+            label14.TabIndex = 14;
+            label14.Text = "Thông Tin Trả BoardGame";
             // 
             // TTTraBoardGame
             // 
-            this.TTTraBoardGame.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.TTTraBoardGame.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.TTTraBoardGame.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TTTraBoardGame.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TTTraBoardGame.Location = new System.Drawing.Point(33, 58);
-            this.TTTraBoardGame.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TTTraBoardGame.Name = "TTTraBoardGame";
-            this.TTTraBoardGame.ReadOnly = true;
-            this.TTTraBoardGame.RowHeadersWidth = 51;
-            this.TTTraBoardGame.RowTemplate.Height = 29;
-            this.TTTraBoardGame.Size = new System.Drawing.Size(905, 440);
-            this.TTTraBoardGame.TabIndex = 13;
+            TTTraBoardGame.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            TTTraBoardGame.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            TTTraBoardGame.BackgroundColor = SystemColors.ButtonHighlight;
+            TTTraBoardGame.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            TTTraBoardGame.Location = new Point(38, 77);
+            TTTraBoardGame.Name = "TTTraBoardGame";
+            TTTraBoardGame.ReadOnly = true;
+            TTTraBoardGame.RowHeadersWidth = 51;
+            TTTraBoardGame.RowTemplate.Height = 29;
+            TTTraBoardGame.Size = new Size(1034, 587);
+            TTTraBoardGame.TabIndex = 13;
             // 
             // tabPage2
             // 
-            this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
-            this.tabPage2.Controls.Add(this.dateTimePicker1);
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.mahd);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(974, 546);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Cập nhật thông tin trả BoardGame";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            tabPage2.BackgroundImage = (Image)resources.GetObject("tabPage2.BackgroundImage");
+            tabPage2.Controls.Add(dateTimePicker1);
+            tabPage2.Controls.Add(button2);
+            tabPage2.Controls.Add(label3);
+            tabPage2.Controls.Add(label2);
+            tabPage2.Controls.Add(mahd);
+            tabPage2.Controls.Add(label1);
+            tabPage2.Location = new Point(4, 29);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1114, 732);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Cập nhật thông tin trả BoardGame";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(435, 239);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(225, 23);
-            this.dateTimePicker1.TabIndex = 13;
+            dateTimePicker1.Location = new Point(497, 319);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(257, 27);
+            dateTimePicker1.TabIndex = 13;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(574, 315);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 33);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Cập nhật";
-            this.button2.UseVisualStyleBackColor = true;
+            button2.Location = new Point(656, 420);
+            button2.Name = "button2";
+            button2.Size = new Size(128, 44);
+            button2.TabIndex = 12;
+            button2.Text = "Cập nhật";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(297, 243);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Ngày trả";
+            label3.AutoSize = true;
+            label3.Location = new Point(339, 324);
+            label3.Name = "label3";
+            label3.Size = new Size(66, 20);
+            label3.TabIndex = 11;
+            label3.Text = "Ngày trả";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(297, 221);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 15);
-            this.label2.TabIndex = 10;
+            label2.AutoSize = true;
+            label2.Location = new Point(339, 295);
+            label2.Name = "label2";
+            label2.Size = new Size(0, 20);
+            label2.TabIndex = 10;
             // 
             // mahd
             // 
-            this.mahd.Location = new System.Drawing.Point(435, 178);
-            this.mahd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.mahd.Name = "mahd";
-            this.mahd.Size = new System.Drawing.Size(155, 23);
-            this.mahd.TabIndex = 9;
+            mahd.Location = new Point(497, 237);
+            mahd.Name = "mahd";
+            mahd.Size = new Size(177, 27);
+            mahd.TabIndex = 9;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(297, 178);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 15);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Mã hóa đơn";
+            label1.AutoSize = true;
+            label1.Location = new Point(339, 237);
+            label1.Name = "label1";
+            label1.Size = new Size(89, 20);
+            label1.TabIndex = 8;
+            label1.Text = "Mã hóa đơn";
             // 
             // TraBoardGame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(987, 606);
-            this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "TraBoardGame";
-            this.Text = "TraBoardGame";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TTTraBoardGame)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1128, 808);
+            Controls.Add(tabControl1);
+            Name = "TraBoardGame";
+            Text = "TraBoardGame";
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)TTTraBoardGame).EndInit();
+            tabPage2.ResumeLayout(false);
+            tabPage2.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

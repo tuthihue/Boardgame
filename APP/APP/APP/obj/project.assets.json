@@ -1710,19 +1710,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hthan\\.nuget\\packages\\": {}
+    "C:\\Users\\hongp\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hthan\\Downloads\\APP\\APP\\APP\\APP\\APP.csproj",
+      "projectUniqueName": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Sample\\APP\\APP\\APP\\APP.csproj",
       "projectName": "APP",
-      "projectPath": "C:\\Users\\hthan\\Downloads\\APP\\APP\\APP\\APP\\APP.csproj",
-      "packagesPath": "C:\\Users\\hthan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hthan\\Downloads\\APP\\APP\\APP\\APP\\obj\\",
+      "projectPath": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Sample\\APP\\APP\\APP\\APP.csproj",
+      "packagesPath": "C:\\Users\\hongp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Sample\\APP\\APP\\APP\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\hthan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hongp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1772,7 +1777,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

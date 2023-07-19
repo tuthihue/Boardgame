@@ -47,7 +47,7 @@ namespace APP
             conn.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             string idthue = mahd.Text;
             DateTime selectedDate1 = dateTimePicker1.Value;
@@ -109,7 +109,12 @@ namespace APP
             TTTraBoardGame.DataSource = table;
         }
 
-        private void refreshButton_Click(object sender, EventArgs e)
+        private void refreshButton_Click_1(object sender, EventArgs e)
+        {
+            search("");
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
         {
             search("");
         }

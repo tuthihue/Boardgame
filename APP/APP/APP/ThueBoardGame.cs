@@ -53,7 +53,7 @@ namespace APP
             conn.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             conn.Open();
             MySqlCommand mySqlComman = new MySqlCommand("select ID_THUE,MASP,TENSP, sum(soluong) from thuegame group by ID_THUE, MASP,TENSP", conn);
@@ -84,13 +84,13 @@ namespace APP
 
         }
 
-        private void searchButton_Click(object sender, EventArgs e)
+        private void searchButton_Click_1(object sender, EventArgs e)
         {
             string searchValue = searchBar.Text.ToString();
             search(searchValue);
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click_2(object sender, EventArgs e)
         {
             search("");
         }
@@ -98,7 +98,7 @@ namespace APP
         private void searchButtonBGRent_Click(object sender, EventArgs e)
         {
             string searchValue = searchBarBGRent.Text.ToString();
-            search(searchValue);
+            searchBGRent(searchValue);
         }
         public void searchBGRent(string searchValue)
         {
@@ -111,9 +111,8 @@ namespace APP
             TTSPThue.DataSource = table;
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            search("");
-        }
+
+
+
     }
 }
