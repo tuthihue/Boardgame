@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Sample\\APP\\APP\\APP\\APP.csproj": {}
+    "C:\\Users\\hongp\\OneDrive\\Desktop\\Web\\Boardgame\\APP\\APP\\APP\\APP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Sample\\APP\\APP\\APP\\APP.csproj": {
+    "C:\\Users\\hongp\\OneDrive\\Desktop\\Web\\Boardgame\\APP\\APP\\APP\\APP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Sample\\APP\\APP\\APP\\APP.csproj",
+        "projectUniqueName": "C:\\Users\\hongp\\OneDrive\\Desktop\\Web\\Boardgame\\APP\\APP\\APP\\APP.csproj",
         "projectName": "APP",
-        "projectPath": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Sample\\APP\\APP\\APP\\APP.csproj",
+        "projectPath": "C:\\Users\\hongp\\OneDrive\\Desktop\\Web\\Boardgame\\APP\\APP\\APP\\APP.csproj",
         "packagesPath": "C:\\Users\\hongp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hongp\\OneDrive\\Desktop\\Do An\\DoAnNMCNPM\\Sample\\APP\\APP\\APP\\obj\\",
+        "outputPath": "C:\\Users\\hongp\\OneDrive\\Desktop\\Web\\Boardgame\\APP\\APP\\APP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

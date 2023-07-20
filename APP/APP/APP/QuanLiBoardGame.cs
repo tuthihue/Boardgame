@@ -138,7 +138,7 @@ namespace APP
                 slkh = Reader.GetString("soluong");
             }
             Reader.Close();
-            MySqlCommand mySqlComman1 = new MySqlCommand("select IFNULL(SUM(tongtien), 0) as dt from thue where ngaythue between @date1 and @date2 ", conn);
+            MySqlCommand mySqlComman1 = new MySqlCommand("select cast(IFNULL(SUM(tongtien), 0) as int) as dt from thue where ngaythue between @date1 and @date2 ", conn);
             mySqlComman1.Parameters.AddWithValue("@date1", date1);
             mySqlComman1.Parameters.AddWithValue("@date2", date2);
             MySqlDataReader Reader1 = mySqlComman1.ExecuteReader();
@@ -158,7 +158,7 @@ namespace APP
             Reader2.Close();
             conn.Close();
             conn.Open();
-            MySqlCommand Command1 = new MySqlCommand("WITH temp AS (SELECT t.USERNAME, HOTEN, sdt,IFNULL(SUM(tongtien), 0) AS DoanhSo FROM thue t JOIN customers c ON t.username = c.username WHERE ngaythue BETWEEN @date1 AND @date2 GROUP BY t.username, hoten, sdt ORDER BY SUM(tongtien) DESC LIMIT 3) select USERNAME,HOTEN,sdt,concat(DoanhSo,'000') as DoanhSo from temp", conn);
+            MySqlCommand Command1 = new MySqlCommand("WITH temp AS (SELECT t.USERNAME, HOTEN, sdt,cast(IFNULL(SUM(tongtien), 0) as int) AS DoanhSo FROM thue t JOIN customers c ON t.username = c.username WHERE ngaythue BETWEEN @date1 AND @date2 GROUP BY t.username, hoten, sdt ORDER BY SUM(tongtien) DESC LIMIT 3) select USERNAME,HOTEN,sdt,concat(DoanhSo,'000') as DoanhSo from temp", conn);
             Command1.Parameters.AddWithValue("@date1", date1);
             Command1.Parameters.AddWithValue("@date2", date2);
             MySqlDataReader reader = Command1.ExecuteReader();
@@ -170,7 +170,7 @@ namespace APP
             string date4 = selectedDate2.ToString("dd-MM-yyyy");
             label2.Text = "Tính từ ngày " + date3 + " tới ngày " + date4;
             label3.Text = "Có tổng " + slkh + " đăng kí tài khoản trên website";
-            label4.Text = "Doanh thu thu được là: " + ds + " VNĐ" + "";
+            label4.Text = "Doanh thu thu được là: " + ds + ".000 VNĐ" + "";
             label5.Text = "Có tổng " + slgame + " game được thuê";
         }
 
