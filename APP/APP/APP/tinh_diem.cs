@@ -16,6 +16,8 @@ namespace APP
         private DataGridView pointDataGridView;
         private Label label1;
         private TextBox searchBar;
+        private Button searchButton;
+        private Button refreshButton;
         static MySqlConnection conn;
         public tinh_diem()
         {
@@ -62,6 +64,16 @@ namespace APP
             pointDataGridView.DataSource = dt;
         }
 
+        public void search(string searcValue)
+        {
+            string query = "SELECT * FROM `tich_diem`" +
+                " WHERE CONCAT(`Id_diem`, `USERNAME`, `diem`, `score_used`) like '%" + searcValue + "%'";
+            MySqlCommand command = new MySqlCommand(query, conn);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            pointDataGridView.DataSource = table;
+        }
 
         //Phần dưới trình duyệt tự tạo 
         private void InitializeComponent()
@@ -70,6 +82,8 @@ namespace APP
             this.pointDataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.searchBar = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.refreshButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pointDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,10 +117,36 @@ namespace APP
             this.searchBar.TabIndex = 2;
             this.searchBar.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // searchButton
+            // 
+            this.searchButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.searchButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.searchButton.Location = new System.Drawing.Point(385, 464);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 36);
+            this.searchButton.TabIndex = 3;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // refreshButton
+            // 
+            this.refreshButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.refreshButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.refreshButton.Location = new System.Drawing.Point(506, 464);
+            this.refreshButton.Name = "refreshButton";
+            this.refreshButton.Size = new System.Drawing.Size(75, 36);
+            this.refreshButton.TabIndex = 4;
+            this.refreshButton.Text = "LÀM MỚI";
+            this.refreshButton.UseVisualStyleBackColor = false;
+            this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
+            // 
             // tinh_diem
             // 
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(620, 512);
+            this.Controls.Add(this.refreshButton);
+            this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchBar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pointDataGridView);
@@ -120,6 +160,17 @@ namespace APP
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            string searchValue = searchBar.Text.ToString();
+            search(searchValue);
+        }
+
+        private void refreshButton_Click(object sender, EventArgs e)
+        {
+            search("");
         }
     }
 }
