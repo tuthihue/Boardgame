@@ -728,7 +728,7 @@ Mỗi Hộp phim truyện đều có hai mặt, với các bìa được minh h�
                                 
                                   
                     <div class="row px-1"> 
-                        <div class = "col-md-10">
+                        <!-- <div class = "col-md-10"> -->
                              <div class="card">
                                           <?php 
                                               $a=1;
@@ -743,22 +743,22 @@ Mỗi Hộp phim truyện đều có hai mặt, với các bìa được minh h�
                                                 $MOTA = $row['MOTA'];
                                                 $BG_image = $row['img_src'];
                                                 echo"
-                                                <div class='product'>;
-                                                <div class='image'>;
-                                                <a href='/BoardGame/product-details.php?id=$a' > <img src='./$BG_image' class='card-img-top' alt='$TENSP'></a>   
+                                                <div class='product'>
+                                                <div class='image'>
+                                                <a href='/BoardGame/product-details.php?id=$a' > <img src='./$BG_image' style='width:250px; height: 250px' class='card-img-top' alt='$TENSP'></a>   
                                                 </div>
                                                 <div class='product-info'>
                                                 <h4>$TENSP</h4>
                                                 <span>$GIA</span>
                                                 </div>
-                                                '<p>Mã SP: $MASP </p>';
-                                                <div class='stars'>';
+                                                <p>Mã SP: $MASP </p>
+                                                <div class='stars'>
                                                 <i class='fa-solid fa-star'></i>
                                                 <i class='fa-solid fa-star'></i>
                                                 <i class='fa-solid fa-star'></i>
                                                 <i class='fa-solid fa-star'></i>
                                                 <i class='fa-regular fa-star'></i>
-                                                </div>';
+                                                </div>
                                                 <div class='pay'>
                                                 <form action='save_to_cart.php' method='post'>
                                                 <input type='hidden' name='name_product' value= $TENSP>
@@ -777,7 +777,7 @@ Mỗi Hộp phim truyện đều có hai mặt, với các bìa được minh h�
                                               
                                           ?> 
                              </div>
-                        </div>
+                        <!-- </div> -->
                     </div> 
                    
                    
