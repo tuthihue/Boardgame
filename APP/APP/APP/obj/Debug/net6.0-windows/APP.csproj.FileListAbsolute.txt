@@ -249,3 +249,5 @@ C:\Users\hongp\OneDrive\Desktop\Web\Boardgame\APP\APP\APP\obj\Debug\net6.0-windo
 C:\Users\hongp\OneDrive\Desktop\Web\Boardgame\APP\APP\APP\obj\Debug\net6.0-windows\APP.pdb
 C:\Users\hongp\OneDrive\Desktop\Web\Boardgame\APP\APP\APP\obj\Debug\net6.0-windows\APP.genruntimeconfig.cache
 C:\Users\hongp\OneDrive\Desktop\Web\Boardgame\APP\APP\APP\obj\Debug\net6.0-windows\ref\APP.dll
+C:\Users\hthan\Downloads\APP\APP\APP\APP\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\hthan\Downloads\APP\APP\APP\APP\bin\Debug\net6.0-windows\ZstdSharp.dll

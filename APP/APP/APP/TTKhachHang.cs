@@ -155,6 +155,43 @@ namespace APP
             search(searchValue);
         }
 
+        private void pointSearchButton_Click(object sender, EventArgs e)
+        {
+            string searchValue = pointSearchBar.Text.ToString();
+            pointSearch(searchValue);
+        }
+        public void pointSearch(string searcValue)
+        {
+            string query = "SELECT * FROM `tich_diem`" +
+                " WHERE CONCAT(`Id_diem`, `USERNAME`, `diem`, `score_used`) like '%" + searcValue + "%'";
+            MySqlCommand command = new MySqlCommand(query, conn);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            pointDataGridView.DataSource = table;
+        }
 
+        private void pointRefreshButton_Click(object sender, EventArgs e)
+        {
+            pointSearch("");
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+        public void LoadData()
+        {
+            string query = "SELECT * FROM `tich_diem`";
+            MySqlCommand mySqlCommand = new MySqlCommand(query);
+            mySqlCommand.Connection = conn;
+            MySqlDataAdapter adapter = new MySqlDataAdapter(mySqlCommand);
+            adapter.SelectCommand = mySqlCommand;
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            BindingSource bindingSource = new BindingSource();
+            bindingSource.DataSource = dt;
+            pointDataGridView.DataSource = dt;
+        }
     }
 }
