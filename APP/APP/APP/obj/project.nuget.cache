@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "2fDx2DT4xfsYnAM+IRnYnjPTxqxEsA+2sBX+x/LK8iOCmW02QpclNhDKo3UHMFuX/ROT6TaVa7xc9Xs/dvuPoA==",
   "success": true,
   "projectFilePath": "C:\\Users\\hongp\\OneDrive\\Desktop\\boardgameapp\\Boardgame\\APP\\APP\\APP\\APP.csproj",
+=======
+  "dgSpecHash": "dTGbdSKlxKSCZpqeaJO/Yp9vsAtJniSxM2040IKNPvDR6TrDD5iAzZZufW/GBdznDhDjZau671dQpfVgbwO4oQ==",
+  "success": true,
+  "projectFilePath": "C:\\APP\\Boardgame\\APP\\APP\\APP\\APP.csproj",
+>>>>>>> a5b461fdf5eab10bb05a2539dbe87cd376617a69
   "expectedPackageFiles": [
     "C:\\Users\\hongp\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\hongp\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",

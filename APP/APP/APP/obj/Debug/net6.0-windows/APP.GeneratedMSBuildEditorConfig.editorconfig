@@ -14,4 +14,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = APP
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\hongp\OneDrive\Desktop\boardgameapp\Boardgame\APP\APP\APP\
+=======
+build_property.ProjectDir = C:\APP\Boardgame\APP\APP\APP\
+>>>>>>> a5b461fdf5eab10bb05a2539dbe87cd376617a69
