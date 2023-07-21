@@ -52,17 +52,39 @@ namespace APP
             string idthue = mahd.Text;
             DateTime selectedDate1 = dateTimePicker1.Value;
             string date1 = selectedDate1.ToString("yyyy-MM-dd");
+            conn.Open();
+            MySqlCommand mySqlComman2 = new MySqlCommand("select count(*) as slg from thue where ID_thue=@idthue", conn);
+            mySqlComman2.Parameters.AddWithValue("@idthue", idthue);
+            string slgame = "";
+            MySqlDataReader Reader2 = mySqlComman2.ExecuteReader();
+            while (Reader2.Read())
+            {
+                slgame = Reader2.GetString("slg");
+            }
+            Reader2.Close();
+            conn.Close();
+
             if (string.IsNullOrEmpty(mahd.Text))
             {
                 MessageBox.Show("Mã hóa đơn không được để trống !");
+            }
+            else if (slgame == "0")
+            {
+                MessageBox.Show("Mã hóa đơn không tồn tại (Mã hóa đơn là ID thuê của khách hàng) !");
             }
             else
             {
                 conn.Open();
                 MySqlCommand mySqlCommand = new MySqlCommand("insert into tragame(ID_THUE,ngaytra) values(@mahd,@date)", conn);
+                MySqlCommand mySqlCommand2 = new MySqlCommand("delete from thue where ID_THUE=@mahd ", conn);
+                MySqlCommand mySqlCommand3 = new MySqlCommand("delete from thuegame where ID_THUE=@mahd ", conn);
                 mySqlCommand.Parameters.AddWithValue("@mahd", idthue);
+                mySqlCommand2.Parameters.AddWithValue("@mahd", idthue);
+                mySqlCommand3.Parameters.AddWithValue("@mahd", idthue);
                 mySqlCommand.Parameters.AddWithValue("@date", date1);
                 mySqlCommand.ExecuteNonQuery();
+                mySqlCommand2.ExecuteNonQuery();
+                mySqlCommand3.ExecuteNonQuery();
                 MessageBox.Show("Cập nhật thành công!");
                 conn.Close();
             }
