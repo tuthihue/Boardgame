@@ -36,10 +36,39 @@
         <li><a href="account.php">Tài khoản</a></li>
       </ul>
     </nav>
+    <style>
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-bar #search-form {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-bar input[type="text"],
+  .search-bar button[type="submit"] {
+    margin: 0;
+  }
+
+  .search-bar input[type="text"] {
+    flex: 1;
+  }
+
+  .search-bar button[type="submit"] {
+    margin-left: 10px;
+    background-color: #444; /* Màu xám đậm hơn cho nút tìm kiếm */
+    color: #fff; /* Màu chữ trắng cho nút tìm kiếm */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+</style>
     <div class="search-bar">
     <form id="search-form" method="post" action="search.php">
         <input type="text" name="noidung" placeholder="Tìm kiếm">
-        <button type="submit" name="btn" id="search-btn">Tìm kiếm</button>
+        <button type="submit" name="btn" id="search-btn"> Tìm kiếm </button>
     </form>
     </div>
     <?php 

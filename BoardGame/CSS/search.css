@@ -263,6 +263,7 @@ body {
 .pay button:hover {
   transform: scale(1.1);
 }
+
 /* CSS cho footer */
 #footer {
   background-color: #24262b;
