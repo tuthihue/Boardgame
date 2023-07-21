@@ -130,6 +130,43 @@
                     </div>
                   </div>
                   </div>
+
+                  <h2>Bình luận</h2>
+                  <div id="comments">
+
+    <h3>Thêm bình luận</h3>
+    <form action="load_comments.php" method="POST">
+                        <?php
+                        $productId = $_GET['id'];
+                        ?>
+                        <input type="hidden" name="id" value="<?php echo $productId; ?>">
+                        <label for="user_name">Tên người dùng:</label>
+                        <input type="text" name="USERNAME" id="user_name" required>
+                        <br>
+                        <label for="comment_text">Bình luận:</label>
+                        <input type="text" name="noidung" id="comment_text" rows="4" cols="50" required>
+                        <br>
+                        <input type="submit" value="Gửi bình luận">
+                    </form>
+                    <?php
+                    include 'connect.php';
+                    $sql =  " SELECT id, USERNAME, noidung FROM binhluan where id='$productId' ";
+
+                        $result = mysqli_query($conn, $sql);
+
+                        while ($row = mysqli_fetch_array($result)) {
+                        
+                                echo "<br>";
+                                echo "<strong>" . $row['USERNAME'] . "</strong>"; 
+                                echo  ":   ";
+                                echo $row['noidung'];
+
+                            
+                        }
+                    
+                    ?>
+                    </div>
+
                   <script>
                     window.onload = function() {
                       const urlParams = new URLSearchParams(window.location.search);
