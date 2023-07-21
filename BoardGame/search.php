@@ -88,7 +88,7 @@ if (!$conn) {
         $noidung = $_POST['noidung'];
 
         // Truy vấn cơ sở dữ liệu
-        $sql = "SELECT TENSP, img_src, GIA, MASP, MOTA
+        $sql = "SELECT TENSP, img_src, GIA, MASP, MOTA, href
                 FROM boardgame
                 WHERE TENSP LIKE '%$noidung%'";
         $quantity =1 ;
@@ -98,7 +98,7 @@ if (!$conn) {
             while ($row = mysqli_fetch_array($result)) {
                 echo '<div class="product">';
                         echo '<div class="image">';
-                        echo '<a href="#"><img src="' . $row['img_src'] . '" alt=""></a>';
+                        echo '<a href="'. $row['href'] .'"><img src="' . $row['img_src'] . '" alt=""></a>';
                         echo '</div>';
                         echo '<div class="product-info">';
                         echo '<h4>' . $row['TENSP'] . '</h4>';

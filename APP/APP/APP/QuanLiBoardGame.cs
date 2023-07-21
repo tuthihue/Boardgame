@@ -158,7 +158,7 @@ namespace APP
             Reader2.Close();
             conn.Close();
             conn.Open();
-            MySqlCommand Command1 = new MySqlCommand("WITH temp AS (SELECT t.USERNAME, HOTEN, sdt,cast(IFNULL(SUM(tongtien), 0) as int) AS DoanhSo FROM thue t JOIN customers c ON t.username = c.username WHERE ngaythue BETWEEN @date1 AND @date2 GROUP BY t.username, hoten, sdt ORDER BY SUM(tongtien) DESC LIMIT 3) select USERNAME,HOTEN,sdt,concat(DoanhSo,'000') as DoanhSo from temp", conn);
+            MySqlCommand Command1 = new MySqlCommand("WITH temp AS (SELECT t.USERNAME, sdt,cast(IFNULL(SUM(tongtien), 0) as int) AS DoanhSo FROM thue t JOIN customers c ON t.username = c.username WHERE ngaythue BETWEEN @date1 AND @date2 GROUP BY t.username,  sdt ORDER BY SUM(tongtien) DESC LIMIT 3) select USERNAME,sdt,concat(DoanhSo,'000') as DoanhSo from temp", conn);
             Command1.Parameters.AddWithValue("@date1", date1);
             Command1.Parameters.AddWithValue("@date2", date2);
             MySqlDataReader reader = Command1.ExecuteReader();
