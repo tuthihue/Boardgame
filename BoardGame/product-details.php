@@ -80,8 +80,8 @@
 </div>
   </header>
         <!-- end header -->
-        <br><br>
-        <div id="main">
+        <div>
+        <div class="main">
             <div class="page-title">
                 <div class="title">
                 <p>
@@ -90,7 +90,7 @@
                 <a href="/BoardGame">/BoardGame</a>
                 </p>
                 </div>
-                <h1 ></h1>
+                </div>
               <div class = "card-wrapper">
                   <div class = "card">
                       <div class="product-imgs">
@@ -100,11 +100,12 @@
                           </div>
                         </div>
                       </div>
-                  
+                    </div>
+                    </div>
                       <div class="product-content">
                       <div>
                           <h2 style="display: inline;">Mã sản phẩm: </h2>
-                          <h2 class="product-ID" style="display: inline;"></h2>
+                          <h2 class="product-ID" ></h2>
                       </div>
                       
                         <h2 class="product-title"></h2>
@@ -126,22 +127,22 @@
 
                     </div>
                     
-                    
+                    </div>
                   </div>
                   </div>
-
                   <script>
                     window.onload = function() {
                       const urlParams = new URLSearchParams(window.location.search);
                       const productId = urlParams.get('id');
                       const productData = {
                         1: {
-                        name: 'Outer Rim',
-                        price: '74.999',
-                        code: 'BG001',
-                        image: 'Sanpham/fantasy-flight-games-star-wars-outer-rim.jpg',
-                        hreference: '/BoardGame/product-details.php?id=1',
-                        describe: `Bay tới các vì sao và trở thành huyền thoại sống trong Star Wars: Outer Rim, một trò chơi về thợ săn tiền thưởng, lính đánh thuê và buôn lậu dành cho 1-4 người chơi!
+
+                            name: 'Outer Rim',
+                            price: '74.999',
+                            code: 'BG001',
+                            image: 'Sanpham/fantasy-flight-games-star-wars-outer-rim.jpg',
+                            hreference: '/BoardGame/product-details.php?id=1',
+                            describe: `Bay tới các vì sao và trở thành huyền thoại sống trong Star Wars: Outer Rim, một trò chơi về thợ săn tiền thưởng, lính đánh thuê và buôn lậu dành cho 1-4 người chơi!
 
 Trong Outer Rim, bạn đảm nhận vai trò của một cư dân thế giới ngầm, bắt đầu ghi dấu ấn của mình trên thiên hà. Bạn sẽ du hành vòng ngoài trên con tàu cá nhân của mình, thuê các nhân vật huyền thoại trong Chiến tranh giữa các vì sao tham gia vào phi hành đoàn của mình và cố gắng trở thành kẻ sống ngoài vòng pháp luật nổi tiếng (hoặc khét tiếng) nhất trong thiên hà!
 
