@@ -36,8 +36,10 @@
       </ul>
     </nav>
     <div class="search-bar">
-      <input type="text" placeholder="Tìm kiếm">
-      <button type="submit">Tìm kiếm</button>
+    <form id="search-form" method="post" action="search.php">
+        <input type="text" name="noidung" placeholder="Tìm kiếm">
+        <button type="submit" name="btn" id="search-btn">Tìm kiếm</button>
+    </form>
     </div>
     <?php 
     session_start();
@@ -75,8 +77,13 @@
 </div>
   </header>
         <!-- end header -->
-        <!-- 1 --> 
-        <div class="bang-sron">
+        <div id="main">
+            <div class="container">
+                    <div class="banner">
+                        <img src="Sanpham/banner.jpg" alt="">
+                    </div>            
+               <!-- 1 --> 
+               <div class="bang-sron">
                     <h2 class="new-arrival">HÀNG MỚI VỀ!</h2> 
                     <div class="title">
                     </div>

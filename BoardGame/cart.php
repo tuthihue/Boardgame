@@ -37,8 +37,10 @@
       </ul>
     </nav>
     <div class="search-bar">
-      <input type="text" placeholder="Tìm kiếm">
-      <button type="submit">Tìm kiếm</button>
+    <form id="search-form" method="post" action="search.php">
+        <input type="text" name="noidung" placeholder="Tìm kiếm">
+        <button type="submit" name="btn" id="search-btn">Tìm kiếm</button>
+    </form>
     </div>
     <?php 
     session_start();
@@ -129,6 +131,10 @@
                     <label class="cart" style="width: 50%;">Số điện thoại:</label>
                     <input type="text" class="form-control" style="border: none; outline: none; width: 100%;" id="phone" name="phone" required>
                 </div>
+                <div style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+                <label class="cart" style="width: 50%;">Số điểm quy đổi: ( 10.000 vnđ= 1 điểm )</label>
+                <input type="text" class="form-control" style="border: none; outline: none; width: 100%;" id="point" name="point" required value="0">
+                </div>
                 </div>
                 <button type="submit" class="btn">Lưu <i class="fas fa-shopping-cart"></i></button>
             </form>
@@ -136,30 +142,6 @@
     <?php
     }
     ?>
-    <br><br>
-    <div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Thông tin</h4>
-                    <ul>
-                        <li><a href="contact.php">Liên hệ</a></li>
-                        <li><a href="policy.php">Chính sách</a></li>
-                        <li><a href="https://www.google.com/maps/search/Duong+Hàn+Huyên,+Khu+pho+6,+Phuong+Linh+Trung,+Tp.Thù+Đức,+Tp.HCM"  target="_blank"Đường Hàn Huyên, Khu phố 6, Phường Linh Trung, Tp.Thủ Đức, Tp.HCM>Địa chỉ</a></li>
-                        <li><a href="respond.php">Phản hồi</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Theo dõi chúng tôi</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
 </div>
 </body>
 

@@ -37,8 +37,10 @@
       </ul>
     </nav>
     <div class="search-bar">
-      <input type="text" placeholder="Tìm kiếm">
-      <button type="submit">Tìm kiếm</button>
+    <form id="search-form" method="post" action="search.php">
+        <input type="text" name="noidung" placeholder="Tìm kiếm">
+        <button type="submit" name="btn" id="search-btn">Tìm kiếm</button>
+    </form>
     </div>
     <?php 
     session_start();
@@ -128,6 +130,23 @@
                     echo '</table>';
                     $res=mysqli_query($conn, $TT);
                     $tt=mysqli_fetch_assoc($res);
+                    // Tính điểm và cập nhật vào bảng tich_diem
+                    $username = isset($_SESSION['username']) ? $_SESSION['username'] : "";
+                    $tongTien = $tt['TONGTIEN'];
+                    $diem = intval($tongTien / 10.000);
+
+                    $select_query = "SELECT * FROM tich_diem WHERE USERNAME = '$username'";
+                    $select_result = mysqli_query($conn, $select_query);
+
+                    if (mysqli_num_rows($select_result) > 0) {
+                        // Nếu username đã tồn tại trong bảng tich_diem, cập nhật điểm
+                        $update_query = "UPDATE tich_diem SET diem = diem + $diem WHERE USERNAME = '$username'";
+                        mysqli_query($conn, $update_query);
+                    } else {
+                        // Nếu username chưa tồn tại trong bảng tich_diem, thêm mới
+                        $insert_query = "INSERT INTO tich_diem (USERNAME, diem) VALUES ('$username', $diem)";
+                        mysqli_query($conn, $insert_query);
+                    }
                 ?>
                     <div style="text-align: right;">
                         <h2 style="margin-top: 20px;">TỔNG TIỀN: <?php echo $tt['TONGTIEN'] . ' VND'; ?></h2>

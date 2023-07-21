@@ -136,8 +136,6 @@ body {
     font-weight: bold;
     text-transform: capitalize;
   }
-
-
  /* CSS cho liên kết sắp xếp */
  .sort-links {
   margin-top: 20px;
@@ -155,6 +153,7 @@ body {
 body {
   font-family: 'Times New Roman', Times, serif;
 }
+/* CSS for main container */
 #main {
   overflow: hidden;
 }
@@ -170,24 +169,23 @@ body {
   flex-direction: column;
   align-items: center;
 }
-h1 {
-  text-align: left;
-}
+
 .products {
   width: 100%;
   align-self: center;
   height: 70%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
+  justify-content: flex-start;
+  gap: 20px; /* Decrease the gap between products */
 }
 
+/* Styles for individual products */
 .product {
   position: relative;
-  background-color:#fff;
-  flex-grow: 1;
-  width: 350px;
+  background-color: #fff;
+  flex-grow: 0;
+  width: calc(33.33% - 20px); /* Adjust the width for three products with reduced gaps in between */
   height: 100%;
   box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
   display: flex;
@@ -198,13 +196,18 @@ h1 {
   transition: .3s;
 }
 
+/* Remove margin from the last product to avoid extra spacing */
+.product:last-child {
+  margin-right: 0;
+}
+
 .product:hover {
   transform: translateY(-15px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
 .image {
-  width:100%;
+  width: 100%;
   height: 60%;
   display: grid;
   place-content: center;
@@ -220,12 +223,12 @@ h1 {
 .product-info h4 {
   font-size: 18px;
   text-transform: capitalize;
-  color:black;
+  color: black;
 }
 
 .product-info span {
   font-size: 25px;
-  color:crimson;
+  color: crimson;
   font-weight: bold;
 }
 
@@ -234,10 +237,11 @@ h1 {
   line-height: 25px;
 }
 
-.stars svg{
+.stars svg {
   font-size: 1.3em;
-  color:black;  
+  color: black;
 }
+
 .pay {
   position: absolute;
   bottom: 20px;
@@ -248,8 +252,8 @@ h1 {
   padding: 7px 7px;
   border-radius: 7px;
   border: none;
-  background-color:crimson;
-  color:#fff;
+  background-color: crimson;
+  color: #fff;
   font-size: 18px;
   text-transform: capitalize;
   cursor: pointer;
@@ -259,58 +263,6 @@ h1 {
 .pay button:hover {
   transform: scale(1.1);
 }
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.pagination a {
-  padding: 5px 10px;
-  margin: 0 5px;
-  color: #333;
-  text-decoration: none;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-.pagination a:hover {
-  background-color: #ccc;
-}
-
-.pagination .active {
-  background-color: crimson;
-  color: #fff;
-}
-
-
-.pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.pagination a {
-    color: #000;
-    text-decoration: none;
-    padding: 5px 10px;
-    margin: 0 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.pagination a:hover {
-    background-color: #ccc;
-}
-
-.pagination .active {
-    background-color: #333;
-    color: #fff;
-}
-
 
 /* CSS cho footer */
 #footer {
@@ -457,4 +409,3 @@ h1 {
         left: initial;
     }
 }
-                           

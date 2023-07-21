@@ -36,8 +36,10 @@
       </ul>
     </nav>
     <div class="search-bar">
-      <input type="text" placeholder="Tìm kiếm">
-      <button type="submit">Tìm kiếm</button>
+    <form id="search-form" method="post" action="search.php">
+        <input type="text" name="noidung" placeholder="Tìm kiếm">
+        <button type="submit" name="btn" id="search-btn">Tìm kiếm</button>
+    </form>
     </div>
     <?php 
     session_start();
@@ -87,9 +89,11 @@
         <div class="container">
             <div class="main-product">
                 <div class="products">
+                    
                     <?php
-                    // Danh sách sản phẩm
-                    $products = [                         
+                    global $products;
+                    //Danh sách sản phẩm
+                     $products = [                         
                         [   
                             'code' => 'BG001',
                             'name' => 'Outer Rim',
@@ -653,13 +657,13 @@
                         echo '<i class="fa-regular fa-star"></i>';
                         echo '</div>';
                         echo '<div class="pay">';
-                        echo '<form action="save_to_cart.php" method="post">';
+                        echo '<form action="save_to_cart.php" method="post">';// này
                         echo '<input type="hidden" name="name_product" value="' . $product['name'] . '">';
                         echo '<input type="hidden" name="code" value="' . $product['code'] . '">';
                         echo '<input type="hidden" name="price" value="' . $product['price'] . '">';
                         echo '<input type="hidden" name="describe" value="' . $product['describe'] . '">';
                         echo '<input type="hidden" name="quantity" value="' . $product['quantity'] . '">';
-                        echo '<button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>';
+                        echo '<button type="submit" class="btn">Thêm vào giỏ <i class="fas fa-shopping-cart"></i></button>';//này
                         echo '</form>';
                         echo '</div>';
                         echo '</div>';

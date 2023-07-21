@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Games</title>
-    <link rel="stylesheet" href="categories.css">
+    <link rel="stylesheet" href="CSS/categories.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <header>
@@ -36,8 +36,10 @@
       </ul>
     </nav>
     <div class="search-bar">
-      <input type="text" placeholder="Tìm kiếm">
-      <button type="submit">Tìm kiếm</button>
+    <form id="search-form" method="post" action="search.php">
+        <input type="text" name="noidung" placeholder="Tìm kiếm">
+        <button type="submit" name="btn" id="search-btn">Tìm kiếm</button>
+    </form>
     </div>
     <?php 
     session_start();
