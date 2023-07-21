@@ -19,7 +19,7 @@
           <a href="#">Thể loại</a>
           <!-- Thêm danh sách cho mục "Thể loại" -->
           <ul class="sub-menu">
-            <li><a href="cardgame.php">Card Games</a></li> 
+          <li><a href="cardgame.php">Card Games</a></li> 
             <li><a href="dicegame.php">Dice Games</a></li> 
             <li><a href="chess.php">Chess</a></li> 
             <li><a href="family.php">Family</a></li> 
@@ -29,11 +29,7 @@
             <li><a href="cooperative.php">Cooperative</a></li> 
             <li><a href="dungeoncral&minis.php">Dungeon Crawl & Minis</a></li> 
             <li><a href="partygames.php">Party Games</a></li> 
-
-            <li><a href="starwars.php">Star Wars</a></li>  
-
             <li><a href="starwars.php">Star Wars</a></li> 
-
           </ul>
         </li>
         <li><a href="contact.php">Liên hệ</a></li>
@@ -66,7 +62,6 @@
     <a href="cart.php">
       <i class="fas fa-shopping-cart"></i>
       <span class="cart-count">
-
             <?php
               // Kết nối cơ sở dữ liệu và thực hiện truy vấn
               include 'connect.php';
@@ -79,20 +74,6 @@
               echo $cartItemCount;
             ?>
           </span>
-
-      <?php
-        // Kết nối cơ sở dữ liệu và thực hiện truy vấn
-        include 'connect.php';
-        $query = "SELECT SUM(quantity) AS totalQuantity FROM carts";
-        $result = mysqli_query($conn, $query);
-        $row = mysqli_fetch_assoc($result);
-        $cartItemCount = $row['totalQuantity'];
-        
-        // Hiển thị tổng số sản phẩm trong giỏ hàng
-        echo $cartItemCount;
-      ?>
-    </span>
-
     </a>
     </div>
 </header> 
@@ -120,11 +101,7 @@
                             <ul>
                                 <li><a href="contact.php">Liên hệ</a></li>
                                 <li><a href="policy.php">Chính sách</a></li>
-
                                 <li><a href="https://www.google.com/maps/search/Duong+Hàn+Huyên,+Khu+pho+6,+Phuong+Linh+Trung,+Tp.Thù+Đức,+Tp.HCM"  target="_blank"Đường Hàn Huyên, Khu phố 6, Phường Linh Trung, Tp.Thủ Đức, Tp.HCM>Địa chỉ</a></li>
-
-                               <li><a href="https://www.google.com/maps/search/Duong+Hàn+Huyên,+Khu+pho+6,+Phuong+Linh+Trung,+Tp.Thù+Đức,+Tp.HCM"  target="_blank"Đường Hàn Huyên, Khu phố 6, Phường Linh Trung, Tp.Thủ Đức, Tp.HCM>Địa chỉ</a></li>
-
                                 <li><a href="respond.php">Phản hồi</a></li>
                             </ul>
                         </div>

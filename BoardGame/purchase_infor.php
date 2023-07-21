@@ -93,7 +93,7 @@
             }
             //session_start();
             $randomNumber = $_SESSION['randomNumber'];
-            $sql = "SELECT t.ID_THUE,t.HOTEN,t.NGAYTHUE,t.TONGTIEN,tg.TENSP,tg.SOLUONG FROM THUE t JOIN THUEGAME tg ON t.ID_THUE=tg.ID_THUE  WHERE t.id_thue='$randomNumber'";
+            $sql = "SELECT t.ID_THUE,t.HOTEN,t.NGAYTHUE,t.TONGTIEN,tg.TENSP,tg.SOLUONG FROM THUE t JOIN THUEGAME tg ON t.ID_THUE=tg.ID_THUE WHERE t.id_thue='$randomNumber'";
             $TT="SELECT * from thue WHERE id_thue='$randomNumber'";
             $result = mysqli_query($conn, $sql);
             if ($result) {
@@ -164,29 +164,6 @@
             mysqli_close($conn);
             ?>
         </div>
-        </div>
-        <div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Thông tin</h4>
-                    <ul>
-                        <li><a href="contact.php">Liên hệ</a></li>
-                        <li><a href="policy.php">Chính sách</a></li>
-                        <li><a href="https://www.google.com/maps/search/Duong+Hàn+Huyên,+Khu+pho+6,+Phuong+Linh+Trung,+Tp.Thù+Đức,+Tp.HCM"  target="_blank"Đường Hàn Huyên, Khu phố 6, Phường Linh Trung, Tp.Thủ Đức, Tp.HCM>Địa chỉ</a></li>
-                        <li><a href="respond.php">Phản hồi</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Theo dõi chúng tôi</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
         </div>
 </body>
 

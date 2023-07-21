@@ -20,7 +20,7 @@
           <a href="#">Thể loại</a>
           <!-- Thêm danh sách cho mục "Thể loại" -->
           <ul class="sub-menu">
-            <li><a href="cardgame.php">Card Games</a></li> 
+          <li><a href="cardgame.php">Card Games</a></li> 
             <li><a href="dicegame.php">Dice Games</a></li> 
             <li><a href="chess.php">Chess</a></li> 
             <li><a href="family.php">Family</a></li> 
@@ -30,7 +30,7 @@
             <li><a href="cooperative.php">Cooperative</a></li> 
             <li><a href="dungeoncral&minis.php">Dungeon Crawl & Minis</a></li> 
             <li><a href="partygames.php">Party Games</a></li> 
-            <li><a href="starwars.php">Star Wars</a></li> 
+            <li><a href="starwars.php">Star Wars</a></li>
           </ul>
         </li>
         <li><a href="#">Liên hệ</a></li>
@@ -51,18 +51,18 @@
       <a href="cart.php">
         <i class="fas fa-shopping-cart"></i>
         <span class="cart-count">
-      <?php
-        // Kết nối cơ sở dữ liệu và thực hiện truy vấn
-        include 'connect.php';
-        $query = "SELECT SUM(quantity) AS totalQuantity FROM carts";
-        $result = mysqli_query($conn, $query);
-        $row = mysqli_fetch_assoc($result);
-        $cartItemCount = $row['totalQuantity'];
-        
-        // Hiển thị tổng số sản phẩm trong giỏ hàng
-        echo $cartItemCount;
-      ?>
-    </span>
+            <?php
+              // Kết nối cơ sở dữ liệu và thực hiện truy vấn
+              include 'connect.php';
+              $query = "SELECT SUM(quantity) AS totalQuantity FROM carts";
+              $result = mysqli_query($conn, $query);
+              $row = mysqli_fetch_assoc($result);
+              $cartItemCount = $row['totalQuantity'];
+              
+              // Hiển thị tổng số sản phẩm trong giỏ hàng
+              echo $cartItemCount;
+            ?>
+          </span>
       </a>
     </div>
   </header>
