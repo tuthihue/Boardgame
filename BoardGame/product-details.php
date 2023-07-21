@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -130,7 +128,90 @@
                     </div>
                   </div>
                   </div>
+                  <!DOCTYPE html>
+<html>
+<head>
+    <title>Bình luận</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
 
+        /* Header styles */
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Comments container styles */
+        #comments {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Form styles */
+        form {
+            margin-bottom: 10px;
+        }
+
+        /* Label styles */
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Text input styles */
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Submit button styles */
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Comment list styles */
+        #comments-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        /* Individual comment styles */
+        .comment {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 8px;
+        }
+
+        .comment strong {
+            font-weight: bold;
+        }
+
+        .comment p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
                   <h2>Bình luận</h2>
                   <div id="comments">
 
