@@ -239,7 +239,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         </div>
     </div> 
-    <script src="account.js"></script>
+    <script src="JS/account.js"></script>
     <!-- end main -->
     <div id="footer">
                 <div class="container">
