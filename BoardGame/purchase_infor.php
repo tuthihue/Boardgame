@@ -93,7 +93,7 @@
             }
             //session_start();
             $randomNumber = $_SESSION['randomNumber'];
-            $sql = "SELECT t.ID_THUE,t.USERNAME,t.NGAYTHUE,t.TONGTIEN,tg.TENSP,tg.SOLUONG FROM THUE t JOIN THUEGAME tg ON t.ID_THUE=tg.ID_THUE  WHERE t.id_thue='$randomNumber'";
+            $sql = "SELECT t.ID_THUE,t.HOTEN,t.NGAYTHUE,t.TONGTIEN,tg.TENSP,tg.SOLUONG FROM THUE t JOIN THUEGAME tg ON t.ID_THUE=tg.ID_THUE  WHERE t.id_thue='$randomNumber'";
             $TT="SELECT * from thue WHERE id_thue='$randomNumber'";
             $result = mysqli_query($conn, $sql);
             if ($result) {
@@ -117,7 +117,7 @@
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo '<tr>';
                         echo '<td>' . $row['ID_THUE'] . '</td>';
-                        echo '<td>' . $row['USERNAME'] . '</td>';
+                        echo '<td>' . $row['HOTEN'] . '</td>';
                         $ngayThue = date('d-m-Y', strtotime($row['NGAYTHUE']));
                         echo '<td>' . $ngayThue . '</td>';
                         
