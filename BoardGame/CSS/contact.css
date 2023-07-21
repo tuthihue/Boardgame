@@ -1,0 +1,227 @@
+
+  /* CSS cho thanh công cụ */
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+    position: relative;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f2f2f2;
+    padding: 10px;
+    z-index: 1;
+    width: 200px;
+  }
+
+  nav ul li:hover .sub-menu {
+    display: block;
+  }
+
+  nav ul li .sub-menu li {
+    margin-bottom: 10px;
+  }
+
+  nav ul li .sub-menu li a {
+    color: #333;
+  }
+
+  /* CSS cho tìm kiếm và giỏ hàng */
+  .search-bar {
+    display: flex;
+  }
+
+  .search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+  }
+
+  .search-bar button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+  }
+
+  .cart-icon {
+    position: relative;
+  }
+
+  .cart-icon i {
+    font-size: 18px;
+  }
+
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+  }
+  .name {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .contact-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: left;
+}
+
+.store-info {
+    margin-bottom: 20px;
+}
+
+.store-info p {
+    margin: 5px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+#footer{
+	background-color: #24262b;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#footer .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+#footer .row ul{
+	list-style: none;
+}
+#footer .footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+#footer .footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+#footer .footer-col p{
+  width: 50%;
+  color: #fff;
+}
+#footer .footer-col h4:before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+#footer .footer-col ul li{
+	margin-bottom: 10px;
+}
+#footer .footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+#footer .footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+#footer .footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+#footer .footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.footer-top{
+  margin-top: 40px;
+  text-align: center;
+  color: #fff;
+}
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .menu-area ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .menu-area ul li a {
+        padding: 12px;
+    }
+
+    .menu-area ul ul {
+        position: static;
+        display: none;
+        top: initial;
+        background: none;
+    }
+
+    .menu-area ul ul li {
+        border-bottom: none;
+    }
+
+    .menu-area ul ul ul {
+        position: static;
+        left: initial;
+    }
+}

@@ -82,6 +82,7 @@
                     <div class="banner">
                         <img src="Sanpham/banner.jpg" alt="">
                     </div>            
+               <!-- 1 --> 
                <div class="bang-sron">
                     <h2 class="new-arrival">HÀNG MỚI VỀ!</h2> 
                     <div class="title">
