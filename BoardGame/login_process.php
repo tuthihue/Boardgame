@@ -12,6 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_array($result);
+        session_start();
         $_SESSION['username'] = $row['username'];
         // Chuyển hướng người dùng đến trang index.php khi đăng nhập thành công
         header('location: index.php');
